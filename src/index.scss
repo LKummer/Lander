@@ -1,3 +1,8 @@
+// Theme Styles
 @import 'theme/fonts';
 @import 'theme/colors';
 @import 'theme/screens';
+
+// Base Styles
+@import 'base/reset';
+@import 'base/site';
