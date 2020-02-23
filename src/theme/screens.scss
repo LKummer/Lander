@@ -1,0 +1,14 @@
+// Top boundary breakpoints for screen sizes.
+$screen-breakpoints: (
+  'mobile': 768px,
+  'tablet': 991px,
+  'small': 1200px
+);
+
+// Container widths for the different screen sizes.
+$screen-widths: (
+  'mobile': 100%,
+  'tablet': 723px,
+  'small': 933px,
+  'large': 1127px
+);
