@@ -7,6 +7,9 @@
     "env": {
         "browser": true
     },
+    "ignorePatterns": [
+        "webpack.*.js"
+    ],
     "rules": {
         "no-dupe-else-if": "error",
         "no-import-assign": "error",
