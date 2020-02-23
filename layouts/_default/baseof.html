@@ -2,7 +2,9 @@
 <html lang="en">
 {{ partial "head" . }}
 <body>
+    {{ partial "header" . }}
     {{- block "main" . }}{{- end }}
+    {{ partial "footer" . }}
     <script src="{{ absURL "/main.js" }}"></script>
 </body>
 </html>
