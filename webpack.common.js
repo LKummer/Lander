@@ -16,6 +16,13 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'eslint-loader'
+            },
+            {
+                test: /\.woff2?$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'static/fonts/[name].[ext]'
+                }
             }
         ]
     },
