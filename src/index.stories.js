@@ -1,4 +1,4 @@
-import '../index.js'
+import './index.js'
 
 export default {
   title: 'Demo'
