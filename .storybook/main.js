@@ -6,7 +6,7 @@ const dev = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(?:css|scss|sass)$/i,
         use: ['style-loader']
       }
     ]
@@ -14,6 +14,13 @@ const dev = {
 }
 
 module.exports = {
-  stories: ['../src/stories/**/*.stories.js'],
-  webpackFinal: config => merge(config, dev, common)
+  stories: ['../src/**/*.stories.js'],
+  webpackFinal: config => {
+    const merged = merge.smart(config, dev, common)
+    // Find the CSS/Sass rule and add exclusion for css files as Storybook's
+    // configuration already handles them.
+    const css = merged.module.rules.find(element => element.test.toString() === "/\\.(?:css|scss|sass)$/i")
+    css.exclude = /\.css$/
+    return merged
+  }
 }

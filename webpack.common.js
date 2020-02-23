@@ -4,7 +4,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(?:css|scss|sass)$/i,
                 use: [
                     // No third loader as it is added while merging later.
                     'css-loader',
@@ -16,13 +16,6 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'eslint-loader'
-            },
-            {
-                test: /\.woff2?$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'static/fonts/[name].[ext]'
-                }
             }
         ]
     },

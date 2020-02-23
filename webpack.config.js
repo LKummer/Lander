@@ -16,8 +16,17 @@ const build = {
             {
                 // When merged first, this loader should be the last one used
                 // to process Sass files.
-                test: /\.s[ac]ss$/i,
+                test: /\.(?:css|scss|sass)$/i,
                 use: [MiniCssExtractPlugin.loader]
+            },
+            {
+                test: /\.woff2?$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'theme/static/fonts',
+                    publicPath: './fonts/'
+                }
             }
         ]
     },
