@@ -51,8 +51,8 @@ module.exports = env => {
     // Short circuit check `env` to avoid errors.
     if (env && env.prod) {
         const prod = require('./webpack.prod')
-        return merge(build, common, prod)
+        return merge.smart(build, common, prod) 
     } else {
-        return merge(build, common, { mode: 'development' })
+        return merge.smart(build, common, { mode: 'development' }) 
     }
 }
