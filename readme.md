@@ -1,4 +1,6 @@
-# Webpack Based Hugo Theme
+# Theme Hugo Theme
+
+Hugo theme for Hugo themes.
 
 ## Development Guide
 
