@@ -1,4 +1,4 @@
-import '../index.scss'
+import '../index.js'
 
 export default {
   title: 'Demo'
