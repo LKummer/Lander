@@ -1,0 +1,16 @@
+.masthead {
+  @extend %container;
+
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+
+  &-heading {
+    font-size: map-get($font-sizes, 'huge');
+    margin: 0 0 0.75em 0;
+  }
+
+  &-subheading {
+    font-size: map-get($font-sizes, 'large');
+    margin: 0 0 1.25em 0;
+  }
+}
