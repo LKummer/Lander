@@ -1,13 +1,18 @@
 .button {
-  @include transition('background');
+  @include transition('all');
 
   border: none;
-  border-radius: 1rem;
+  border-radius: 100em;
+  box-shadow: 0 0.3em 0.2em -0.15em rgba(0, 0, 0, 0.2);
   display: inline-block;
   font-size: map-get($font-sizes, 'medium');
   font-weight: bold;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   text-decoration: none;
+
+  &:active {
+    box-shadow: 0 0.2em 0.2em -0.15em rgba(0, 0, 0, 0.2);
+  }
 
   &-primary {
     $primary-color: map-get($colors, 'primary');
