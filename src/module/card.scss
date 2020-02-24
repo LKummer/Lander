@@ -1,0 +1,35 @@
+.card {
+  @include shadow;
+
+  background: darken(map-get($colors, 'background'), 2%);
+  border-radius: 1.5rem;
+  color: map-get($colors, 'text');
+  display: block;
+  padding: 2rem;
+  // Remove decoration from anchor cards.
+  text-decoration: none;
+
+  // Set the color of anchor cards.
+  &[href] {
+    color: map-get($colors, 'text');
+  }
+
+  &-heading {
+    font-size: map-get($font-sizes, 'large');
+    margin: 1.1em 0 0.4em 0;
+
+    &:first-child {
+      // Compensate for the line height of the title.
+      margin-top: -0.3em;
+    }
+  }
+
+  &-text {
+    font-size: map-get($font-sizes, 'small');
+    margin: 0 0 1em 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
