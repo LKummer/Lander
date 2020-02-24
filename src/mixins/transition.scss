@@ -1,0 +1,12 @@
+// Length options: 'slow' or 'fast'.
+@mixin transition ($property, $length: 'fast') {
+  @if $length == 'fast' {
+    transition: $property map-get($timings, 'fast');
+  }
+  @else if $length == 'slow' {
+    transition: $property map-get($timings, 'slow');
+  }
+  @else {
+    @warn "Length value must be either 'slow' or 'fast'.";
+  }
+}
