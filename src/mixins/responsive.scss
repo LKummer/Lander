@@ -1,4 +1,4 @@
-// Width options: `mobile`, `tablet`, `small` and `large`.
+// Width options: `mobile`, `tablet`, `small` or `large`.
 @mixin responsive-block ($width) {
   @if $width == 'mobile' {
     @media only screen and (max-width: map-get($screen-breakpoints, 'mobile')) {
@@ -21,6 +21,9 @@
     @media only screen and (min-width: map-get($screen-breakpoints, 'small') + 1px) {
       @content;
     }
+  }
+  @else {
+    @warn "Width value must be 'mobile', 'tablet', 'small' or 'large'.";
   }
 }
 
