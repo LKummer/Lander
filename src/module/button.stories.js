@@ -7,11 +7,6 @@ export const Semantic = function () {
   <button class="button button-primary">
     Semantic Button
   </button>
-  <br>
-  <br>
-  <button class="button button-accent">
-    Semantic Button
-  </button>
   `
 }
 
@@ -20,10 +15,21 @@ export const Anchor = function () {
   <a href class="button button-primary">
     Link Button
   </a>
-  <br>
-  <br>
-  <a href class="button button-accent">
-    Link Button
-  </a>
+  `
+}
+
+export const PrimaryColored = function () {
+  return `
+  <button class="button button-primary">
+    Primary Button
+  </button>
+  `
+}
+
+export const AccentColored = function () {
+  return `
+  <button class="button button-accent">
+    Accent Button
+  </button>
   `
 }

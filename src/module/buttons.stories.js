@@ -70,3 +70,27 @@ export const ManyButtons = function () {
   </ul>
   `
 }
+
+export const InsideNav = function () {
+  return `
+  <nav>
+    <ul class="buttons">
+      <li>
+        <button class="button button-primary">
+          First Button
+        </button>
+      </li>
+      <li>
+        <button class="button button-accent">
+          Second Button
+        </button>
+      </li>
+      <li>
+        <button class="button button-primary">
+          Third Button
+        </button>
+      </li>
+    </ul>
+  </nav>
+  `
+}
