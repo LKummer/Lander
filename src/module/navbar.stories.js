@@ -1,5 +1,8 @@
 export default {
-  title: 'Navigation Bar'
+  title: 'Navigation Bar',
+  parameters: {
+    componentSubtitle: 'Main navigation bar.'
+  }
 }
 
 export const Normal = function () {

@@ -1,8 +1,12 @@
 export default {
-  title: 'Buttons'
+  title: 'Buttons',
+  parameters: {
+    componentSubtitle: 'Use to group multiple buttons together with organized '
+      + 'wrapping and margins.'
+  }
 }
 
-export const Buttons = function () {
+export const FewButtons = function () {
   return `
   <ul class="buttons">
     <li>

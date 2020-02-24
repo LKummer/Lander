@@ -22,5 +22,8 @@ module.exports = {
     const css = merged.module.rules.find(element => element.test.toString() === "/\\.(?:css|scss|sass)$/i")
     css.exclude = /\.css$/
     return merged
-  }
+  },
+  addons: [
+    '@storybook/addon-docs'
+  ]
 }

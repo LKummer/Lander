@@ -1,5 +1,9 @@
 export default {
-  title: 'Button'
+  title: 'Button',
+  parameters: {
+    componentSubtitle: 'Styled button that can be used with <button> and <a> '
+      + 'tags.'
+  }
 }
 
 export const Semantic = function () {
