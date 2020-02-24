@@ -28,10 +28,6 @@
 }
 
 %container {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-
   @include responsive-block('mobile') {
     max-width: map-get($screen-widths, 'mobile');
   }
@@ -47,4 +43,8 @@
   @include responsive-block('large') {
     max-width: map-get($screen-widths, 'large');
   }
+
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }
