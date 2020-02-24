@@ -10,17 +10,17 @@ export const FewButtons = function () {
   return `
   <ul class="buttons">
     <li>
-      <button class="button button-primary">
+      <button class="buttons-button button button-primary">
         First Button
       </button>
     </li>
     <li>
-      <button class="button button-accent">
+      <button class="buttons-button button button-accent">
         Second Button
       </button>
     </li>
     <li>
-      <button class="button button-primary">
+      <button class="buttons-button button button-primary">
         Third Button
       </button>
     </li>
@@ -32,42 +32,42 @@ export const ManyButtons = function () {
   return `
   <ul class="buttons">
     <li>
-      <button class="button button-primary">
+      <button class="buttons-button button button-primary">
         First Button
       </button>
     </li>
     <li>
-      <button class="button button-accent">
+      <button class="buttons-button button button-accent">
         Second Button
       </button>
     </li>
     <li>
-      <button class="button button-primary">
+      <button class="buttons-button button button-primary">
         Third Button
       </button>
     </li>
     <li>
-      <button class="button button-accent">
+      <button class="buttons-button button button-accent">
         Fourth Button
       </button>
     </li>
     <li>
-      <button class="button button-primary">
+      <button class="buttons-button button button-primary">
         Fifth Button
       </button>
     </li>
     <li>
-      <button class="button button-accent">
+      <button class="buttons-button button button-accent">
         Sixth Button
       </button>
     </li>
     <li>
-      <button class="button button-primary">
+      <button class="buttons-button button button-primary">
         Seventh Button
       </button>
     </li>
     <li>
-      <button class="button button-accent">
+      <button class="buttons-button button button-accent">
         Eighth Button
       </button>
     </li>
@@ -80,17 +80,17 @@ export const InsideNav = function () {
   <nav>
     <ul class="buttons">
       <li>
-        <button class="button button-primary">
+        <button class="buttons-button button button-primary">
           First Button
         </button>
       </li>
       <li>
-        <button class="button button-accent">
+        <button class="buttons-button button button-accent">
           Second Button
         </button>
       </li>
       <li>
-        <button class="button button-primary">
+        <button class="buttons-button button button-primary">
           Third Button
         </button>
       </li>
