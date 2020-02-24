@@ -3,6 +3,9 @@
 @import 'theme/colors';
 @import 'theme/screens';
 
+// Mixins
+@import 'mixins/responsive';
+
 // Base Styles
 @import 'base/reset';
 @import 'base/site';
