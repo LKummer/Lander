@@ -24,6 +24,7 @@ module.exports = {
     return merged
   },
   addons: [
-    '@storybook/addon-docs'
+    '@storybook/addon-docs',
+    '@storybook/addon-viewport/register'
   ]
 }
