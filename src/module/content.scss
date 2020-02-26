@@ -29,4 +29,8 @@
   &-dark {
     color: map-get($colors, 'dark-text');
   }
+
+  &-centered {
+    text-align: center;
+  }
 }

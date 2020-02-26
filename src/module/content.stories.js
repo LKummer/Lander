@@ -75,3 +75,19 @@ export const Dark = function () {
   </section>
   `
 }
+
+export const Center = function () {
+  return `
+  <section class="content content-light content-centered">
+    <h1 class="content-title">
+      This is a short title.
+    </h1>
+    <p class="content-text">
+      This is a short piece of sample text.
+    </p>
+    <p class="content-text">
+      This is a second paragraph of sample text to see how content is handled.
+    </p>
+  </section>
+  `
+}
