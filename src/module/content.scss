@@ -1,0 +1,32 @@
+.content {
+  &-title {
+    font-size: map-get($font-sizes, 'large');
+    margin: 1.1em 0 0.4em 0;
+
+    &:first-child {
+      // Compensate for the line height of the title.
+      margin-top: -0.3em;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-text {
+    font-size: map-get($font-sizes, 'small');
+    margin: 0 0 1em 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-light {
+    color: map-get($colors, 'text');
+  }
+
+  &-dark {
+    color: map-get($colors, 'dark-text');
+  }
+}

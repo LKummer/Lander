@@ -1,0 +1,13 @@
+.cardsview {
+  background: map-get($colors, 'primary');
+
+  &-container {
+    @extend %container;
+
+    padding: 12rem 0;
+  }
+
+  &-top {
+    margin-bottom: 5rem;
+  }
+}
