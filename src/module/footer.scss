@@ -1,0 +1,8 @@
+.footer {
+  background: map-get($colors, 'primary');
+  padding: 8rem 0 6rem;
+
+  &-container {
+    @extend %container;
+  }
+}
