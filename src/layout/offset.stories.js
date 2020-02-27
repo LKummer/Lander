@@ -7,7 +7,7 @@ export default {
 
 export const OffsetStart = function () {
   return `
-  <section class="offset offset-start">
+  <section class="l-offset l-offset-start">
     <section class="card">
       <h1 class="card-heading">
         Start Card
@@ -30,7 +30,7 @@ export const OffsetStart = function () {
 
 export const OffsetEnd = function () {
   return `
-  <section class="offset offset-end">
+  <section class="l-offset l-offset-end">
     <section class="card">
       <h1 class="card-heading">
         Start Card

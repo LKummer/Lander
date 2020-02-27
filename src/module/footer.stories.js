@@ -9,7 +9,7 @@ export default {
 export const Footer = function () {
   return `
   <section class="footer">
-    <section class="footer-container offset offset-start">
+    <section class="footer-container l-offset l-offset-start">
       <section class="content content-dark">
         <h1 class="content-title">
           Longer Section Title

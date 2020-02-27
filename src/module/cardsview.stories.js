@@ -9,7 +9,7 @@ export const Cards = function () {
   return `
   <section class="cardsview">
     <div class="cardsview-container">
-      <section class="offset offset-end cardsview-top">
+      <section class="l-offset l-offset-end cardsview-top">
         <section class="content content-dark">
           <h1 class="content-title">
             You should use our solution!
