@@ -90,3 +90,16 @@ export const ManyHeadings = function () {
   </section>
   `
 }
+
+export const ContentCard = function () {
+  return `
+  <section class="card content">
+    <h1 class="content-title">
+      Content Module Title
+    </h1>
+    <p class="content-text">
+      Content module text based paragraph.
+    </p>
+  </section>
+  `
+}
