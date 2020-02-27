@@ -9,15 +9,19 @@ export const Cards = function () {
   return `
   <section class="cardsview">
     <div class="cardsview-container">
-      <section class="content content-dark offset offset-end cardsview-top">
-        <h1 class="content-title">
-          You should use our solution!
-        </h1>
-        <p class="content-text">
-          This bit of sample text explains that you should definitely use our
-          product because reasons! Yes! Any reasonable person would use our
-          product.
-        </p>
+      <section class="offset offset-end cardsview-top">
+        <section class="content content-dark">
+          <h1 class="content-title">
+            You should use our solution!
+          </h1>
+        </section>
+        <section class="content content-dark">
+          <p class="content-text">
+            This bit of sample text explains that you should definitely use our
+            product because reasons! Yes! Any reasonable person would use our
+            product.
+          </p>
+        </section>
       </section>
       <ul class="grid">
         <li>
