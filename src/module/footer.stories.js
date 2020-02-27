@@ -16,7 +16,8 @@ export const Footer = function () {
         </h1>
         <p class="content-text">
           This is a short bit of sample text. This side should be a little bit
-          longer so it wraps.
+          longer so it wraps. It needs to be longer so here is more text to make
+          it wrap.
         </p>
       </section>
       <nav>
