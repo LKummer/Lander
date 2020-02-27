@@ -19,12 +19,25 @@ export const Footer = function () {
           longer so it wraps.
         </p>
       </section>
-      <section class="content content-dark">
-        <p class="content-text">
-          This is a short bit of sample text.
-        </p>
-      </section>
-    </section>
+      <nav>
+        <ul class="lowernav">
+          <li>
+            <a href class="lowernav-item">
+              First Link
+            </a>
+          </li>
+          <li>
+            <a href class="lowernav-item">
+              Second Link
+            </a>
+          </li>
+          <li>
+            <a href class="lowernav-item">
+              Third Link
+            </a>
+          </li>
+        </ul>
+      </nav>
   </section>
   `
 }
