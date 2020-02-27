@@ -7,7 +7,7 @@ export default {
 
 export const Even = function () {
   return `
-  <ul class="grid">
+  <ul class="l-grid">
     <li>
       <section class="card">
         <h1 class="card-heading">

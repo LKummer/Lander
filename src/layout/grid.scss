@@ -1,4 +1,4 @@
-.grid {
+.l-grid {
   @include responsive-block('mobile') {
     grid-template-columns: 1fr;
   }

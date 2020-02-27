@@ -23,7 +23,7 @@ export const Cards = function () {
           </p>
         </section>
       </section>
-      <ul class="grid">
+      <ul class="l-grid">
         <li>
           <section class="card">
             <h1 class="card-heading">
