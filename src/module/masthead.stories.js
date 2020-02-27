@@ -8,10 +8,10 @@ export default {
 export const Normal = function () {
   return `
   <section class="masthead">
-    <h1 class="masthead-heading">
+    <h1 class="masthead-title">
       This is the masthead title.
     </h1>
-    <h2 class="masthead-subheading">
+    <h2 class="masthead-subtitle">
       This is the masthead's subtitle, which will contain a little bit more
       text.
     </h2>

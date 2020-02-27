@@ -8,7 +8,7 @@ export default {
 export const Card = function () {
   return `
   <section class="card">
-    <h1 class="card-heading">
+    <h1 class="card-title">
       Card Title
     </h1>
     <p class="card-text">
@@ -23,7 +23,7 @@ export const Card = function () {
 export const AnchorCard = function () {
   return `
   <a href class="card">
-    <h1 class="card-heading">
+    <h1 class="card-title">
         Card Title
     </h1>
     <p class="card-text">
@@ -38,7 +38,7 @@ export const AnchorCard = function () {
 export const ManyParagraphs = function () {
   return `
   <section class="card">
-    <h1 class="card-heading">
+    <h1 class="card-title">
       Card Title
     </h1>
     <p class="card-text">
@@ -60,10 +60,10 @@ export const ManyParagraphs = function () {
   `
 }
 
-export const ManyHeadings = function () {
+export const ManyTitles = function () {
   return `
   <section class="card">
-    <h1 class="card-heading">
+    <h1 class="card-title">
       Card Title
     </h1>
     <p class="card-text">
@@ -71,7 +71,7 @@ export const ManyHeadings = function () {
       contain a couple of sentences to wrap around. The card should contain about
       this much text in a paragraph.
     </p>
-    <h1 class="card-heading">
+    <h1 class="card-title">
       Another Card Title
     </h1>
     <p class="card-text">
@@ -79,7 +79,7 @@ export const ManyHeadings = function () {
       contain a couple of sentences to wrap around. The card should contain about
       this much text in a paragraph.
     </p>
-    <h1 class="card-heading">
+    <h1 class="card-title">
       An Even Longer Card Title
     </h1>
     <p class="card-text">
