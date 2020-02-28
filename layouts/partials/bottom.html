@@ -1,0 +1,15 @@
+<section class="lowercontent">
+    <section class="content content-light content-centered">
+        <h1 class="content-title">
+            {{ .title }}
+        </h1>
+        <p class="content-text">
+            {{ .text }}
+        </p>
+        {{ with .button }}
+        <a href="{{ absLangURL .url }}" class="button button-accent">
+            {{ .label }}
+        </a>
+        {{ end }}
+    </section>
+</section>
