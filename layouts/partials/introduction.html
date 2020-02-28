@@ -1,0 +1,28 @@
+<section class="cardsview">
+    <div class="cardsview-container">
+        <section class="l-offset l-offset-end cardsview-top">
+            <section class="content content-dark">
+                <h1 class="content-title">
+                    {{ .title }}
+                </h1>
+            </section>
+            <section class="content content-dark">
+                {{ markdownify .title }}
+            </section>
+        </section>
+        <ul class="l-grid">
+            {{ range .cards }}
+            <li>
+                <section class="card">
+                    <h1 class="card-title">
+                        {{ .title }}
+                    </h1>
+                    <p class="card-text">
+                        {{ .text }}
+                    </p>
+                </section>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
