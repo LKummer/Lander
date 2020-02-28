@@ -1,6 +1,5 @@
 baseURL = "https://gohugo.io"
 title = "Hugo Themes"
-author = "Steve Francia"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
 languageCode = "en"
@@ -10,8 +9,12 @@ footnoteReturnLinkContents = "^"
 
 theme = "theme"
 
-[menu]
+[params]
+  [params.footer]
+    title = "Footer Title"
+    text = "Footer section text."
 
+[menu]
   [[menu.main]]
     identifier = "about"
     name = "About"

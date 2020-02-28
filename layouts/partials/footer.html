@@ -1,2 +1,23 @@
-<footer>
+<footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            <h1 class="content-title">
+                {{ .Site.Params.footer.title }}
+            </h1>
+            <p class="content-text">
+                {{ .Site.Params.footer.text }}
+            </p>
+        </section>
+        <nav>
+            <ul class="lowernav">
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ absLangURL .URL }}" class="lowernav-item">
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
 </footer>
