@@ -1,0 +1,21 @@
+<section class="masthead">
+    <h1 class="masthead-title">
+        {{ .title }}
+    </h1>
+    <h2 class="masthead-subtitle">
+        {{ .subtitle }}
+    </h2>
+    <nav>
+        <ul class="buttons">
+            {{ range .buttons }}
+            <li>
+                <a
+                    href="{{ absLangURL .url }}"
+                    class="button button-{{ with .color }}{{ . }}{{ else }}primary{{ end }} buttons-button">
+                    {{ .label }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</section>
