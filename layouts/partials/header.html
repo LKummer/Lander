@@ -1,2 +1,17 @@
 <header>
+    <nav class="navbar">
+        <ul class="navbar-container">
+            <li class="navbar-logo">
+                {{ .Site.Title }}
+            </li>
+            <li class="navbar-spacer"></li>
+            {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ absLangURL .URL }}" class="navbar-item navbar-item-active">
+                  {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
 </header>
