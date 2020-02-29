@@ -9,13 +9,17 @@
   border-radius: 1.5rem;
   color: map-get($colors, 'text');
   display: block;
-  padding: 3.236rem;
+  padding: 4rem 3.236rem;
   // Remove decoration from anchor cards.
   text-decoration: none;
 
   // Set the color of anchor cards.
   &[href] {
     color: map-get($colors, 'text');
+  }
+
+  &-centered {
+    text-align: center;
   }
 
   &-title {

@@ -103,3 +103,18 @@ export const ContentCard = function () {
   </section>
   `
 }
+
+export const Centered = function () {
+  return `
+  <section class="card card-centered">
+    <h1 class="card-title">
+      Card Title
+    </h1>
+    <p class="card-text">
+      This is a bit of placeholder text for card content. This paragraph should
+      contain a couple of sentences to wrap around. The card should contain about
+      this much text in a paragraph.
+    </p>
+  </section>
+  `
+}
