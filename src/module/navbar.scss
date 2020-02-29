@@ -28,7 +28,7 @@
     @include transition('all');
 
     background: rgba(0, 0, 0, 0);
-    color: transparentize(map-get($colors, 'text'), .25);
+    color: transparentize(map-get($colors, 'text'), 0.25);
     margin: 1rem 0 1rem 1rem;
     padding: 1rem;
     text-decoration: none;
@@ -39,7 +39,7 @@
 
     &:hover {
       background: darken(map-get($colors, 'background'), 10%);
-      color: transparentize(map-get($colors, 'text'), .1);
+      color: transparentize(map-get($colors, 'text'), 0.1);
     }
 
     &:active {
