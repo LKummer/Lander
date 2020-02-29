@@ -1,7 +1,7 @@
 .l-offset {
-  column-gap: 2rem;
+  column-gap: 3.236rem;
   display: grid;
-  row-gap: 2rem;
+  row-gap: 3.236rem;
 
   &-start {
     @include responsive-block('mobile') {
