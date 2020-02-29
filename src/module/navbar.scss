@@ -16,10 +16,9 @@
   }
 
   %navbar-item {
-    border-radius: 1rem;
+    border-radius: 100rem;
     color: map-get($colors, 'text');
     display: inline-block;
-    padding: 1rem;
     text-transform: uppercase;
   }
 
@@ -27,9 +26,10 @@
     @extend %navbar-item;
     @include transition('background');
 
-    background: map-get($colors, 'background');
-    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
+    font-weight: normal;
     margin: 1rem 0 1rem 1rem;
+    padding: 1rem;
     text-decoration: none;
 
     &-active {
@@ -48,7 +48,7 @@
   &-logo {
     @extend %navbar-item;
 
-    margin: 1rem 0;
+    font-weight: bold;
     user-select: none;
   }
 }

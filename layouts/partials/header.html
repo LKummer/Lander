@@ -5,9 +5,13 @@
                 {{ .Site.Title }}
             </li>
             <li class="navbar-spacer"></li>
+            {{ $current := . }}
             {{ range .Site.Menus.main }}
             <li>
-              <a href="{{ absLangURL .URL }}" class="navbar-item navbar-item-active">
+              <a href="{{ absLangURL .URL }}" class="navbar-item
+              {{- if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+              navbar-item-active
+              {{- end -}}">
                   {{ .Name }}
               </a>
             </li>
