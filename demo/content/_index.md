@@ -1,4 +1,8 @@
 ---
+title: 'Home'
+menu:
+  main:
+    weight: 10
 masthead:
   title: 'Minimalistic Hugo Theme for Themes'
   subtitle: 'The perfect way to provide documentation for your static generator themes.'

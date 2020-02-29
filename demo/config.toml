@@ -14,13 +14,6 @@ theme = "theme"
     title = "Footer Title"
     text = "Footer section text."
 
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-
 [taxonomies]
 category = "categories"
 tag = "tags"
