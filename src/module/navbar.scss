@@ -18,27 +18,28 @@
 
   %navbar-item {
     border-radius: 100rem;
-    color: map-get($colors, 'text');
     display: inline-block;
+    font-weight: bold;
     text-transform: uppercase;
   }
 
   &-item {
     @extend %navbar-item;
-    @include transition('background');
+    @include transition('all');
 
     background: rgba(0, 0, 0, 0);
-    font-weight: normal;
+    color: transparentize(map-get($colors, 'text'), .25);
     margin: 1rem 0 1rem 1rem;
     padding: 1rem;
     text-decoration: none;
 
     &-active {
-      background: darken(map-get($colors, 'background'), 5%);
+      color: map-get($colors, 'text');
     }
 
     &:hover {
       background: darken(map-get($colors, 'background'), 10%);
+      color: transparentize(map-get($colors, 'text'), .1);
     }
 
     &:active {
@@ -49,7 +50,6 @@
   &-logo {
     @extend %navbar-item;
 
-    font-weight: bold;
     user-select: none;
   }
 }
