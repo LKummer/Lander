@@ -1,4 +1,5 @@
 html {
+  color: map-get($colors, 'text');
   font-family: 'Open Sans', serif;
   font-size: map-get($font-sizes, 'small');
   line-height: 1.8;
