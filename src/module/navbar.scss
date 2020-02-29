@@ -1,5 +1,6 @@
 .navbar {
   background: map-get($colors, 'background');
+  font-size: map-get($font-sizes, 'small');
 
   &-container {
     @extend %container;

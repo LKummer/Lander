@@ -1,5 +1,9 @@
+html {
+  font-family: 'Open Sans', serif;
+  font-size: map-get($font-sizes, 'small');
+  line-height: 1.8;
+}
+
 body {
   background: map-get($colors, 'background');
-  font-family: 'Open Sans', serif;
-  line-height: 1.8;
 }
