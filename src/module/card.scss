@@ -2,14 +2,14 @@
   @include shadow;
 
   @include responsive-block('mobile') {
-    padding: 3.236rem 1rem;
+    padding: 2.5rem 1rem 3.236rem;
   }
 
   background: darken(map-get($colors, 'background'), 2%);
   border-radius: 1.5rem;
   color: map-get($colors, 'text');
   display: block;
-  padding: 4rem 3.236rem;
+  padding: 3rem 3.236rem 4rem;
   // Remove decoration from anchor cards.
   text-decoration: none;
 
