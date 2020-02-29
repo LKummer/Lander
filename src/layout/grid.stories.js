@@ -34,7 +34,7 @@ export const Even = function () {
 
 export const Uneven = function () {
   return `
-  <ul class="grid">
+  <ul class="l-grid">
     <li>
       <section class="card">
         <h1 class="card-heading">
@@ -71,7 +71,7 @@ export const Uneven = function () {
 
 export const HeightDifference = function () {
   return `
-  <ul class="grid">
+  <ul class="l-grid">
     <li>
       <section class="card">
         <h1 class="card-heading">
@@ -109,7 +109,7 @@ export const HeightDifference = function () {
 
 export const Many = function () {
   return `
-  <ul class="grid">
+  <ul class="l-grid">
     <li>
       <section class="card">
         <h1 class="card-heading">
