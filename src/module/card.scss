@@ -1,6 +1,10 @@
 .card {
   @include shadow;
 
+  @include responsive-block('mobile') {
+    padding: 3.236rem 1rem;
+  }
+
   background: darken(map-get($colors, 'background'), 2%);
   border-radius: 1.5rem;
   color: map-get($colors, 'text');
