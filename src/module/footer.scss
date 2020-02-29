@@ -4,5 +4,9 @@
 
   &-container {
     @extend %container;
+
+    @include responsive-block('mobile') {
+      text-align: center;
+    }
   }
 }
