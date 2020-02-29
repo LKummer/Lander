@@ -1,7 +1,8 @@
 .masthead {
   @extend %container;
 
-  margin: 12rem auto 14rem;
+  margin-top: 12rem;
+  margin-bottom: 14rem;
 
   &-title {
     font-size: map-get($font-sizes, 'huge');

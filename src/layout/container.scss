@@ -1,6 +1,7 @@
 %container {
   @include responsive-block('mobile') {
     max-width: map-get($screen-widths, 'mobile');
+    margin: 0 1rem;
   }
 
   @include responsive-block('tablet') {
