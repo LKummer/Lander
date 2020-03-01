@@ -27,6 +27,28 @@ export const OffsetStart = function () {
   </section>
   `
 }
+export const OffsetDenseEnd = function () {
+  return `
+  <section class="l-offset l-offset-dense-end">
+    <section class="card">
+      <h1 class="card-title">
+        Start Card
+      </h1>
+      <p class="card-text">
+        Some filler text.
+      </p>
+    </section>
+    <section class="card">
+      <h1 class="card-title">
+        End Card
+      </h1>
+      <p class="card-text">
+        Some filler text.
+      </p>
+    </section>
+  </section>
+  `
+}
 
 export const OffsetEnd = function () {
   return `
