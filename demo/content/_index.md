@@ -13,42 +13,30 @@ masthead:
       url: '/test'
       color: 'accent'
 introduction:
-  title: 'Create Beautiful Landing Pages for Your Project'
+  title: 'Create Beautiful Landing Pages for Projects'
   text: >
-    Ease the learning curve for your users by writing guides instead of a
-    convoluted readme that combines development and usage instruction.
-    Improve first impressions by presenting the project's selling points.
+    Improve the first impression of your project. Ease the learning curve for new
+    users. Stop sending people to the readme.
   cards:
-    - title: 'Mobile First Design'
+    - title: 'Responsively Designed'
       text: >
-        Built from the ground up with responsiveness in mind.
-        Utilizing modern CSS layouts to create a good user experience for screens
-        ranging from 4 inch 720p phones to a 27 inch 4K monitors.
+        Designed from the ground up to work well with any screen size.
     - title: 'Light as a Feather'
       text: >
-        Ranking in at under 20 kB uncompressed, the sites generated from the theme
-        are lightning fast on all connection speeds.
-        The extremely light size is achieved using stylesheets made from scratch exactly
-        for the site with no extra styling.
+        Fast for all users at under 50 kB uncompressed including fonts.
     - title: 'Ready for Internationalization'
       text: >
-        Providing full support for Hugo's i18n features, the theme can be used
-        for building multi-language websites easily.
+        Full support for Hugo's i18n features for templates and content.
     - title: 'Direction Agnostic'
       text: >
-        Includes a right to left direction stylesheet built using a specialized Webpack
-        setup created for Hugo themes. Ready for use with languages written from right
-        to left out of the box.
+        Right to left stylesheet included for sites supporting languages in
+        multiple directions.
     - title: 'Accessible for Everyone'
       text: >
-        Follows accessibility guidelines in order to provide a good user
-        experience to all users.
-        Making sure your content is available for everyone, even with poor
-        eyesight or motor skills.
-    - title: 'Easy to Customize'
+        Follows accessibility guidelines for a good user experience for everyone.
+    - title: 'Easily Customizable'
       text: >
-        Organized dependency management and scripts ensure a smooth build when
-        the theme needs to be customized.
+        Building a customized version is easy with ready made scripts.
 bottom:
   title: 'Get Started Today'
   text: 'The guides will help you get up and running as quick as possible.'
