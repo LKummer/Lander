@@ -50,3 +50,49 @@ export const OffsetEnd = function () {
   </section>
   `
 }
+
+export const OffsetItemStart = function () {
+  return `
+  <section class="l-offset l-offset-end">
+    <section class="card l-offset-item-start">
+      <h1 class="card-heading">
+      End Card
+      </h1>
+      <p class="card-text">
+        Some filler text.
+      </p>
+    </section>
+    <section class="card l-offset-item-start">
+      <h1 class="card-heading">
+        Second End Card
+      </h1>
+      <p class="card-text">
+        Some filler text.
+      </p>
+    </section>
+  </section>
+  `
+}
+
+export const OffsetItemEnd = function () {
+  return `
+  <section class="l-offset l-offset-end">
+    <section class="card l-offset-item-end">
+      <h1 class="card-heading">
+      End Card
+      </h1>
+      <p class="card-text">
+        Some filler text.
+      </p>
+    </section>
+    <section class="card l-offset-item-end">
+      <h1 class="card-heading">
+        Second End Card
+      </h1>
+      <p class="card-text">
+        Some filler text.
+      </p>
+    </section>
+  </section>
+  `
+}

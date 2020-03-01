@@ -18,4 +18,14 @@
 
     grid-template-columns: 3fr 5fr;
   }
+
+  &-item {
+    &-start {
+      grid-column: 1 / 2;
+    }
+
+    &-end {
+      grid-column: 2 / 3;
+    }
+  }
 }
