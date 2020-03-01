@@ -18,7 +18,7 @@ export const OffsetStart = function () {
     </section>
     <section class="card">
       <h1 class="card-heading">
-        Start Card
+        End Card
       </h1>
       <p class="card-text">
         Some filler text.
@@ -41,7 +41,7 @@ export const OffsetEnd = function () {
     </section>
     <section class="card">
       <h1 class="card-heading">
-        Start Card
+        End Card
       </h1>
       <p class="card-text">
         Some filler text.
