@@ -26,7 +26,7 @@ export const Grid = function () {
       <ul class="l-grid">
         <li>
           <section class="card">
-            <h1 class="card-heading">
+            <h1 class="card-title">
               First Card
             </h1>
             <p class="card-text">
@@ -36,7 +36,7 @@ export const Grid = function () {
         </li>
         <li>
           <section class="card">
-            <h1 class="card-heading">
+            <h1 class="card-title">
               Second Card
             </h1>
             <p class="card-text">
@@ -46,7 +46,7 @@ export const Grid = function () {
         </li>
         <li>
           <section class="card">
-            <h1 class="card-heading">
+            <h1 class="card-title">
               Third Card
             </h1>
             <p class="card-text">
@@ -70,7 +70,7 @@ export const Offset = function () {
         </h1>
         <li class="l-offset-item-end">
           <section class="card">
-            <h1 class="card-heading">
+            <h1 class="card-title">
               First Card
             </h1>
             <p class="card-text">
@@ -80,7 +80,7 @@ export const Offset = function () {
         </li>
         <li class="l-offset-item-end">
           <section class="card">
-            <h1 class="card-heading">
+            <h1 class="card-title">
               Second Card
             </h1>
             <p class="card-text">
@@ -93,7 +93,7 @@ export const Offset = function () {
         </h1>
         <li class="l-offset-item-end">
           <section class="card">
-            <h1 class="card-heading">
+            <h1 class="card-title">
               Third Card
             </h1>
             <p class="card-text">
