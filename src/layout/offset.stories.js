@@ -56,7 +56,7 @@ export const OffsetItemStart = function () {
   <section class="l-offset l-offset-end">
     <section class="card l-offset-item-start">
       <h1 class="card-title">
-      End Card
+      Start Card
       </h1>
       <p class="card-text">
         Some filler text.
@@ -64,7 +64,7 @@ export const OffsetItemStart = function () {
     </section>
     <section class="card l-offset-item-start">
       <h1 class="card-title">
-        Second End Card
+        Second Start Card
       </h1>
       <p class="card-text">
         Some filler text.
@@ -94,5 +94,42 @@ export const OffsetItemEnd = function () {
       </p>
     </section>
   </section>
+  `
+}
+
+export const ListBased = function () {
+  return `
+  <ul class="l-offset l-offset-end">
+    <li>
+      <section class="card">
+        <h1 class="card-heading">
+          First Card
+        </h1>
+        <p class="card-text">
+          Some filler text.
+        </p>
+      </section>
+    </li>
+    <li>
+      <section class="card">
+        <h1 class="card-heading">
+          Second Card
+        </h1>
+        <p class="card-text">
+          Some filler text.
+        </p>
+      </section>
+    </li>
+    <li>
+      <section class="card">
+        <h1 class="card-heading">
+          Third Card
+        </h1>
+        <p class="card-text">
+          Some filler text.
+        </p>
+      </section>
+    </li>
+  </ul>
   `
 }
