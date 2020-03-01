@@ -1,16 +1,16 @@
-<header>
-    <nav class="navbar">
-        <ul class="navbar-container">
-            <li class="navbar-logo">
-                {{ .Site.Title }}
-            </li>
-            <li class="navbar-spacer"></li>
+<header class="navbar">
+    <h1 class="navbar-logo">
+        {{ .Site.Title }}
+    </h1>
+    <span class="navbar-spacer"></span>
+    <nav>
+        <ul class="navbar-navigation">
             {{ $current := . }}
             {{ range .Site.Menus.main }}
             <li>
-              <a href="{{ absLangURL .URL }}" class="navbar-item
+              <a href="{{ absLangURL .URL }}" class="navbar-navigation-item
               {{- if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
-              navbar-item-active
+              navbar-navigation-item-active
               {{- end -}}">
                   {{ .Name }}
               </a>

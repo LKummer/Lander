@@ -5,21 +5,27 @@ export default {
   }
 }
 
-export const Normal = function () {
+export const Navigation = function () {
   return `
-  <nav class="navbar">
-    <ul class="navbar-container">
-      <li class="navbar-logo">
-        Logo
-      </li>
-      <li class="navbar-spacer"></li>
-      <li>
-        <a href class="navbar-item navbar-item-active">Home</a>
-      </li>
-      <li>
-        <a href class="navbar-item">Guides</a>
-      </li>
-    </ul>
-  </nav>
+  <section class="navbar">
+    <h1 class="navbar-logo">
+      Logo
+    </h1>
+    <span class="navbar-spacer"></span>
+    <nav>
+      <ul class="navbar-navigation">
+        <li>
+          <a href class="navbar-navigation-item">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href class="navbar-navigation-item">
+            Guides
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
   `
 }

@@ -1,16 +1,9 @@
 .navbar {
-  background: map-get($colors, 'background');
-  font-size: map-get($font-sizes, 'small');
+  @extend %container;
 
-  &-container {
-    @extend %container;
-
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-  }
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 
   &-spacer {
     flex-grow: 1;
@@ -19,37 +12,48 @@
   %navbar-item {
     border-radius: 100rem;
     display: inline-block;
+    font-size: map-get($font-sizes, 'small');
     font-weight: bold;
     text-transform: uppercase;
   }
 
-  &-item {
-    @extend %navbar-item;
-    @include transition('all');
+  &-navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-    background: rgba(0, 0, 0, 0);
-    color: transparentize(map-get($colors, 'text'), 0.25);
-    margin: 1rem 0 1rem 1rem;
-    padding: 1rem;
-    text-decoration: none;
+    &-item {
+      @extend %navbar-item;
+      @include transition('all');
 
-    &-active {
-      color: map-get($colors, 'text');
-    }
+      background: rgba(0, 0, 0, 0);
+      color: transparentize(map-get($colors, 'text'), 0.25);
+      margin: 1rem 0 1rem 1rem;
+      padding: 1rem;
+      text-decoration: none;
 
-    &:hover {
-      background: darken(map-get($colors, 'background'), 10%);
-      color: transparentize(map-get($colors, 'text'), 0.1);
-    }
+      &-active {
+        color: map-get($colors, 'text');
+      }
 
-    &:active {
-      background: darken(map-get($colors, 'background'), 15%);
+      &:hover {
+        background: darken(map-get($colors, 'background'), 10%);
+        color: transparentize(map-get($colors, 'text'), 0.1);
+      }
+
+      &:active {
+        background: darken(map-get($colors, 'background'), 15%);
+      }
     }
   }
 
   &-logo {
     @extend %navbar-item;
 
+    display: inline;
+    margin: 0;
     user-select: none;
   }
 }
