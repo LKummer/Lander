@@ -30,13 +30,13 @@
 
       background: rgba(0, 0, 0, 0);
       color: transparentize(map-get($colors, 'text'), 0.25);
-      padding: 1.5rem 1rem;
       margin-left: 1rem;
+      padding: 1.5rem 1rem;
       text-decoration: none;
 
       &-active {
-        color: map-get($colors, 'text');
         border-top: 0.5rem solid map-get($colors, 'text');
+        color: map-get($colors, 'text');
         padding-top: 1rem;
       }
 
