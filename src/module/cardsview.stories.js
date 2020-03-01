@@ -5,7 +5,7 @@ export default {
   }
 }
 
-export const Cards = function () {
+export const Grid = function () {
   return `
   <section class="cardsview">
     <div class="cardsview-container">
@@ -45,6 +45,53 @@ export const Cards = function () {
           </section>
         </li>
         <li>
+          <section class="card">
+            <h1 class="card-heading">
+              Third Card
+            </h1>
+            <p class="card-text">
+              Some filler text to make the card look fuller.
+            </p>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </section>
+  `
+}
+
+export const Offset = function () {
+  return `
+  <section class="cardsview">
+    <div class="cardsview-container">
+      <ul class="l-offset l-offset-dense-end">
+        <h1 class="l-offset-item-start cardsview-offset-title">
+          First Title
+        </h1>
+        <li class="l-offset-item-end">
+          <section class="card">
+            <h1 class="card-heading">
+              First Card
+            </h1>
+            <p class="card-text">
+              Some filler text to make the card look fuller.
+            </p>
+          </section>
+        </li>
+        <li class="l-offset-item-end">
+          <section class="card">
+            <h1 class="card-heading">
+              Second Card
+            </h1>
+            <p class="card-text">
+              Some filler text to make the card look fuller.
+            </p>
+          </section>
+        </li>
+        <h1 class="l-offset-item-start cardsview-offset-title">
+          Second Title
+        </h1>
+        <li class="l-offset-item-end">
           <section class="card">
             <h1 class="card-heading">
               Third Card
