@@ -16,8 +16,6 @@ theme = "theme"
 
 [taxonomies]
 category = "categories"
-tag = "tags"
-series = "series"
 
 [privacy]
 
