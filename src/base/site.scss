@@ -6,5 +6,14 @@ html {
 }
 
 body {
+  align-items: stretch;
   background: map-get($colors, 'background');
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  // Enable grow to create a sticky footer when the page content height is smaller
+  // than the viewport height.
+  flex-grow: 1;
 }
