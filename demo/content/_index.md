@@ -4,8 +4,8 @@ menu:
   main:
     weight: 10
 masthead:
-  title: 'Minimalistic Hugo Theme for Themes'
-  subtitle: 'The perfect way to provide documentation for your static generator themes.'
+  title: 'Lander Hugo Theme'
+  subtitle: 'Generate landing pages and guidance for your projects.'
   buttons:
     - label: 'Download the Releases'
       url: '/test'
