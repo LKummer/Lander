@@ -4,6 +4,11 @@
   margin-bottom: 14rem;
   margin-top: 12rem;
 
+  &-dense {
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+  }
+
   &-title {
     font-size: map-get($font-sizes, 'huge');
     letter-spacing: -0.02em;

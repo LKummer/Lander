@@ -32,3 +32,27 @@ export const Normal = function () {
   </section>
   `
 }
+
+export const Dense = function () {
+  return `
+  <section class="masthead masthead-dense">
+    <h1 class="masthead-title">
+      This is the title of the dense masthead.
+    </h1>
+    <nav>
+      <ul class="buttons">
+        <li>
+          <a href class="buttons-button button button-primary">
+            First Button
+          </a>
+        </li>
+        <li>
+          <a href class="buttons-button button button-accent">
+            Second Longer Button
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  `
+}
