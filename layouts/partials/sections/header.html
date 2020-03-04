@@ -4,11 +4,12 @@
         <h1 class="navbar-logo">
             {{ .Site.Title }}
         </h1>
+        {{ $current := . }}
+        {{ with .Site.Menus.main }}
         <span class="navbar-spacer"></span>
         <nav>
             <ul class="navbar-navigation">
-                {{ $current := . }}
-                {{ range .Site.Menus.main }}
+                {{ range . }}
                 <li>
                 <a href="{{ absLangURL .URL }}" class="navbar-navigation-item
                 {{- if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
@@ -20,5 +21,6 @@
                 {{ end }}
             </ul>
         </nav>
+        {{ end }}
     </header>
 </div>
