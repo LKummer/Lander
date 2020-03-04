@@ -13,6 +13,19 @@ theme = "theme"
   [params.footer]
     title = "Footer Title"
     text = "Footer section text."
+  [params.seo]
+    category = "Hugo Theme"
+    downloadURL = "#"
+    version = "0.1.0"
+    operatingSystem = "Any"
+    isFree = true
+    license = "#"
+    defaultAuthor = "Lander Contributors"
+
+[menu]
+  [[menu.main]]
+    name = "Download"
+    url = "#"
 
 [taxonomies]
 category = "categories"
