@@ -12,6 +12,21 @@
   }
 
   &-offset-title {
+    @include responsive-block ('mobile') {
+      margin-top: 2rem;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+    @include responsive-block ('tablet') {
+      margin-top: 2rem;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
     color: map-get($colors, 'dark-text');
     font-size: map-get($font-sizes, 'large');
     margin: -0.3em 0 0 0;
