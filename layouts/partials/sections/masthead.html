@@ -1,13 +1,19 @@
+{{ if . }}
 <section class="masthead">
+    {{ with .title }}
     <h1 class="masthead-title">
-        {{ .title }}
+        {{ . }}
     </h1>
+    {{ end }}
+    {{ with .subtitle }}
     <h2 class="masthead-subtitle">
-        {{ .subtitle }}
+        {{ . }}
     </h2>
+    {{ end }}
+    {{ with .buttons }}
     <nav>
         <ul class="buttons">
-            {{ range .buttons }}
+            {{ range . }}
             <li>
                 <a
                     href="{{ absLangURL .url }}"
@@ -18,4 +24,6 @@
             {{ end }}
         </ul>
     </nav>
+    {{ end }}
 </section>
+{{ end }}
