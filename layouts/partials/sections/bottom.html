@@ -1,11 +1,16 @@
+{{ if . }}
 <section class="lowercontent">
     <section class="content content-light content-centered">
+        {{ with .title }}
         <h1 class="content-title">
-            {{ .title }}
+            {{ . }}
         </h1>
+        {{ end }}
+        {{ with .text }}
         <p class="content-text">
-            {{ .text }}
+            {{ . }}
         </p>
+        {{ end }}
         {{ with .button }}
         <a href="{{ absLangURL .url }}" class="button button-accent">
             {{ .label }}
@@ -13,3 +18,4 @@
         {{ end }}
     </section>
 </section>
+{{ end }}
