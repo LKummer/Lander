@@ -1,0 +1,29 @@
+{{ if . }}
+<section class="masthead masthead-dense">
+    {{ with .title }}
+    <h1 class="masthead-title">
+        {{ . }}
+    </h1>
+    {{ end }}
+    {{ with .subtitle }}
+    <h2 class="masthead-subtitle">
+        {{ . }}
+    </h2>
+    {{ end }}
+    {{ with .buttons }}
+    <nav>
+        <ul class="buttons">
+            {{ range . }}
+            <li>
+                <a
+                    href="{{ absLangURL .url }}"
+                    class="button button-{{ with .color }}{{ . }}{{ else }}primary{{ end }} buttons-button">
+                    {{ .label }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+    {{ end }}
+</section>
+{{ end }}
