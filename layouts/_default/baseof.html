@@ -2,11 +2,11 @@
 <html lang="en">
 {{ partial "head" . }}
 <body>
-    {{ partial "header" . }}
+    {{ partial "sections/header" . }}
     <main>
         {{- block "main" . }}{{- end }}
     </main>
-    {{ partial "footer" . }}
+    {{ partial "sections/footer" . }}
     <script src="{{ absURL "/main.js" }}"></script>
 </body>
 </html>
