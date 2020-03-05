@@ -8,9 +8,9 @@ masthead:
   subtitle: 'Generate landing pages and guidance for your projects.'
   buttons:
     - label: 'Download the Releases'
-      url: '/test'
+      href: '#'
     - label: 'See the Guides'
-      url: '/test'
+      to: '/guides'
       color: 'accent'
 introduction:
   title: 'Create Beautiful Landing Pages for Projects'
@@ -41,6 +41,6 @@ bottom:
   text: 'The guides will help you get up and running as quick as possible.'
   buttons:
     - label: 'See the Guides'
-      url: '/test'
+      to: '/guides'
       color: 'accent'
 ---

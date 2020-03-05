@@ -10,13 +10,13 @@ masthead:
   title: 'Looking to Get Started?'
   buttons:
     - label: 'See the Quick Start Guide'
-      url: '/test'
+      href: '%'
       color: 'accent'
 bottom:
   title: 'Need More Help?'
   text: 'Check out existing Github Issues or open a new one.'
   buttons:
     - label: 'See the Github Issues'
-      url: '/test'
+      href: '%'
       color: 'accent'
 ---
