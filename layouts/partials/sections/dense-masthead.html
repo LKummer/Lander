@@ -10,20 +10,6 @@
         {{ . }}
     </h2>
     {{ end }}
-    {{ with .buttons }}
-    <nav>
-        <ul class="buttons">
-            {{ range . }}
-            <li>
-                <a
-                    href="{{ absLangURL .url }}"
-                    class="button button-{{ with .color }}{{ . }}{{ else }}primary{{ end }} buttons-button">
-                    {{ .label }}
-                </a>
-            </li>
-            {{ end }}
-        </ul>
-    </nav>
-    {{ end }}
+    {{ partial "components/buttons" .buttons }}
 </section>
 {{ end }}
