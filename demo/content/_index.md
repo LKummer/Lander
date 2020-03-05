@@ -39,7 +39,8 @@ introduction:
 bottom:
   title: 'Get Started Today'
   text: 'The guides will help you get up and running as quick as possible.'
-  button:
-    label: 'See the Guides'
-    url: '/test'
+  buttons:
+    - label: 'See the Guides'
+      url: '/test'
+      color: 'accent'
 ---

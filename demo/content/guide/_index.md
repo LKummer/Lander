@@ -15,7 +15,8 @@ masthead:
 bottom:
   title: 'Need More Help?'
   text: 'Check out existing Github Issues or open a new one.'
-  button:
-    label: 'See the Github Issues'
-    url: '/test'
+  buttons:
+    - label: 'See the Github Issues'
+      url: '/test'
+      color: 'accent'
 ---

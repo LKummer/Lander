@@ -11,11 +11,7 @@
             {{ . }}
         </p>
         {{ end }}
-        {{ with .button }}
-        <a href="{{ absLangURL .url }}" class="button button-accent">
-            {{ .label }}
-        </a>
-        {{ end }}
+        {{ partial "components/buttons" .buttons }}
     </section>
 </section>
 {{ end }}
