@@ -24,13 +24,12 @@ introduction:
     - title: 'Light as a Feather'
       text: >
         Fast for all users at under 50 kB uncompressed including fonts.
-    - title: 'Ready for Internationalization'
+    - title: 'Made for Internationalization'
       text: >
-        Full support for Hugo's i18n features for templates and content.
-    - title: 'Direction Agnostic'
+        Additional RTL stylesheet included and support for Hugo's i18n features.
+    - title: 'Modern Search Engine Optimizations'
       text: >
-        Right to left stylesheet included for sites supporting languages in
-        multiple directions.
+        JSON-LD schema and optimizations to get your project out there.
     - title: 'Accessible for Everyone'
       text: >
         Follows accessibility guidelines for a good user experience for everyone.
