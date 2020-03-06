@@ -9,13 +9,13 @@ export const Article = function () {
   return `
   <article class="article">
     <nav>
-      <ul>
-        <li>
+      <ul class="article-breadcrumb">
+        <li class="article-breadcrumb-item">
           <a href>
             Guides
           </a>
         </li>
-        <li>
+        <li class="article-breadcrumb-item">
           <a href>
             Development Guides
           </a>
