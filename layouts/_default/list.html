@@ -12,12 +12,16 @@
             </h1>
             {{ range $pages }}
             <li class="l-offset-item-end">
-                <a href="{{ relLangURL .Permalink }}" class="card">
+                <a href="{{ absLangURL .Permalink }}" class="card">
                     <h1 class="card-title">
                         {{ .Title }}
                     </h1>
                     <p class="card-text">
+                        {{ with .Params.description }}
+                        {{ . | htmlUnescape | plainify }}
+                        {{ else }}
                         {{ .Summary | htmlUnescape | plainify }}
+                        {{ end }}
                     </p>
                 </a>
             </li>
@@ -39,12 +43,16 @@
             </h1>
             {{ range $uncategorized }}
             <li class="l-offset-item-end">
-                <a href="{{ relLangURL .Permalink }}" class="card">
+                <a href="{{ absLangURL .Permalink }}" class="card">
                     <h1 class="card-title">
                         {{ .Title }}
                     </h1>
                     <p class="card-text">
+                        {{ with .Params.description }}
+                        {{ . | htmlUnescape | plainify }}
+                        {{ else }}
                         {{ .Summary | htmlUnescape | plainify }}
+                        {{ end }}
                     </p>
                 </a>
             </li>
