@@ -16,8 +16,14 @@
     {{ with .Site.Params.seo.downloadURL -}}
     "downloadUrl": "{{ . }}",
     {{ end -}}
+    {{/* Try to use the versionEnv config option to get the version from the
+       * environment. */ -}}
+    {{ with getenv .Site.Params.seo.versionEnv -}}
+    "softwareVersion": "{{ . }}",
+    {{ else -}}
     {{ with .Site.Params.seo.version -}}
     "softwareVersion": "{{ . }}",
+    {{ end -}}
     {{ end -}}
     "url": "{{ absLangURL "/" }}",
 
