@@ -1,4 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-{{ end }}
+{{- if lt 1 (len (.GetTerms "categories")) -}}
+    {{- warnf "Content page '%s' belongs to more than one category. Use a single category per page." .File -}}
+{{- end -}}
+{{- end -}}
