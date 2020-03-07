@@ -18,3 +18,9 @@
     margin-top: 0.25em;
   }
 }
+
+// Using the id used by Hugo for the TOC.
+#TableOfContents {
+  position: sticky;
+  top: 4rem;
+}

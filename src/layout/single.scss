@@ -2,6 +2,7 @@
   @extend %container;
 
   display: flex;
+  padding: 4rem 0;
 
   &-toc {
     @include responsive-block ('mobile') {
@@ -12,9 +13,6 @@
     }
 
     margin-right: 1.5rem;
-  }
-
-  &-article {
-    max-width: 40em;
+    min-width: 13em;
   }
 }
