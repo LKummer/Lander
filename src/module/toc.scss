@@ -1,6 +1,8 @@
 .toc {
   hyphens: auto;
   line-height: 1.6;
+  // Negative margin to account for the margins on the list items.
+  margin-top: -0.25em;
 
   ul {
     list-style: none;
