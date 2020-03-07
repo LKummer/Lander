@@ -1,8 +1,9 @@
 .toc {
+  font-weight: bold;
   hyphens: auto;
   line-height: 1.6;
   // Negative margin to account for the margins on the list items.
-  margin-top: -0.25em;
+  margin-top: -0.3em;
 
   ul {
     list-style: none;
@@ -15,7 +16,17 @@
   }
 
   li {
-    margin-top: 0.25em;
+    margin-top: 0.3em;
+  }
+
+  a[href] {
+    @include transition('color');
+
+    color: map-get($colors, "text");
+
+    &:hover {
+      color: map-get($colors, "accent");
+    }
   }
 }
 
