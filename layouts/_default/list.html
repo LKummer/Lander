@@ -8,7 +8,9 @@
             {{ range $key, $pages := .Site.Taxonomies.categories }}
             {{/* Find the page for the category to get it's title and content. */}}
             {{ $category := $site.GetPage (printf "categories/%s" $key) }}
-            <h1 class="cardsview-offset-title l-offset-item-start">
+            <h1
+                class="cardsview-offset-title l-offset-item-start"
+                id="{{ urlize $category.Title }}" >
                 {{ $category.Title }}
             </h1>
             {{ range $pages }}
