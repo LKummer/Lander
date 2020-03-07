@@ -3,9 +3,7 @@
 {{ partial "head/head" . }}
 <body>
     {{ partial "sections/header" . }}
-    <main>
-        {{- block "main" . }}{{- end }}
-    </main>
+    {{- block "main" . }}{{- end }}
     {{ partial "sections/footer" . }}
     <script src="{{ absURL "/main.js" }}"></script>
 </body>
