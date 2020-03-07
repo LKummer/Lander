@@ -1,7 +1,18 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }}
+<main class="l-single">
+    <aside class="toc l-single-toc">
+        {{ .TableOfContents }}
+    </aside>
+    <article class="article l-single-article">
+        <h1 class="article-title">
+            {{ .Title }}
+        </h1>
+        <section class="article-content">
+            {{ .Content }}
+        </section>
+    </article>
 {{- if lt 1 (len (.GetTerms "categories")) -}}
     {{- warnf "Content page '%s' belongs to more than one category. Use a single category per page." .File -}}
 {{- end -}}
+</main>
 {{- end -}}
