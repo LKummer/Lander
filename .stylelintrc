@@ -14,7 +14,6 @@
         "scss/at-else-if-parentheses-space-before": "always",
         "scss/at-extend-no-missing-placeholder": true,
         "scss/at-function-parentheses-space-before": "always",
-        "scss/at-function-pattern": "always",
         "scss/at-if-no-null": true,
         "scss/at-import-partial-extension": "never",
         "scss/at-mixin-argumentless-call-parentheses": "never",
