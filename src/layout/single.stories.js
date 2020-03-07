@@ -9,7 +9,7 @@ export default {
 export const Single = function () {
   return `
   <div class="single">
-    <aside class="single-toc">
+    <aside class="toc single-toc">
       <nav id="TableOfContents">
         <ul>
           <li><a href="#headings">Headings</a></li>
