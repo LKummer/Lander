@@ -8,8 +8,8 @@ export default {
 
 export const Single = function () {
   return `
-  <div class="single">
-    <aside class="toc single-toc">
+  <div class="l-single">
+    <aside class="toc l-single-toc">
       <nav id="TableOfContents">
         <ul>
           <li><a href="#headings">Headings</a></li>
@@ -74,7 +74,7 @@ export const Single = function () {
         </ul>
       </nav>
     </aside>
-    <article class="article single-article">
+    <article class="article l-single-article">
       <nav>
         <ul class="article-breadcrumb">
           <li class="article-breadcrumb-item">
