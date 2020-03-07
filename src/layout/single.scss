@@ -1,0 +1,18 @@
+.single {
+  @extend %container;
+
+  display: flex;
+
+  &-toc {
+    @include responsive-block ('mobile') {
+      display: none;
+    }
+    @include responsive-block ('tablet') {
+      display: none;
+    }
+  }
+
+  &-article {
+    max-width: 40em;
+  }
+}
