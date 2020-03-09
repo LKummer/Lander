@@ -18,8 +18,4 @@
     font-size: map-get($font-sizes, "huge");
     margin: 0.75em 0;
   }
-
-  &-content {
-    @extend %markdown;
-  }
 }

@@ -17,3 +17,66 @@ main {
   // than the viewport height.
   flex-grow: 1;
 }
+
+// Calculates font sizes between the systemized sizes.
+@function intermediate-font-size (
+  $fraction,
+  $small: map-get($font-sizes, "large"),
+  $large: map-get($font-sizes, "huge")) {
+  @return $small + ($fraction * ($large - $small));
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 2rem 0 1.25rem;
+}
+
+h5,
+h6 {
+  margin: 1.5rem 0 0.75rem;
+}
+
+h1 {
+  font-size: map-get($font-sizes, "huge");
+}
+
+h2 {
+  font-size: intermediate-font-size(4 / 7);
+}
+
+h3 {
+  font-size: intermediate-font-size(2 / 7);
+}
+
+h4 {
+  font-size: map-get($font-sizes, "large");
+}
+
+h5 {
+  font-size: map-get($font-sizes, "medium");
+}
+
+h6 {
+  font-size: map-get($font-sizes, "small");
+}
+
+p {
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin: 0 0 1.25rem;
+  padding-left: 3rem;
+}
+
+pre {
+  overflow: auto;
+  // For some reason overflow: auto does not make the overflow scrollable, but
+  // instead makes the parent element wider.
+  // Wrap the lines until it's figured out.
+  white-space: pre-wrap;
+}
