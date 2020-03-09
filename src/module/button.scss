@@ -16,31 +16,37 @@
 
   &-primary {
     $primary-color: map-get($colors, 'primary');
+    $text-color: map-get($colors, 'dark-text');
 
     background: $primary-color;
-    color: map-get($colors, 'dark-text');
+    color: $text-color;
 
     &:hover {
       background: darken($primary-color, 10%);
+      color: $text-color;
     }
 
     &:active {
       background: darken($primary-color, 15%);
+      color: $text-color;
     }
   }
 
   &-accent {
     $accent-color: map-get($colors, 'accent');
+    $text-color: map-get($colors, 'dark-text');
 
     background: $accent-color;
-    color: map-get($colors, 'dark-text');
+    color: $text-color;
 
     &:hover {
       background: darken($accent-color, 10%);
+      color: $text-color;
     }
 
     &:active {
       background: darken($accent-color, 15%);
+      color: $text-color;
     }
   }
 }
