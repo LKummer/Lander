@@ -28,6 +28,10 @@
       color: map-get($colors, "accent");
     }
   }
+
+  a[href].is-active {
+    color: map-get($colors, "accent");
+  }
 }
 
 // Using the id used by Hugo for the TOC.
