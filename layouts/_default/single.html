@@ -1,27 +1,30 @@
 {{ define "main" }}
 <main class="l-single">
+    {{- /* Check if the TOC actually contains anything before rendering it. */ -}}
+    {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
     <aside class="toc l-single-toc">
         {{ .TableOfContents }}
     </aside>
+    {{ end }}
     <article class="article l-single-article">
         <nav>
             <ul class="article-breadcrumbs">
                 <li class="article-breadcrumbs-item">
-                    {{ $section := printf "/%s" .Type }}
-                    {{ with .GetPage $section }}
+                    {{- $section := printf "/%s" .Type }}
+                    {{ with .GetPage $section -}}
                     <a href="{{ absLangURL $section }}">
                         {{ .Title }}
                     </a>
-                    {{ end }}
+                    {{- end }}
                 </li>
-                {{ with (index (.GetTerms "categories") 0) }}
+                {{ with (index (.GetTerms "categories") 0) -}}
                 <li class="article-breadcrumbs-item">
-                    {{ $category := printf "%s#%s" (absLangURL $section) (urlize .Title) }}
+                    {{ $category := printf "%s#%s" (absLangURL $section) (urlize .Title) -}}
                     <a href="{{ $category }}">
                         {{ .Title }}
                     </a>
                 </li>
-                {{ end }}
+                {{- end }}
             </ul>
         </nav>
         <h1 class="article-title">
