@@ -18,6 +18,19 @@ main {
   flex-grow: 1;
 }
 
+a {
+  $color: map-get($colors, 'accent');
+  color: $color;
+  font-weight: bold;
+
+  &:hover {
+    color: darken($color, 10%);
+  }
+  &:active {
+    color: darken($color, 15%);
+  }
+}
+
 // Calculates font sizes between the systemized sizes.
 @function intermediate-font-size (
   $fraction,
