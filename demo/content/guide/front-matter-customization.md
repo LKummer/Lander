@@ -10,14 +10,14 @@ categories = [
 The root `_index.md` and section `_index.md` files render sections that are
 customizable through front matter options.
 
-# Section Options
+## Section Options
 
 Some sections are only availbale for certain pages.
 
 Most section options are optional, but it is recommended to fill all sections for
 optimal aesthetics.
 
-## Masthead
+### Masthead
 
 The `masthead` section is available for both root and section `_index.md` files.
 
@@ -43,7 +43,7 @@ masthead:
       color: 'accent'
 ```
 
-## Introduction
+### Introduction
 
 The `introduction` section is only available for the root `_index.md` file.
 
@@ -65,7 +65,7 @@ introduction:
       text: 'Second Card Text'
 ```
 
-## Bottom
+### Bottom
 
 The `bottom` section is available for both both root and section `_index.md` files.
 
@@ -85,12 +85,12 @@ bottom:
       color: 'accent'
 ```
 
-# Example Configurations
+## Example Configurations
 
 To finish the guide, let's take a look at a couple of full front matter page
 configurations.
 
-## Root `_index.md`
+### Root `_index.md`
 
 This configuration is similar to what is used in this site's root `_index.md`.
 
@@ -132,7 +132,7 @@ bottom:
 ---
 ```
 
-## Guide Section `_index.md` 
+### Guide Section `_index.md` 
 
 This configuration is similar to what is used in this site's guide section `_index.md`.
 
