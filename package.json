@@ -16,7 +16,9 @@
     "doc:dev:watch": "hugo serve -s doc --themesDir ../dist",
     "doc:dev:run": "run-p doc:dev:watch theme:watch",
     "story": "start-storybook -p 6006",
-    "story:build": "build-storybook"
+    "story:build": "build-storybook",
+    "lint:js": "eslint src/",
+    "lint:style": "stylelint **/*.scss"
   },
   "author": "Lior Kummer",
   "license": "GPL-3.0",
