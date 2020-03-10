@@ -7,6 +7,8 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
+pygmentsUseClasses = true
+
 theme = "theme"
 
 [params]

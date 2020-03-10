@@ -1,6 +1,20 @@
 /* Background */ 
 .chroma {
-  background-color: #f0f0f0;
+  // Names and namespaces.
+  $text: hsl(240, 35%, 99%);
+  // Comments.
+  $comment: hsl(250, 25%, 55%);
+  // Exceptions and types.
+  $special: hsl(180, 75%, 55%);
+  // Operators and parenthesis.
+  $operator: hsl(330, 95%, 75%);
+  // Literals and keywords.
+  $literal: hsl(250, 80%, 70%);
+  // Background.
+  $background: hsl(240, 13%, 14%);
+
+  background: $background;
+  color: $text;
 
   /* Error 
   .err {  }
@@ -28,289 +42,303 @@
   /* LineHighlight */
   .hl {
     display: block;
-    width: 100%;background-color: #ffffcc;
+    width: 100%;
+    background-color: $background;
   }
 
   /* LineNumbersTable */
   .lnt {
     margin-right: 0.4em;
-    padding: 0 0.4em 0 0.4em;color: #7f7f7f;
+    padding: 0 0.4em 0 0.4em;
+    color: $operator;
   }
 
   /* LineNumbers */
   .ln {
     margin-right: 0.4em;
-    padding: 0 0.4em 0 0.4em;color: #7f7f7f;
+    padding: 0 0.4em 0 0.4em;
+    color: $operator;
   }
 
   /* Keyword */
   .k {
-    color: #007020;
+    color: $literal;
     font-weight: bold;
   }
 
   /* KeywordConstant */
   .kc {
-    color: #007020;
+    color: $literal;
     font-weight: bold;
   }
 
   /* KeywordDeclaration */
   .kd {
-    color: #007020;
+    color: $literal;
     font-weight: bold;
   }
 
   /* KeywordNamespace */
   .kn {
-    color: #007020;
+    color: $literal;
     font-weight: bold;
   }
 
   /* KeywordPseudo */
   .kp {
-    color: #007020;
+    color: $literal;
   }
 
   /* KeywordReserved */
   .kr {
-    color: #007020;
+    color: $literal;
     font-weight: bold;
   }
 
   /* KeywordType */
   .kt {
-    color: #902000;
+    font-weight: bold;
+    color: $special;
   }
 
   /* NameAttribute */
   .na {
-    color: #4070a0;
+    color: $text;
   }
 
   /* NameBuiltin */
   .nb {
-    color: #007020;
+    color: $text;
   }
 
   /* NameClass */
   .nc {
-    color: #0e84b5;
+    color: $text;
     font-weight: bold;
   }
 
   /* NameConstant */
   .no {
-    color: #60add5;
+    color: $text;
   }
 
   /* NameDecorator */
   .nd {
-    color: #555555;
+    color: $operator;
     font-weight: bold;
   }
 
   /* NameEntity */
   .ni {
-    color: #d55537;
+    color: $text;
     font-weight: bold;
   }
 
   /* NameException */
   .ne {
-    color: #007020;
+    color: $special;
   }
 
   /* NameFunction */
   .nf {
-    color: #06287e;
+    color: $text;
   }
 
   /* NameLabel */
   .nl {
-    color: #002070;
+    color: $text;
     font-weight: bold;
   }
 
   /* NameNamespace */
   .nn {
-    color: #0e84b5;
+    color: $text;
     font-weight: bold;
   }
 
   /* NameTag */
   .nt {
-    color: #062873;
+    color: $text;
     font-weight: bold;
   }
 
   /* NameVariable */
   .nv {
-    color: #bb60d5;
+    color: $text;
+  }
+
+  /* NameExtra (?) */
+  .nx {
+    color: $text;
   }
 
   /* LiteralString */
   .s {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringAffix */
   .sa {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringBacktick */
   .sb {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringChar */
   .sc {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringDelimiter */
   .dl {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringDoc */
   .sd {
-    color: #4070a0;
+    color: $text;
     font-style: italic;
   }
 
   /* LiteralStringDouble */
   .s2 {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringEscape */
   .se {
-    color: #4070a0;
+    color: $text;
     font-weight: bold;
   }
 
   /* LiteralStringHeredoc */
   .sh {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringInterpol */
   .si {
-    color: #70a0d0;
+    color: $operator;
     font-style: italic;
   }
 
   /* LiteralStringOther */
   .sx {
-    color: #c65d09;
+    color: $text;
   }
 
   /* LiteralStringRegex */
   .sr {
-    color: #235388;
+    color: $text;
   }
 
   /* LiteralStringSingle */
   .s1 {
-    color: #4070a0;
+    color: $text;
   }
 
   /* LiteralStringSymbol */
   .ss {
-    color: #517918;
+    color: $operator;
   }
 
   /* LiteralNumber */
   .m {
-    color: #40a070;
+    color: $literal;
   }
 
   /* LiteralNumberBin */
   .mb {
-    color: #40a070;
+    color: $literal;
   }
 
   /* LiteralNumberFloat */
   .mf {
-    color: #40a070;
+    color: $literal;
   }
 
   /* LiteralNumberHex */
   .mh {
-    color: #40a070;
+    color: $literal;
   }
 
   /* LiteralNumberInteger */
   .mi {
-    color: #40a070;
+    color: $literal;
   }
 
   /* LiteralNumberIntegerLong */
   .il {
-    color: #40a070;
+    color: $literal;
   }
 
   /* LiteralNumberOct */
   .mo {
-    color: #40a070;
+    color: $literal;
   }
 
   /* Operator */
   .o {
-    color: #666666;
+    color: $operator;
   }
 
   /* OperatorWord */
   .ow {
-    color: #007020;
+    color: $operator;
     font-weight: bold;
+  }
+
+  /* Parenthesis */
+  .p {
+    color: $operator;
   }
 
   /* Comment */
   .c {
-    color: #60a0b0;
+    color: $comment;
     font-style: italic;
   }
 
   /* CommentHashbang */
   .ch {
-    color: #60a0b0;
+    color: $comment;
     font-style: italic;
   }
 
   /* CommentMultiline */
   .cm {
-    color: #60a0b0;
+    color: $comment;
     font-style: italic;
   }
 
   /* CommentSingle */
   .c1 {
-    color: #60a0b0;
+    color: $comment;
     font-style: italic;
   }
 
   /* CommentSpecial */
   .cs {
-    color: #60a0b0;
-    background-color: #fff0f0;
+    color: $comment;
+    background-color: $comment;
   }
 
   /* CommentPreproc */
   .cp {
-    color: #007020;
+    color: $special;
   }
 
   /* CommentPreprocFile */
   .cpf {
-    color: #007020;
+    color: $special;
   }
 
   /* GenericDeleted */
   .gd {
-    color: #a00000;
+    color: $text;
   }
 
   /* GenericEmph */
@@ -320,28 +348,28 @@
 
   /* GenericError */
   .gr {
-    color: #ff0000;
+    color: $text;
   }
 
   /* GenericHeading */
   .gh {
-    color: #000080;
+    color: $text;
     font-weight: bold;
   }
 
   /* GenericInserted */
   .gi {
-    color: #00a000;
+    color: $text;
   }
 
   /* GenericOutput */
   .go {
-    color: #888888;
+    color: $text;
   }
 
   /* GenericPrompt */
   .gp {
-    color: #c65d09;
+    color: $text;
     font-weight: bold;
   }
 
@@ -352,13 +380,13 @@
 
   /* GenericSubheading */
   .gu {
-    color: #800080;
+    color: $text;
     font-weight: bold;
   }
 
   /* GenericTraceback */
   .gt {
-    color: #0044dd;
+    color: $text;
   }
 
   /* GenericUnderline */
@@ -368,6 +396,6 @@
 
   /* TextWhitespace */
   .w {
-    color: #bbbbbb;
+    color: $text;
   }
 }
