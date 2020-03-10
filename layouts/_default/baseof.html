@@ -5,6 +5,6 @@
     {{ partial "sections/header" . }}
     {{- block "main" . }}{{- end }}
     {{ partial "sections/footer" . }}
-    <script src="{{ absURL "/main.js" }}"></script>
+    <script src="{{ relURL "/main.js" }}"></script>
 </body>
 </html>
