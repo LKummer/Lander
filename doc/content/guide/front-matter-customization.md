@@ -40,7 +40,7 @@ masthead:
     - label: 'Primary Colored Button'
       href: '#'
     - label: 'Accent Colored Button'
-      to: '/guides'
+      to: 'guide/'
       color: 'accent'
 ```
 
@@ -51,6 +51,9 @@ The `buttons` array itself is optional.
 The `to` option is used to link to internal pages, as it formats a URL in the
 current active language for all languages. The `href` option is used for external
 links as it directly sets URL for the link.
+
+Avoid using the `to` option with paths that begin with `/` because Hugo's
+`absLangURL` method behaves unexpectedly.
 
 Currently the available settings for `color` are `primary` and `accent`. When no
 color is supplied it defaults to `primary`.
@@ -104,7 +107,7 @@ The `title` and `text` are used to render centered text. Both are optional.
 bottom:
   buttons:
     - label: 'First Button'
-      to: '/guides'
+      to: 'guide/'
       color: 'accent'
 ```
 
@@ -134,7 +137,7 @@ masthead:
     - label: 'Download the Releases'
       href: '#'
     - label: 'See the Guides'
-      to: '/guides'
+      to: 'guide/'
       color: 'accent'
 introduction:
   title: 'Create Beautiful Landing Pages for Projects'
@@ -153,7 +156,7 @@ bottom:
   text: 'The guides will help you get up and running as quick as possible.'
   buttons:
     - label: 'See the Guides'
-      to: '/guides'
+      to: 'guide/'
       color: 'accent'
 ---
 ```
@@ -175,7 +178,7 @@ masthead:
   title: 'Looking to Get Started?'
   buttons:
     - label: 'See the Quick Start Guide'
-      to: '/guide/quickstart'
+      to: 'guide/quickstart/'
       color: 'accent'
 bottom:
   title: 'Need More Help?'

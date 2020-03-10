@@ -10,7 +10,7 @@ masthead:
     - label: 'Download the Releases'
       href: '#'
     - label: 'See the Guides'
-      to: '/guides'
+      to: 'guide/'
       color: 'accent'
 introduction:
   title: 'Create Beautiful Landing Pages for Projects'
@@ -41,6 +41,6 @@ bottom:
   text: 'The guides will help you get up and running as quick as possible.'
   buttons:
     - label: 'See the Guides'
-      to: '/guides'
+      to: 'guide/'
       color: 'accent'
 ---

@@ -9,7 +9,7 @@ masthead:
   title: 'Looking to Get Started?'
   buttons:
     - label: 'See the Quick Start Guide'
-      to: '/guide/quickstart'
+      to: 'guide/quickstart/'
       color: 'accent'
 bottom:
   title: 'Need More Help?'

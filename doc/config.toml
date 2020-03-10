@@ -1,4 +1,4 @@
-baseURL = "https://lkummer.github.io/Lander"
+baseURL = "https://lkummer.github.io/Lander/"
 title = "Lander"
 languageCode = "en"
 DefaultContentLanguage = "en"
