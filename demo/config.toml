@@ -1,15 +1,12 @@
 baseURL = "https://gohugo.io"
 title = "Lander"
-copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
-paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
-pygmentsUseClasses = true
-
 theme = "theme"
+pygmentsUseClasses = true
 
 [params]
   [params.footer]
@@ -37,29 +34,22 @@ theme = "theme"
 category = "categories"
 
 [privacy]
-
   [privacy.vimeo]
     disabled = false
     simple = true
-
   [privacy.twitter]
     disabled = false
     enableDNT = true
     simple = true
-
   [privacy.instagram]
     disabled = false
     simple = true
-
   [privacy.youtube]
     disabled = false
     privacyEnhanced = true
 
 [services]
-
   [services.instagram]
     disableInlineCSS = true
-
   [services.twitter]
     disableInlineCSS = true
-
