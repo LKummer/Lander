@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Build the Theme
-        run: npm run theme:build
+        run: npm run theme:build:prod
 
       - name: Build Documentation
         run: npm run doc:build
