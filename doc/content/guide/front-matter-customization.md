@@ -27,21 +27,33 @@ important pages or download links.
 
 ```yaml
 masthead:
-  # `title`, `subtitle` and `buttons` options are all optional.
   title: 'Masthead Title'
   subtitle: 'Masthead Subtitle'
+```
+
+The `title` and `subtitle` strings are used for the masthead's large title and
+smaller subtitle. Both are optional.
+
+```yaml
+masthead:
   buttons:
     - label: 'Primary Colored Button'
-      # The `href` option is used to link to external URLs.
-      # It directly sets the href attribute on the link.
       href: '#'
     - label: 'Accent Colored Button'
-      # The `to` option is used to link to internal pages.
-      # It finds the URL for the page in the current language.
       to: '/guides'
-      # Color is optional and defaults to the primary color.
       color: 'accent'
 ```
+
+The `buttons` array is used to render links in the masthead. Each button requires
+a `label`, either an `href` or `to` and optionally contains a `color`.
+The `buttons` array itself is optional.
+
+The `to` option is used to link to internal pages, as it formats a URL in the
+current active language for all languages. The `href` option is used for external
+links as it directly sets URL for the link.
+
+Currently the available settings for `color` are `primary` and `accent`. When no
+color is supplied it defaults to `primary`.
 
 ### Introduction
 
@@ -53,17 +65,24 @@ points.
 
 ```yaml
 introduction:
-  # `title`, `text` and `cards` options are all optional.
   title: 'Introduction Title'
   text: 'Introduction Text'
+```
 
+The `title` and `text` strings are used for an offset section displayed above
+the cards. Both are optional.
+
+```yaml
+introduction:
   cards:
-      # Both `title` and `text` options are required for the cards.
     - title: 'First Card'
       text: 'First Card Text'
     - title: 'Second Card'
       text: 'Second Card Text'
 ```
+
+The `cards` array contains cards that must have both `title` and `text` options.
+Currently the `text` options do not support Markdown formatting.
 
 ### Bottom
 
@@ -75,15 +94,22 @@ be used to direct them to content they might be looking for.
 
 ```yaml
 bottom:
-  # `title`, `text` and `buttons` options are all optional.
   title: 'Bottom Title'
   text: 'Bottom Text'
-  # These buttons are rendered exactly like the masthead buttons.
+```
+
+The `title` and `text` are used to render centered text. Both are optional.
+
+```yaml
+bottom:
   buttons:
     - label: 'First Button'
       to: '/guides'
       color: 'accent'
 ```
+
+The `buttons` array is rendered like the Masthead `buttons` array. It is
+optional.
 
 ## Example Configurations
 
