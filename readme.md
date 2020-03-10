@@ -5,7 +5,6 @@ Hugo theme for Hugo themes.
 ## Development Guide
 
 After cloning the project, install the required dependencies:
-
 ```shell
 $ npm ci
 ```
@@ -13,37 +12,37 @@ $ npm ci
 ### Development Server
 
 To launch a hot reload dev server with a demo Hugo blog:
-
 ```shell
-$ npm run dev
+$ npm run demo:dev
 ```
 
 ### Storybook
 
 To launch a hot reload Storybook instance:
-
 ```shell
-$ npm run storybook
+$ npm run story
 ```
 
 ### Build
 
 To build in development mode:
-
 ```shell
-$ npm run build:theme
+$ npm run theme:build
 ```
 
 To build in production mode:
-
 ```shell
-$ npm run build:theme:prod
+$ npm run theme:build:prod
 ```
 
-To build the theme and the demo blog:
-
+To build the demo blog:
 ```shell
-$ npm run build
+$ npm run demo:build
+```
+
+To build the documentation:
+```shell
+$ npm run doc:build
 ```
 
 Built files can be found in the `dist` folder.
@@ -54,7 +53,6 @@ The translation files are in the `i18n` folder. Translation files should be
 named in the form `<language subtag>.toml`, for example: `fr.toml`.
 
 A translation definition takes the following form:
-
 ```toml
 [definition]
     form = "template string"
