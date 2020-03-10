@@ -20,12 +20,14 @@ main {
 
 a {
   $color: map-get($colors, 'accent');
+
   color: $color;
   font-weight: bold;
 
   &:hover {
     color: darken($color, 10%);
   }
+
   &:active {
     color: darken($color, 15%);
   }
@@ -93,6 +95,6 @@ pre {
   // For some reason overflow: auto does not make the overflow scrollable, but
   // instead makes the parent element wider.
   // Wrap the lines until it's figured out.
-  white-space: pre-wrap;
   padding: 2em 1.618em;
+  white-space: pre-wrap;
 }

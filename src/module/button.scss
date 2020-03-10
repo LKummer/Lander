@@ -15,38 +15,38 @@
   }
 
   &-primary {
-    $primary-color: map-get($colors, 'primary');
-    $text-color: map-get($colors, 'dark-text');
+    $primary: map-get($colors, 'primary');
+    $text: map-get($colors, 'dark-text');
 
-    background: $primary-color;
-    color: $text-color;
+    background: $primary;
+    color: $text;
 
     &:hover {
-      background: darken($primary-color, 10%);
-      color: $text-color;
+      background: darken($primary, 10%);
+      color: $text;
     }
 
     &:active {
-      background: darken($primary-color, 15%);
-      color: $text-color;
+      background: darken($primary, 15%);
+      color: $text;
     }
   }
 
   &-accent {
-    $accent-color: map-get($colors, 'accent');
-    $text-color: map-get($colors, 'dark-text');
+    $accent: map-get($colors, 'accent');
+    $accent-text: map-get($colors, 'dark-text');
 
-    background: $accent-color;
-    color: $text-color;
+    background: $accent;
+    color: $accent-text;
 
     &:hover {
-      background: darken($accent-color, 10%);
-      color: $text-color;
+      background: darken($accent, 10%);
+      color: $accent-text;
     }
 
     &:active {
-      background: darken($accent-color, 15%);
-      color: $text-color;
+      background: darken($accent, 15%);
+      color: $accent-text;
     }
   }
 }

@@ -1,4 +1,4 @@
-/* Background */ 
+/* Background */
 .chroma {
   // Names and namespaces.
   $text: hsl(240, 35%, 99%);
@@ -16,48 +16,44 @@
   background: $background;
   color: $text;
 
-  /* Error 
-  .err {  }
-  */
-
   /* LineTableTD */
   .lntd {
-    vertical-align: top;
-    padding: 0;
-    margin: 0;
     border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
   }
 
   /* LineTable */
   .lntable {
-    border-spacing: 0;
-    padding: 0;
-    margin: 0;
     border: 0;
-    width: auto;
-    overflow: auto;
+    border-spacing: 0;
     display: block;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: auto;
   }
 
   /* LineHighlight */
   .hl {
+    background-color: $background;
     display: block;
     width: 100%;
-    background-color: $background;
   }
 
   /* LineNumbersTable */
   .lnt {
+    color: $operator;
     margin-right: 0.4em;
     padding: 0 0.4em 0 0.4em;
-    color: $operator;
   }
 
   /* LineNumbers */
   .ln {
+    color: $operator;
     margin-right: 0.4em;
     padding: 0 0.4em 0 0.4em;
-    color: $operator;
   }
 
   /* Keyword */
@@ -97,8 +93,8 @@
 
   /* KeywordType */
   .kt {
-    font-weight: bold;
     color: $special;
+    font-weight: bold;
   }
 
   /* NameAttribute */
@@ -323,7 +319,6 @@
   /* CommentSpecial */
   .cs {
     color: $comment;
-    background-color: $comment;
   }
 
   /* CommentPreproc */
@@ -344,7 +339,7 @@
   /* GenericEmph */
   .ge {
     font-style: italic;
-  }  
+  }
 
   /* GenericError */
   .gr {

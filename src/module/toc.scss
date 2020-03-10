@@ -1,5 +1,6 @@
 .toc {
-  $toc-margin : 0.2em;
+  $toc-margin: 0.2em;
+
   font-weight: bold;
   hyphens: auto;
   line-height: 1.6;
@@ -8,8 +9,8 @@
 
   ul {
     list-style: none;
-    padding-left: 1.25em;
     margin: 0;
+    padding-left: 1.25em;
   }
 
   nav > ul {
