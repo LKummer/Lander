@@ -9,11 +9,11 @@
     "theme:watch": "webpack -w",
     "demo:build": "hugo -s demo -d ../dist/demo --themesDir ../dist",
     "demo:dev": "run-s theme:build demo:dev:run",
-    "demo:dev:watch": "hugo serve -s demo -d ../dist/demo --themesDir ../dist",
+    "demo:dev:watch": "hugo serve -s demo --themesDir ../dist",
     "demo:dev:run": "run-p demo:dev:watch theme:watch",
     "doc:build": "hugo -s doc -d ../dist/doc --themesDir ../dist",
     "doc:dev": "run-s theme:build doc:dev:run",
-    "doc:dev:watch": "hugo serve -s doc -d ../dist/doc --themesDir ../dist",
+    "doc:dev:watch": "hugo serve -s doc --themesDir ../dist",
     "doc:dev:run": "run-p doc:dev:watch theme:watch",
     "story": "start-storybook -p 6006",
     "story:build": "build-storybook"
