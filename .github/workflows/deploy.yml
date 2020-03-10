@@ -1,0 +1,36 @@
+# Deploys the documentation and demo.
+name: Deploy Sites
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build the Theme
+        run: npm run theme:build
+
+      - name: Build Documentation
+        run: npm run doc:build
+
+      - name: Build Demo
+        run: npm run demo:build
+
+      - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist/doc
