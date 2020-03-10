@@ -10,7 +10,7 @@
         <nav>
             <ul class="article-breadcrumbs">
                 <li class="article-breadcrumbs-item">
-                    {{- $section := printf "/%s" .Type }}
+                    {{- $section := .Type }}
                     {{ with .GetPage $section -}}
                     <a href="{{ absLangURL $section }}">
                         {{ .Title }}
