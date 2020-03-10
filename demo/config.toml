@@ -1,4 +1,4 @@
-baseURL = "https://gohugo.io"
+baseURL = "https://lkummer.github.io/Lander/demo"
 title = "Lander"
 languageCode = "en"
 DefaultContentLanguage = "en"
