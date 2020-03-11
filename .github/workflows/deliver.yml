@@ -60,3 +60,32 @@ jobs:
           asset_path: dist/lander.tar.gz
           asset_name: lander.tar.gz
           asset_content_type: application/gzip
+      
+      - name: Copy Theme to Demo Site
+        run: mkdir demo/themes && cp dist/lander demo/themes
+
+      - name: Zip the Demo Site
+        run: cd demo && 7z a -tzip ../dist/quickstart-site.zip .
+      
+      - name: Upload Zipped Demo
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: dist/quickstart-site.zip
+          asset_name: quickstart-site.zip
+          asset_content_type: application/zip
+      
+      - name: Archive and Compress the Demo Site
+        run: cd demo && tar -czf ../dist/quickstart-site.tar.gz .
+        
+      - name: Upload Archived and Compressed Demo Site
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: dist/quickstart-site.tar.gz
+          asset_name: quickstart-site.tar.gz
+          asset_content_type: application/gzip
