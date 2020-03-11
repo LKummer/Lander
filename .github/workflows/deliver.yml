@@ -36,7 +36,7 @@ jobs:
           prerelease: false
 
       - name: Zip the Theme
-        run: 7z a -tzip dist/lander.zip dist/lander
+        run: 7z a -tzip -w dist lander.zip lander
       
       - name: Upload Zipped Theme
         uses: actions/upload-release-asset@v1
@@ -45,11 +45,11 @@ jobs:
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: dist/lander.zip
-          asset_name: lander_${{ github.ref }}.zip
+          asset_name: lander_${{ ${{ steps.create-release.outputs.id }} }}.zip
           asset_content_type: application/zip
 
       - name: Archive and Compress the Theme
-        run: tar -czf dist/lander.tar.gz dist/lander
+        run: tar -czfC dist lander.tar.gz lander/**
         
       - name: Upload Archived and Compressed Theme
         uses: actions/upload-release-asset@v1
@@ -58,5 +58,5 @@ jobs:
         with:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: dist/lander.tar.gz
-          asset_name: lander_${{ github.ref }}.tar.gz
+          asset_name: lander_${{ ${{ steps.create-release.outputs.id }} }}.tar.gz
           asset_content_type: application/gzip
