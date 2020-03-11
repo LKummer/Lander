@@ -22,7 +22,7 @@ jobs:
         run: npm run theme:build:prod
       
       - name: Rename the Theme
-        run: mkdir dist/archive && mv dist/theme dist/archive/lander
+        run: mv dist/theme dist/lander
 
       - name: Create Release
         id: create-release
@@ -36,7 +36,7 @@ jobs:
           prerelease: false
 
       - name: Zip the Theme
-        run: 7z a -tzip dist/lander.zip dist/archive
+        run: cd dist && 7z a -tzip lander.zip lander
       
       - name: Upload Zipped Theme
         uses: actions/upload-release-asset@v1
@@ -49,7 +49,7 @@ jobs:
           asset_content_type: application/zip
 
       - name: Archive and Compress the Theme
-        run: tar -czf dist/lander.tar.gz dist/archive
+        run: cd dist && tar -czf lander.tar.gz lander
         
       - name: Upload Archived and Compressed Theme
         uses: actions/upload-release-asset@v1
