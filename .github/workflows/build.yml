@@ -1,4 +1,4 @@
-name: Lint
+name: Build
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
 
     steps:
