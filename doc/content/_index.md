@@ -7,9 +7,9 @@ masthead:
   title: 'Lander Hugo Theme'
   subtitle: 'Generate landing pages and guidance for your projects.'
   buttons:
-    - label: 'Download the Releases'
-      href: '#'
-    - label: 'See the Guides'
+    - label: 'See the Demo'
+      href: 'demo/'
+    - label: 'Read the Guides'
       to: 'guide/'
       color: 'accent'
 introduction:

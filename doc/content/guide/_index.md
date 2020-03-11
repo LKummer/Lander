@@ -16,6 +16,6 @@ bottom:
   text: 'Check out existing Github Issues or open a new one.'
   buttons:
     - label: 'See the Github Issues'
-      href: '#'
+      href: 'https://github.com/LKummer/Lander/issues'
       color: 'accent'
 ---
