@@ -18,7 +18,9 @@
       
       <guid>https://lkummer.github.io/Lander/guide/quickstart/</guid>
       <description>By the end of this guide you should have a Hugo site ready to be generated.
-Creating the Site @mixin(&amp;#39;mixin!&amp;#39;) class Some(Object): &amp;#34;&amp;#34;&amp;#34; Hello Class Docstring! &amp;#34;&amp;#34;&amp;#34; def __init__(self): print(&amp;#39;Hello {}&amp;#39;.format(&amp;#39;world&amp;#39;)) def hello(self): pass def throw(self): raise Exception(&amp;#39;Just an error!&amp;#39;) 1@mixin(&amp;#39;mixin!&amp;#39;) 2class Some(Object): 3 &amp;#34;&amp;#34;&amp;#34; 4Hello Class Docstring! 5&amp;#34;&amp;#34;&amp;#34; 6 def __init__(self): 7 print(&amp;#39;Hello {}&amp;#39;.format(&amp;#39;world&amp;#39;)) 8 9 def hello(self): 10 pass 11 12 def throw(self): 13 raise Exception(&amp;#39;Just an error!&amp;#39;) { &amp;#34;string&amp;#34;: &amp;#34;Hello World&amp;#34;, &amp;#34;boolean&amp;#34;: true, &amp;#34;number&amp;#34;: 7, &amp;#34;array&amp;#34;: [ &amp;#34;Hello&amp;#34;, &amp;#34;Array&amp;#34; ], &amp;#34;object&amp;#34;: { &amp;#34;nested&amp;#34;: &amp;#34;Hello Nested&amp;#34;, &amp;#34;otherNested&amp;#34;: 12 } } Setting Up the Theme namespace hello { class HelloWorld { public: HelloWorld(); float get_value(float&amp;amp;&amp;amp; value) const { const std::string hello = &amp;#34;world&amp;#34;s; if (variable == 1.</description>
+Quick Start Site The theme has a quickstart-site archive for every release. The archive contains a demo blog ready with the theme already set up inside.
+Head over to the theme&amp;rsquo;s releases on Github and download the quickstart-site archive of the latest version.
+After downloading, extract the quickstart site into an empty directory. The site should be ready for building.</description>
     </item>
     
     <item>
