@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>Content Management</title>
+      <link>https://lkummer.github.io/Lander/guide/content/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lkummer.github.io/Lander/guide/content/</guid>
+      <description>For the best experience, content should be structured and configured according to this guide.
+Sections All section list pages in the theme are rendered the same way. All section pages are rendered without pagination, sorted by category.
+You can read more about customizing section list pages in the Section Customization with Front Matter guide.
+Section Content Pages The front matter options available for section content pages are:
+The title option used as the title of the page.</description>
+    </item>
+    
+    <item>
+      <title>Development Guide</title>
+      <link>https://lkummer.github.io/Lander/guide/development/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lkummer.github.io/Lander/guide/development/</guid>
+      <description>Get familiarized with the development workflow of the project.
+Installing Dependencies All dependencies in the project are managed through NPM, including Hugo.
+To install the dependencies, open a command line at the root of the project and run:
+$ npm ci To avoid package compatiblity issues, use Node version 12.x.
+Hot Reload Servers Hot reload development servers can be launched for the demo site, the documentation or storybook.
+Demo Runs a development server of the demo site while watching the theme with Webpack.</description>
+    </item>
+    
+    <item>
       <title>Quick Start Guide</title>
       <link>https://lkummer.github.io/Lander/guide/quickstart/</link>
       <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>

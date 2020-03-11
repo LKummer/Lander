@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>Content Management</title>
+      <link>https://lkummer.github.io/Lander/guide/content/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lkummer.github.io/Lander/guide/content/</guid>
+      <description>For the best experience, content should be structured and configured according to this guide.
+Sections All section list pages in the theme are rendered the same way. All section pages are rendered without pagination, sorted by category.
+You can read more about customizing section list pages in the Section Customization with Front Matter guide.
+Section Content Pages The front matter options available for section content pages are:
+The title option used as the title of the page.</description>
+    </item>
+    
+    <item>
       <title>Quick Start Guide</title>
       <link>https://lkummer.github.io/Lander/guide/quickstart/</link>
       <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Development Guide</title>
+    
+
+
+<link rel="stylesheet" href="/Lander/main.css">
+
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Development Guide",
+    "author": {
+        "@type": "Person",
+        "name": "Lander Contributors"
+    },
+    "wordCount":  247 ,
+    "isAccessibleForFree": "true",
+    "license": "#",
+    "description": "Development workflow instruction."
+}
+</script>
+
+</head>
+
+<body>
+    
+<div>
+    <header class="navbar">
+        <h1 class="navbar-logo">
+            Lander
+        </h1>
+        
+        
+        <span class="navbar-spacer"></span>
+        <nav>
+            <ul class="navbar-navigation">
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/" class="navbar-navigation-item">
+                    Home
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/guide/" class="navbar-navigation-item">
+                    Guides
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://github.com/LKummer/Lander/releases" class="navbar-navigation-item">
+                    Download
+                </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+</div>
+
+<main class="l-single">
+    <aside class="toc l-single-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#installing-dependencies">Installing Dependencies</a></li>
+    <li><a href="#hot-reload-servers">Hot Reload Servers</a>
+      <ul>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#documentation">Documentation</a></li>
+        <li><a href="#storybook">Storybook</a></li>
+      </ul>
+    </li>
+    <li><a href="#building">Building</a>
+      <ul>
+        <li><a href="#theme">Theme</a></li>
+        <li><a href="#sites">Sites</a></li>
+      </ul>
+    </li>
+    <li><a href="#linting">Linting</a></li>
+  </ul>
+</nav>
+    </aside>
+    
+    <article class="article l-single-article">
+        <nav>
+            <ul class="article-breadcrumbs">
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide">
+                        Guides
+                    </a>
+                </li>
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide#development-guides">
+                        Development Guides
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="article-title">
+            Development Guide
+        </h1>
+        <section class="article-content">
+            <p>Get familiarized with the development workflow of the project.</p>
+<h2 id="installing-dependencies">Installing Dependencies</h2>
+<p>All dependencies in the project are managed through NPM, including Hugo.</p>
+<p>To install the dependencies, open a command line at the root of the project and
+run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm ci
+</code></pre></div><p>To avoid package compatiblity issues, use Node version <code>12.x</code>.</p>
+<h2 id="hot-reload-servers">Hot Reload Servers</h2>
+<p>Hot reload development servers can be launched for the demo site, the
+documentation or storybook.</p>
+<h3 id="demo">Demo</h3>
+<p>Runs a development server of the demo site while watching the theme with Webpack.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run demo:dev
+</code></pre></div><p>It should be accessible at <code>localhost:1313/Lander/demo/</code>.</p>
+<h3 id="documentation">Documentation</h3>
+<p>Runs a development  server of the documentation while watching the theme with
+Webpack.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run doc:dev
+</code></pre></div><p>It should be accessible at <code>localhost:1313/Lander/</code>.</p>
+<h3 id="storybook">Storybook</h3>
+<p>Runs a Storybook dev server.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run story
+</code></pre></div><p>It should be accessible at <code>localhost:6006/</code>.</p>
+<h2 id="building">Building</h2>
+<p>When customizing the theme only a build of the theme itself is needed.
+The rest of the build scripts are mostly for CI/CD pipelines.</p>
+<h3 id="theme">Theme</h3>
+<p>To build the theme in production mode:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run theme:build:prod
+</code></pre></div><p>To build the theme in development mode:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run theme:build
+</code></pre></div><h3 id="sites">Sites</h3>
+<p>Note that having a built theme in <code>dist/</code> is required for building the sites.</p>
+<p>To build the documentation:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run doc:build
+</code></pre></div><p>To build the demo site:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run demo:build
+</code></pre></div><h2 id="linting">Linting</h2>
+<p>ESLint and Stylelint are used in the project. To run them:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run lint
+</code></pre></div><p>The linters are also configured into the Webpack build. When using the
+development servers linting output is displayed in the console.</p>
+
+        </section>
+    </article></main>
+    <footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            
+            <h1 class="content-title">
+                Lander
+            </h1>
+            
+            
+            <p class="content-text">
+                Hugo theme for landing and documentation sites.
+            </p>
+            
+        </section>
+        
+        <nav>
+            <ul class="lowernav">
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/" class="lowernav-item">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/guide/" class="lowernav-item">
+                        Guides
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/LKummer/Lander/releases" class="lowernav-item">
+                        Download
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</footer>
+
+    <script src="/Lander/main.js"></script>
+</body>
+</html>

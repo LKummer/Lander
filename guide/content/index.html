@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Quick Start Guide</title>
+    <title>Content Management</title>
     
 
 
@@ -14,15 +14,15 @@
 {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Quick Start Guide",
+    "headline": "Content Management",
     "author": {
         "@type": "Person",
         "name": "Lander Contributors"
     },
-    "wordCount":  138 ,
+    "wordCount":  160 ,
     "isAccessibleForFree": "true",
     "license": "#",
-    "description": "Succinct guide to get new users up and going quickly."
+    "description": "Content structure and front matter options."
 }
 </script>
 
@@ -69,9 +69,8 @@
     <aside class="toc l-single-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#quick-start-site">Quick Start Site</a></li>
-    <li><a href="#building-the-site">Building the Site</a></li>
-    <li><a href="#further-customization">Further Customization</a></li>
+    <li><a href="#sections">Sections</a></li>
+    <li><a href="#section-content-pages">Section Content Pages</a></li>
   </ul>
 </nav>
     </aside>
@@ -92,28 +91,37 @@
             </ul>
         </nav>
         <h1 class="article-title">
-            Quick Start Guide
+            Content Management
         </h1>
         <section class="article-content">
-            <p>By the end of this guide you should have a Hugo site ready to be generated.</p>
-<h2 id="quick-start-site">Quick Start Site</h2>
-<p>The theme has a quickstart-site archive for every release. The archive contains a
-demo blog ready with the theme already set up inside.</p>
-<p>Head over <a href="https://github.com/LKummer/Lander/releases">to the theme&rsquo;s releases on Github</a>
-and download the quickstart-site archive of the latest version.</p>
-<p>After downloading, extract the quickstart site into an empty directory. The site
-should be ready for building.</p>
-<h2 id="building-the-site">Building the Site</h2>
-<p>Make sure to use a Hugo version newer than <code>0.65</code>.</p>
-<p>To build the site, open a command line in the quickstart site&rsquo;s directory and
-run Hugo:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ hugo
-</code></pre></div><p>To run a hot reload dev server, run:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ hugo server
-</code></pre></div><h2 id="further-customization">Further Customization</h2>
-<p>In depth guides are available for customization and content management. Have a
-look at <a href="https://lkummer.github.io/Lander/guide/#user-guides">the other User Guides</a>.</p>
-
+            <p>For the best experience, content should be structured and configured according to
+this guide.</p>
+<h2 id="sections">Sections</h2>
+<p>All section list pages in the theme are rendered the same way. All section pages
+are rendered without pagination, sorted by category.</p>
+<p>You can read more about customizing section list pages in the
+<a href="https://lkummer.github.io/Lander/guide/front-matter-customization/">Section Customization with Front Matter</a>
+guide.</p>
+<h2 id="section-content-pages">Section Content Pages</h2>
+<p>The front matter options available for section content pages are:</p>
+<p>The <code>title</code> option used as the title of the page.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Content Management&#34;</span>
+</code></pre></div><p>The <code>description</code> option, used for list rendering and SEO.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;Content structure and front matter options.&#34;</span>
+</code></pre></div><p>The <code>categories</code> option, used for sorting on list pages. Each page must have
+either one or no category in order for the list rendering to work correctly.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">categories</span> <span class="p">=</span> <span class="p">[</span>
+    <span class="s2">&#34;User Guides&#34;</span>
+<span class="p">]</span>
+</code></pre></div><p>To wrap it up, an example page front matter:</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="err">+++</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Content Management&#34;</span>
+<span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;Content structure and front matter options.&#34;</span>
+<span class="nx">categories</span> <span class="p">=</span> <span class="p">[</span>
+    <span class="s2">&#34;User Guides&#34;</span>
+<span class="p">]</span>
+<span class="err">+++</span>
+</code></pre></div>
         </section>
     </article></main>
     <footer class="footer">
