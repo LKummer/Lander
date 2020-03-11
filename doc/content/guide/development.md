@@ -1,5 +1,5 @@
 +++
-title = "Development Environment Guide"
+title = "Development Guide"
 date = "2020-03-05"
 description = "Development workflow instruction."
 categories = [
