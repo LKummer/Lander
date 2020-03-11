@@ -5,7 +5,7 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
-theme = "theme"
+theme = "lander"
 pygmentsUseClasses = true
 
 [params]
