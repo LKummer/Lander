@@ -10,8 +10,8 @@ pygmentsUseClasses = true
 
 [params]
   [params.footer]
-    title = "Footer Title"
-    text = "Footer section text."
+    title = "Lander"
+    text = "Hugo theme for landing and documentation sites."
   [params.seo]
     category = "Hugo Theme"
     downloadURL = "#"
