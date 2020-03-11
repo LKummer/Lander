@@ -22,7 +22,7 @@ jobs:
         run: npm run theme:build:prod
       
       - name: Rename the Theme
-        run: mv dist/theme dist/archive/lander
+        run: mkdir dist/archive && mv dist/theme dist/archive/lander
 
       - name: Create Release
         id: create-release
