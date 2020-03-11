@@ -28,7 +28,7 @@ pygmentsUseClasses = true
 [menu]
   [[menu.main]]
     name = "Download"
-    url = "#"
+    url = "https://github.com/LKummer/Lander/releases"
 
 [taxonomies]
 category = "categories"
