@@ -62,7 +62,7 @@ jobs:
           asset_content_type: application/gzip
       
       - name: Copy Theme to Demo Site
-        run: mkdir demo/themes && cp dist/lander demo/themes
+        run: mkdir demo/themes && cp -r dist/lander demo/themes
 
       - name: Zip the Demo Site
         run: cd demo && 7z a -tzip ../dist/quickstart-site.zip .
