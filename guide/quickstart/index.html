@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Quick Start Guide</title>
+    
+
+
+<link rel="stylesheet" href="/Lander/main.css">
+
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Quick Start Guide",
+    "author": {
+        "@type": "Person",
+        "name": "Lander Contributors"
+    },
+    "wordCount":  378 ,
+    "isAccessibleForFree": "true",
+    "license": "#",
+    "description": "A succinct guide to get new users up and going quickly."
+}
+</script>
+
+</head>
+
+<body>
+    
+<div>
+    <header class="navbar">
+        <h1 class="navbar-logo">
+            Lander
+        </h1>
+        
+        
+        <span class="navbar-spacer"></span>
+        <nav>
+            <ul class="navbar-navigation">
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/" class="navbar-navigation-item">
+                    Home
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/guide/" class="navbar-navigation-item">
+                    Guides
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander" class="navbar-navigation-item">
+                    Download
+                </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+</div>
+
+<main class="l-single">
+    <article class="article l-single-article">
+        <nav>
+            <ul class="article-breadcrumbs">
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide">
+                        Guides
+                    </a>
+                </li>
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide#user-guides">
+                        User Guides
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="article-title">
+            Quick Start Guide
+        </h1>
+        <section class="article-content">
+            <p>By the end of this guide you should have a Hugo site ready to be generated.</p>
+<h1 id="creating-the-site">Creating the Site</h1>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="nd">@mixin</span><span class="p">(</span><span class="s1">&#39;mixin!&#39;</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Some</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+    <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">    Hello Class Docstring!
+</span><span class="s2">    &#34;&#34;&#34;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+    
+    <span class="k">def</span> <span class="nf">throw</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Just an error!&#39;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="nd">@mixin</span><span class="p">(</span><span class="s1">&#39;mixin!&#39;</span><span class="p">)</span>
+<span class="ln"> 2</span><span class="k">class</span> <span class="nc">Some</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+<span class="ln"> 3</span>    <span class="s2">&#34;&#34;&#34;
+</span><span class="ln"> 4</span><span class="s2">    Hello Class Docstring!
+</span><span class="ln"> 5</span><span class="s2">    &#34;&#34;&#34;</span>
+<span class="ln"> 6</span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ln"> 7</span>        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">))</span>
+<span class="ln"> 8</span>
+<span class="ln"> 9</span>    <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ln">10</span>        <span class="k">pass</span>
+<span class="ln">11</span>    
+<span class="ln">12</span>    <span class="k">def</span> <span class="nf">throw</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="ln">13</span>        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Just an error!&#39;</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;string&#34;</span><span class="p">:</span> <span class="s2">&#34;Hello World&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;boolean&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&#34;number&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="nt">&#34;array&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&#34;Hello&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Array&#34;</span>
+    <span class="p">],</span>
+    <span class="nt">&#34;object&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;nested&#34;</span><span class="p">:</span> <span class="s2">&#34;Hello Nested&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;otherNested&#34;</span><span class="p">:</span> <span class="mi">12</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h1 id="setting-up-the-theme">Setting Up the Theme</h1>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">namespace</span> <span class="n">hello</span> <span class="p">{</span>
+    
+    <span class="k">class</span> <span class="nc">HelloWorld</span> <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">HelloWorld</span><span class="p">();</span>
+
+        <span class="kt">float</span> <span class="nf">get_value</span><span class="p">(</span><span class="kt">float</span><span class="o">&amp;&amp;</span> <span class="n">value</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+            <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">hello</span> <span class="o">=</span> <span class="s">&#34;world&#34;</span><span class="n">s</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">variable</span> <span class="o">==</span> <span class="mf">1.f</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">const</span> <span class="k">template</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">{};</span>
+                <span class="k">return</span> <span class="n">variable</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="k">virtual</span> <span class="o">~</span><span class="n">HelloWorld</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="c1"># start first script</span>
+some.script <span class="p">&amp;</span>
+
+<span class="c1"># start second script</span>
+some.other.script
+</code></pre></div><h1 id="structuring-the-content">Structuring the Content</h1>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Highlights the TOC anchors and keeps track of the current highlighted anchor.
+</span><span class="c1"></span><span class="kr">class</span> <span class="nx">Highlighter</span> <span class="p">{</span>
+  <span class="nx">constructor</span> <span class="p">(</span><span class="nx">toc</span><span class="p">,</span> <span class="nx">initial</span> <span class="o">=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">toc</span> <span class="o">=</span> <span class="nx">toc</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">current</span> <span class="o">=</span> <span class="nx">initial</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">initial</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">highlight</span><span class="p">(</span><span class="nx">initial</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nx">highlight</span> <span class="p">(</span><span class="nx">anchor</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">reset</span><span class="p">()</span>
+    <span class="nx">anchor</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;is-active&#39;</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">current</span> <span class="o">=</span> <span class="nx">anchor</span>
+  <span class="p">}</span>
+
+  <span class="nx">highlightByID</span> <span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">anchor</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">toc</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="sb">`[href=&#34;#</span><span class="si">${</span><span class="nx">id</span><span class="si">}</span><span class="sb">&#34;]`</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">anchor</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">highlight</span><span class="p">(</span><span class="nx">anchor</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nx">reset</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">current</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;is-active&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Used to observe and unobserve headings for highlihgting.
+</span><span class="c1"></span><span class="kr">class</span> <span class="nx">HeadingObserver</span> <span class="p">{</span>
+  <span class="nx">constructor</span> <span class="p">(</span><span class="nx">toc</span><span class="p">,</span> <span class="nx">headings</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">headings</span> <span class="o">=</span> <span class="nx">headings</span>
+    <span class="kr">const</span> <span class="nx">highlighter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Highlighter</span><span class="p">(</span><span class="nx">toc</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">observer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">IntersectionObserver</span><span class="p">(</span><span class="nx">entries</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="kr">const</span> <span class="nx">active</span> <span class="o">=</span> <span class="nx">entries</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">entry</span> <span class="p">=&gt;</span> <span class="nx">entry</span><span class="p">.</span><span class="nx">isIntersecting</span><span class="p">)</span>
+      <span class="c1">// Only find the active anchor when there is at least one intersecting
+</span><span class="c1"></span>      <span class="c1">// Entry.
+</span><span class="c1"></span>      <span class="k">if</span> <span class="p">(</span><span class="nx">active</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">highlighter</span><span class="p">.</span><span class="nx">highlightByID</span><span class="p">(</span><span class="nx">active</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">target</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="c1">// Set margins for the observer so it only observes the top of the page.
+</span><span class="c1"></span>      <span class="nx">rootMargin</span><span class="o">:</span> <span class="s1">&#39;0px 0px -85% 0px&#39;</span><span class="p">,</span>
+      <span class="nx">threshold</span><span class="o">:</span> <span class="mf">0.8</span>
+    <span class="p">})</span>
+  <span class="p">}</span>
+
+  <span class="nx">connect</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">headings</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">heading</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">observer</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">heading</span><span class="p">)</span>
+    <span class="p">})</span>
+  <span class="p">}</span>
+
+  <span class="nx">disconnect</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">observer</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Sets up TOC highlight and enables or disables it based on it&#39;s visibility.
+</span><span class="c1"></span><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">managedHighlight</span> <span class="p">(</span><span class="nx">toc</span><span class="p">,</span> <span class="nx">headings</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">headingObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HeadingObserver</span><span class="p">(</span><span class="nx">toc</span><span class="p">,</span> <span class="nx">headings</span><span class="p">)</span>
+  <span class="kr">const</span> <span class="nx">tocObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">IntersectionObserver</span><span class="p">(</span><span class="nx">entries</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// Connect or disconnect the observer whether the TOC is intersecting or not.
+</span><span class="c1"></span>    <span class="kr">const</span> <span class="nx">anyIntersecting</span> <span class="o">=</span> <span class="nx">entries</span><span class="p">.</span><span class="nx">some</span><span class="p">(</span><span class="nx">entry</span> <span class="p">=&gt;</span> <span class="nx">entry</span><span class="p">.</span><span class="nx">isIntersecting</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">anyIntersecting</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">headingObserver</span><span class="p">.</span><span class="nx">connect</span><span class="p">()</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">headingObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">()</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
+  <span class="nx">tocObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">toc</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+        </section>
+    </article></main>
+    <footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            
+            <h1 class="content-title">
+                Footer Title
+            </h1>
+            
+            
+            <p class="content-text">
+                Footer section text.
+            </p>
+            
+        </section>
+        
+        <nav>
+            <ul class="lowernav">
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/" class="lowernav-item">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/guide/" class="lowernav-item">
+                        Guides
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander" class="lowernav-item">
+                        Download
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</footer>
+
+    <script src="/Lander/main.js"></script>
+</body>
+</html>

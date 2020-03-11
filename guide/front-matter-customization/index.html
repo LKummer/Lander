@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Section Customization with Front Matter</title>
+    
+
+
+<link rel="stylesheet" href="/Lander/main.css">
+
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Section Customization with Front Matter",
+    "author": {
+        "@type": "Person",
+        "name": "Lander Contributors"
+    },
+    "wordCount":  564 ,
+    "isAccessibleForFree": "true",
+    "license": "#",
+    "description": "Guidance for the customizable sections of the theme."
+}
+</script>
+
+</head>
+
+<body>
+    
+<div>
+    <header class="navbar">
+        <h1 class="navbar-logo">
+            Lander
+        </h1>
+        
+        
+        <span class="navbar-spacer"></span>
+        <nav>
+            <ul class="navbar-navigation">
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/" class="navbar-navigation-item">
+                    Home
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/guide/" class="navbar-navigation-item">
+                    Guides
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander" class="navbar-navigation-item">
+                    Download
+                </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+</div>
+
+<main class="l-single">
+    <aside class="toc l-single-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#section-options">Section Options</a>
+      <ul>
+        <li><a href="#masthead">Masthead</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#bottom">Bottom</a></li>
+      </ul>
+    </li>
+    <li><a href="#example-configurations">Example Configurations</a>
+      <ul>
+        <li><a href="#root-_indexmd">Root <code>_index.md</code></a></li>
+        <li><a href="#guide-section-_indexmd">Guide Section <code>_index.md</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </aside>
+    
+    <article class="article l-single-article">
+        <nav>
+            <ul class="article-breadcrumbs">
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide">
+                        Guides
+                    </a>
+                </li>
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide#user-guides">
+                        User Guides
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="article-title">
+            Section Customization with Front Matter
+        </h1>
+        <section class="article-content">
+            <p>The root <code>_index.md</code> and section <code>_index.md</code> files render sections that are
+customizable through front matter options.</p>
+<h2 id="section-options">Section Options</h2>
+<p>Some sections are only availbale for certain pages.</p>
+<p>Most section options are optional, but it is recommended to fill all sections for
+optimal aesthetics.</p>
+<h3 id="masthead">Masthead</h3>
+<p>The <code>masthead</code> section is available for both root and section <code>_index.md</code> files.</p>
+<p>It is the background colored section with large titles right under the navigation.
+This is the element users usually see first and it can be used to guide them to
+important pages or download links.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">masthead</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Masthead Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Masthead Subtitle&#39;</span><span class="w">
+</span></code></pre></div><p>The <code>title</code> and <code>subtitle</code> strings are used for the masthead&rsquo;s large title and
+smaller subtitle. Both are optional.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">masthead</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Primary Colored Button&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">href</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Accent Colored Button&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
+</span></code></pre></div><p>The <code>buttons</code> array is used to render links in the masthead. Each button requires
+a <code>label</code>, either an <code>href</code> or <code>to</code> and optionally contains a <code>color</code>.
+The <code>buttons</code> array itself is optional.</p>
+<p>The <code>to</code> option is used to link to internal pages, as it formats a URL in the
+current active language for all languages. The <code>href</code> option is used for external
+links as it directly sets URL for the link.</p>
+<p>Avoid using the <code>to</code> option with paths that begin with <code>/</code> because Hugo&rsquo;s
+<code>absLangURL</code> method behaves unexpectedly.</p>
+<p>Currently the available settings for <code>color</code> are <code>primary</code> and <code>accent</code>. When no
+color is supplied it defaults to <code>primary</code>.</p>
+<h3 id="introduction">Introduction</h3>
+<p>The <code>introduction</code> section is only available for the root <code>_index.md</code> file.</p>
+<p>The introduction section is rendered after the masthead. In list pages it is replaced by a category-sorted list of the section&rsquo;s pages.
+This section is used to introduce your project and mention some of it&rsquo;s selling
+points.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">introduction</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Introduction Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Introduction Text&#39;</span><span class="w">
+</span></code></pre></div><p>The <code>title</code> and <code>text</code> strings are used for an offset section displayed above
+the cards. Both are optional.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">introduction</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">cards</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;First Card&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;First Card Text&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Second Card&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Second Card Text&#39;</span><span class="w">
+</span></code></pre></div><p>The <code>cards</code> array contains cards that must have both <code>title</code> and <code>text</code> options.
+Currently the <code>text</code> options do not support Markdown formatting.</p>
+<h3 id="bottom">Bottom</h3>
+<p>The <code>bottom</code> section is available for both both root and section <code>_index.md</code> files.</p>
+<p>It is the background colored section at the bottom of the page, right above the
+footer. It catches the user&rsquo;s attention after they&rsquo;ve finished scrolling and can
+be used to direct them to content they might be looking for.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">bottom</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Text&#39;</span><span class="w">
+</span></code></pre></div><p>The <code>title</code> and <code>text</code> are used to render centered text. Both are optional.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">bottom</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;First Button&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
+</span></code></pre></div><p>The <code>buttons</code> array is rendered like the Masthead <code>buttons</code> array. It is
+optional.</p>
+<h2 id="example-configurations">Example Configurations</h2>
+<p>To finish the guide, let&rsquo;s take a look at a couple of full front matter page
+configurations.</p>
+<h3 id="root-_indexmd">Root <code>_index.md</code></h3>
+<p>This configuration is similar to what is used in this site&rsquo;s root <code>_index.md</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">---<span class="w">
+</span><span class="w"></span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Home&#39;</span><span class="w">
+</span><span class="w"></span><span class="k">menu</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">main</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">weight</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w"></span><span class="c"># Section Configuration:</span><span class="w">
+</span><span class="w"></span><span class="k">masthead</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Lander Hugo Theme&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Generate landing pages and guidance for your projects.&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Download the Releases&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">href</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Guides&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
+</span><span class="w"></span><span class="k">introduction</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Create Beautiful Landing Pages for Projects&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="sd">&gt;
+</span><span class="sd">    Improve the first impression of your project. Ease the learning curve for new</span><span class="w">
+</span><span class="w">    </span>users.<span class="w"> </span>Stop<span class="w"> </span>sending<span class="w"> </span>people<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>readme.<span class="w">
+</span><span class="w">  </span><span class="k">cards</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Responsively Designed&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="sd">&gt;
+</span><span class="sd">        Designed from the ground up to work well with any screen size.</span><span class="w">
+</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Light as a Feather&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="sd">&gt;
+</span><span class="sd">        Fast for all users at under 50 kB uncompressed including fonts.</span><span class="w">
+</span><span class="w"></span><span class="k">bottom</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Get Started Today&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;The guides will help you get up and running as quick as possible.&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Guides&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
+</span><span class="w"></span>---<span class="w">
+</span></code></pre></div><h3 id="guide-section-_indexmd">Guide Section <code>_index.md</code></h3>
+<p>This configuration is similar to what is used in this site&rsquo;s guide section <code>_index.md</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">---<span class="w">
+</span><span class="w"></span><span class="k">aliases</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="s2">&#34;guides&#34;</span><span class="w">
+</span><span class="w"></span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Guides&#34;</span><span class="w">
+</span><span class="w"></span><span class="c"># Section Configuration:</span><span class="w">
+</span><span class="w"></span><span class="k">menu</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">main</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">weight</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w"></span><span class="k">masthead</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Looking to Get Started?&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Quick Start Guide&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/quickstart/&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
+</span><span class="w"></span><span class="k">bottom</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Need More Help?&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Check out existing Github Issues or open a new one.&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Github Issues&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">href</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
+</span><span class="w"></span>---<span class="w">
+</span></code></pre></div>
+        </section>
+    </article></main>
+    <footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            
+            <h1 class="content-title">
+                Footer Title
+            </h1>
+            
+            
+            <p class="content-text">
+                Footer section text.
+            </p>
+            
+        </section>
+        
+        <nav>
+            <ul class="lowernav">
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/" class="lowernav-item">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/guide/" class="lowernav-item">
+                        Guides
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander" class="lowernav-item">
+                        Download
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</footer>
+
+    <script src="/Lander/main.js"></script>
+</body>
+</html>

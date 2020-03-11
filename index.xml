@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Lander</title>
+    <link>https://lkummer.github.io/Lander/</link>
+    <description>Recent content in Home on Lander</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://lkummer.github.io/Lander/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick Start Guide</title>
+      <link>https://lkummer.github.io/Lander/guide/quickstart/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lkummer.github.io/Lander/guide/quickstart/</guid>
+      <description>By the end of this guide you should have a Hugo site ready to be generated.
+Creating the Site @mixin(&amp;#39;mixin!&amp;#39;) class Some(Object): &amp;#34;&amp;#34;&amp;#34; Hello Class Docstring! &amp;#34;&amp;#34;&amp;#34; def __init__(self): print(&amp;#39;Hello {}&amp;#39;.format(&amp;#39;world&amp;#39;)) def hello(self): pass def throw(self): raise Exception(&amp;#39;Just an error!&amp;#39;) 1@mixin(&amp;#39;mixin!&amp;#39;) 2class Some(Object): 3 &amp;#34;&amp;#34;&amp;#34; 4Hello Class Docstring! 5&amp;#34;&amp;#34;&amp;#34; 6 def __init__(self): 7 print(&amp;#39;Hello {}&amp;#39;.format(&amp;#39;world&amp;#39;)) 8 9 def hello(self): 10 pass 11 12 def throw(self): 13 raise Exception(&amp;#39;Just an error!&amp;#39;) { &amp;#34;string&amp;#34;: &amp;#34;Hello World&amp;#34;, &amp;#34;boolean&amp;#34;: true, &amp;#34;number&amp;#34;: 7, &amp;#34;array&amp;#34;: [ &amp;#34;Hello&amp;#34;, &amp;#34;Array&amp;#34; ], &amp;#34;object&amp;#34;: { &amp;#34;nested&amp;#34;: &amp;#34;Hello Nested&amp;#34;, &amp;#34;otherNested&amp;#34;: 12 } } Setting Up the Theme namespace hello { class HelloWorld { public: HelloWorld(); float get_value(float&amp;amp;&amp;amp; value) const { const std::string hello = &amp;#34;world&amp;#34;s; if (variable == 1.</description>
+    </item>
+    
+    <item>
+      <title>Section Customization with Front Matter</title>
+      <link>https://lkummer.github.io/Lander/guide/front-matter-customization/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lkummer.github.io/Lander/guide/front-matter-customization/</guid>
+      <description>The root _index.md and section _index.md files render sections that are customizable through front matter options.
+Section Options Some sections are only availbale for certain pages.
+Most section options are optional, but it is recommended to fill all sections for optimal aesthetics.
+Masthead The masthead section is available for both root and section _index.md files.
+It is the background colored section with large titles right under the navigation. This is the element users usually see first and it can be used to guide them to important pages or download links.</description>
+    </item>
+    
+  </channel>
+</rss>
