@@ -78,7 +78,7 @@ jobs:
           asset_content_type: application/zip
       
       - name: Archive and Compress the Demo Site
-        run: cd demo && tar -czf ../dist/quickstart-site.tar.gz **/*
+        run: cd demo && tar -czf ../dist/quickstart-site.tar.gz **/* *
         
       - name: Upload Archived and Compressed Demo Site
         uses: actions/upload-release-asset@v1
