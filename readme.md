@@ -1,5 +1,13 @@
 # Theme Hugo Theme
 
+<p align="center">
+    <img src="https://img.shields.io/github/v/release/LKummer/Lander">
+    <img src="https://img.shields.io/github/workflow/status/LKummer/Lander/Lint?label=lint">
+    <img src="https://img.shields.io/github/workflow/status/LKummer/Lander/Deliver?label=deliver">
+    <img src="https://img.shields.io/github/workflow/status/LKummer/Lander/Deploy Sites?label=deploy">
+    <img src="https://img.shields.io/github/license/LKummer/Lander">
+</p>
+
 Hugo theme for Hugo themes.
 
 ## Development Guide
