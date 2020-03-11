@@ -7,7 +7,7 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,6 +27,9 @@ jobs:
 
       - name: Build Demo
         run: npm run demo:build
+      
+      - name: Add .nojekyll File
+        run: cat > dist/doc/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
