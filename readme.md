@@ -1,4 +1,4 @@
-# Theme Hugo Theme
+# Lander Hugo Theme
 
 <p align="center">
     <img src="https://img.shields.io/github/v/release/LKummer/Lander">
@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/github/license/LKummer/Lander">
 </p>
 
-Hugo theme for Hugo themes.
+Hugo theme for landing and documentation sites.
 
 ## Development Guide
 
