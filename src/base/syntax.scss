@@ -3,15 +3,15 @@
   // Names and namespaces.
   $text: var(--color-highlight-text);
   // Comments.
-  $comment: var(--color-highglight-comment);
+  $comment: var(--color-highlight-comment);
   // Exceptions and types.
-  $special: var(--color-highglight-special);
+  $special: var(--color-highlight-special);
   // Operators and parenthesis.
-  $operator: var(--color-highglight-operator);
+  $operator: var(--color-highlight-operator);
   // Literals and keywords.
-  $literal: var(--color-highglight-literal);
+  $literal: var(--color-highlight-literal);
   // Background.
-  $background: var(--color-highglight-background);
+  $background: var(--color-highlight-background);
 
   background: $background;
   color: $text;
