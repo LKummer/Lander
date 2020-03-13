@@ -15,38 +15,32 @@
   }
 
   &-primary {
-    $primary: map-get($colors, 'primary');
-    $text: map-get($colors, 'dark-text');
-
-    background: $primary;
-    color: $text;
+    background: var(--color-primary-400);
+    color: var(--color-text-100);
 
     &:hover {
-      background: darken($primary, 10%);
-      color: $text;
+      background: var(--color-primary-500);
+      color: var(--color-text-100);
     }
 
     &:active {
-      background: darken($primary, 15%);
-      color: $text;
+      background: var(--color-primary-600);
+      color: var(--color-text-100);
     }
   }
 
   &-accent {
-    $accent: map-get($colors, 'accent');
-    $accent-text: map-get($colors, 'dark-text');
-
-    background: $accent;
-    color: $accent-text;
+    background: var(--color-accent-400);
+    color: var(--color-text-100);
 
     &:hover {
-      background: darken($accent, 10%);
-      color: $accent-text;
+      background: var(--color-accent-500);
+      color: var(--color-text-100);
     }
 
     &:active {
-      background: darken($accent, 15%);
-      color: $accent-text;
+      background: var(--color-accent-600);
+      color: var(--color-text-100);
     }
   }
 }

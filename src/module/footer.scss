@@ -1,5 +1,5 @@
 .footer {
-  background: map-get($colors, 'primary');
+  background: var(--color-background-900);
   padding: 10rem 0 9rem;
 
   &-container {

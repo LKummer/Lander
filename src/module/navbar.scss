@@ -29,23 +29,23 @@
       @include transition('color');
 
       background: rgba(0, 0, 0, 0);
-      color: transparentize(map-get($colors, 'text'), 0.25);
+      color: var(--color-text-700);
       margin-left: 1rem;
       padding: 1.5rem 1rem;
       text-decoration: none;
 
       &-active {
-        border-top: 0.5rem solid map-get($colors, 'text');
-        color: map-get($colors, 'text');
+        border-top: 0.5rem solid var(--color-text-900);
+        color: var(--color-text-900);
         padding-top: 1rem;
       }
 
       &:hover {
-        color: map-get($colors, 'text');
+        color: var(--color-text-800);
       }
 
       &:active {
-        color: transparentize(map-get($colors, 'text'), 0.1);
+        color: var(--color-text-900);
       }
     }
   }

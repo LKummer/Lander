@@ -24,15 +24,15 @@
   a[href] {
     @include transition('color');
 
-    color: map-get($colors, "text");
+    color: var(--colors-text-900);
 
     &:hover {
-      color: map-get($colors, "accent");
+      color: var(--color-accent-400);
     }
   }
 
   a[href].is-active {
-    color: map-get($colors, "accent");
+    color: var(--color-accent-400);
   }
 }
 

@@ -5,9 +5,9 @@
     padding: 2.5rem 1rem 3.236rem;
   }
 
-  background: lighten(map-get($colors, 'background'), 2%);
+  background: var(--color-background-200);
   border-radius: 1.5rem;
-  color: map-get($colors, 'text');
+  color: var(--color-text-900);
   display: block;
   padding: 3rem 3.236rem 4rem;
   // Remove decoration from anchor cards.
@@ -15,7 +15,7 @@
 
   // Set the color of anchor cards.
   &[href] {
-    color: map-get($colors, 'text');
+    color: var(--color-text-900);
   }
 
   &-centered {

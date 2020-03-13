@@ -23,11 +23,11 @@
   }
 
   &-light {
-    color: map-get($colors, 'text');
+    color: var(--color-text-900);
   }
 
   &-dark {
-    color: map-get($colors, 'dark-text');
+    color: var(--color-text-100);
   }
 
   &-centered {

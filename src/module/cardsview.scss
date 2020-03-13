@@ -1,5 +1,5 @@
 .cardsview {
-  background: map-get($colors, 'primary');
+  background: var(--color-background-900);
 
   &-container {
     @extend %container;
@@ -27,7 +27,7 @@
       }
     }
 
-    color: map-get($colors, 'dark-text');
+    color: var(--color-text-100);
     font-size: map-get($font-sizes, 'large');
     margin: -0.3em 0 0 0;
   }
