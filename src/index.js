@@ -1,4 +1,5 @@
 import 'typeface-open-sans'
+import 'typeface-fira-code'
 
 import './index.scss'
 

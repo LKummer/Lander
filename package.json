@@ -47,6 +47,7 @@
     "stylelint-webpack-plugin": "^1.2.3",
     "terser": "^4.6.3",
     "terser-webpack-plugin": "^2.3.5",
+    "typeface-fira-code": "^1.1.4",
     "typeface-open-sans": "0.0.75",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",

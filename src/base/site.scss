@@ -86,8 +86,11 @@ ol {
   padding-left: 3rem;
 }
 
+pre, code {
+  font-family: 'Fira Code' monospace;
+}
+
 pre {
-  font-family: monospace;
   line-height: 1.6;
   overflow: auto;
   // For some reason overflow: auto does not make the overflow scrollable, but
