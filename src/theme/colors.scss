@@ -17,4 +17,17 @@
   --color-text-700: hsla(0, 0%, 0%, 0.55);
 
   --color-text-100: hsla(0, 0%, 100%, 0.92);
+
+  // Names and namespaces.
+  --color-highlight-text: hsl(240, 35%, 99%);
+  // Background.
+  --color-highglight-background: hsl(240, 13%, 14%);
+  // Comments.
+  --color-highglight-comment: hsl(250, 25%, 55%);
+  // Exceptions and types.
+  --color-highglight-special: hsl(180, 75%, 55%);
+  // Operators and parenthesis.
+  --color-highglight-operator: hsl(330, 95%, 75%);
+  // Literals and keywords.
+  --color-highglight-literal: hsl(250, 80%, 70%);
 }

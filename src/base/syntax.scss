@@ -1,17 +1,17 @@
 /* Background */
 .chroma {
   // Names and namespaces.
-  $text: hsl(240, 35%, 99%);
+  $text: var(--color-highlight-text);
   // Comments.
-  $comment: hsl(250, 25%, 55%);
+  $comment: var(--color-highglight-comment);
   // Exceptions and types.
-  $special: hsl(180, 75%, 55%);
+  $special: var(--color-highglight-special);
   // Operators and parenthesis.
-  $operator: hsl(330, 95%, 75%);
+  $operator: var(--color-highglight-operator);
   // Literals and keywords.
-  $literal: hsl(250, 80%, 70%);
+  $literal: var(--color-highglight-literal);
   // Background.
-  $background: hsl(240, 13%, 14%);
+  $background: var(--color-highglight-background);
 
   background: $background;
   color: $text;
