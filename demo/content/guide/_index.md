@@ -2,20 +2,24 @@
 aliases:
   - "guides"
 title: "Guides"
+# Section Configuration:
 menu:
   main:
     weight: 20
 masthead:
-  title: 'Looking to Get Started?'
+  title: 'Masthead Title'
+  subtitle: 'Masthead Subtitle'
   buttons:
-    - label: 'See the Quick Start Guide'
-      to: 'guide/quickstart/'
+    - label: 'Primary Colored Button'
+      href: '#'
+    - label: 'Accent Colored Button'
+      to: 'guide/'
       color: 'accent'
 bottom:
-  title: 'Need More Help?'
-  text: 'Check out existing Github Issues or open a new one.'
+  title: 'Bottom Title'
+  text: 'Bottom Text'
   buttons:
-    - label: 'See the Github Issues'
-      href: '#'
+    - label: 'Bottom Button'
+      to: 'guide/'
       color: 'accent'
 ---

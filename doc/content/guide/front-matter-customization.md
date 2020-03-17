@@ -106,7 +106,7 @@ The `title` and `text` are used to render centered text. Both are optional.
 ```yaml
 bottom:
   buttons:
-    - label: 'First Button'
+    - label: 'Bottom Button'
       to: 'guide/'
       color: 'accent'
 ```
@@ -151,7 +151,7 @@ bottom:
   title: 'Bottom Title'
   text: 'Bottom Text'
   buttons:
-    - label: 'First Button'
+    - label: 'Bottom Button'
       to: 'guide/'
       color: 'accent'
 ---
@@ -183,7 +183,7 @@ bottom:
   title: 'Bottom Title'
   text: 'Bottom Text'
   buttons:
-    - label: 'First Button'
+    - label: 'Bottom Button'
       to: 'guide/'
       color: 'accent'
 ---
