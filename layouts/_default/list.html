@@ -14,7 +14,7 @@
                 {{ $category.Title }}
             </h1>
             {{ range $pages }}
-            <li class="l-offset-item-end">
+            <li class="l-offset-item-end l-offset-item-end-dense">
                 <a href="{{ absLangURL .Permalink }}" class="card">
                     <h1 class="card-title">
                         {{ .Title }}
@@ -45,7 +45,7 @@
                 {{ T "list-uncategorized" $uncategorized }}
             </h1>
             {{ range $uncategorized }}
-            <li class="l-offset-item-end">
+            <li class="l-offset-item-end l-offset-item-end-dense">
                 <a href="{{ absLangURL .Permalink }}" class="card">
                     <h1 class="card-title">
                         {{ .Title }}
