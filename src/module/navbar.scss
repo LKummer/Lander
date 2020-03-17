@@ -4,14 +4,19 @@
   align-items: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &-spacer {
     flex-grow: 1;
   }
 
   %navbar-item {
+    @include responsive-block('mobile') {
+      letter-spacing: -0.03em;
+    }
+
     display: inline-block;
-    font-size: map-get($font-sizes, 'small');
     font-weight: bold;
     letter-spacing: +0.03em;
     text-transform: uppercase;
@@ -27,17 +32,21 @@
     &-item {
       @extend %navbar-item;
       @include transition('color');
+      @include responsive-block('mobile') {
+        padding: 1.5rem 0.25rem;
+      }
 
       background: rgba(0, 0, 0, 0);
       color: var(--color-text-700);
+      font-size: map-get($font-sizes, 'small');
       margin-left: 1rem;
       padding: 1.5rem 1rem;
       text-decoration: none;
 
       &-active {
-        border-top: 0.5rem solid var(--color-text-900);
+        border-bottom: 0.25rem solid var(--color-text-900);
         color: var(--color-text-900);
-        padding-top: 1rem;
+        padding-bottom: 0.75rem;
       }
 
       &:hover {
@@ -52,8 +61,15 @@
 
   &-logo {
     @extend %navbar-item;
+    @include responsive-block('mobile') {
+      flex-basis: 100%;
+      font-size: map-get($font-sizes, 'large');
+      margin: 1.5rem 0;
+      text-align: center;
+    }
 
     display: inline;
+    font-size: map-get($font-sizes, 'small');
     margin: 0;
     user-select: none;
   }
