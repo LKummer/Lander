@@ -4,19 +4,19 @@ menu:
   main:
     weight: 10
 masthead:
-  title: 'Lander Hugo Theme'
-  subtitle: 'Generate landing pages and guidance for your projects.'
+  title: 'Everyone loves good documentation'
+  subtitle: 'This Hugo theme will get you halfway there'
   buttons:
     - label: 'See the Demo'
       href: 'demo/'
-    - label: 'Read the Guides'
-      to: 'guide/'
+    - label: 'Get Started'
+      to: 'guide/quickstart/'
       color: 'accent'
 introduction:
   title: 'Create Beautiful Landing Pages for Projects'
   text: >
-    Improve the first impression of your project. Ease the learning curve for new
-    users. Stop sending people to the readme.
+    Improve the first impression of your project.
+    Stop sending users to the readme.
   cards:
     - title: 'Open Source'
       text: >
@@ -38,9 +38,9 @@ introduction:
         Ensure your project is accessible for everyone.
 bottom:
   title: 'Get Started Today'
-  text: 'The guides will help you get up and running as quick as possible.'
+  text: 'Check out the guides to get up quickly.'
   buttons:
-    - label: 'See the Guides'
+    - label: 'Read the Guides'
       to: 'guide/'
       color: 'accent'
 ---
