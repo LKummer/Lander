@@ -18,24 +18,24 @@ introduction:
     Improve the first impression of your project. Ease the learning curve for new
     users. Stop sending people to the readme.
   cards:
-    - title: 'Responsively Designed'
+    - title: 'Open Source'
       text: >
-        Designed from the ground up to work well with any screen size.
-    - title: 'Light as a Feather'
+        Use for free under GPL 3.0 with full sources available on Github.
+    - title: 'Ease the Landing'
       text: >
-        Fast for all users at under 50 kB uncompressed including fonts.
-    - title: 'Made for Internationalization'
+        Ease the learning curve with UX designed around learning.
+    - title: 'Control the Search'
       text: >
-        Additional RTL stylesheet included and support for Hugo's i18n features.
-    - title: 'Modern Search Engine Optimizations'
+        Modern search engine optimizations make sure your project is discoverable.
+    - title: 'Scale Globally'
       text: >
-        JSON-LD schema and optimizations to get your project out there.
-    - title: 'Accessible for Everyone'
+        Create translations and support right to left languages.
+    - title: 'Target All Screens'
       text: >
-        Follows accessibility guidelines for a good user experience for everyone.
-    - title: 'Easily Customizable'
+        Make your content available anywhere, on all screen sizes.
+    - title: 'Reach Everyone'
       text: >
-        Building a customized version is easy with ready made scripts.
+        Ensure your project is accessible for everyone.
 bottom:
   title: 'Get Started Today'
   text: 'The guides will help you get up and running as quick as possible.'
