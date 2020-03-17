@@ -121,7 +121,7 @@ configurations.
 
 ### Root `_index.md`
 
-This configuration is similar to what is used in this site's root `_index.md`.
+This is a full front matter configuration of a site's root `_index.md` file.
 
 ```yaml
 ---
@@ -131,31 +131,27 @@ menu:
     weight: 10
 # Section Configuration:
 masthead:
-  title: 'Lander Hugo Theme'
-  subtitle: 'Generate landing pages and guidance for your projects.'
+  title: 'Masthead Title'
+  subtitle: 'Masthead Subtitle'
   buttons:
-    - label: 'Download the Releases'
+    - label: 'Primary Colored Button'
       href: '#'
-    - label: 'See the Guides'
+    - label: 'Accent Colored Button'
       to: 'guide/'
       color: 'accent'
 introduction:
-  title: 'Create Beautiful Landing Pages for Projects'
-  text: >
-    Improve the first impression of your project. Ease the learning curve for new
-    users. Stop sending people to the readme.
+  title: 'Introduction Title'
+  text: 'Introduction Text'
   cards:
-    - title: 'Responsively Designed'
-      text: >
-        Designed from the ground up to work well with any screen size.
-    - title: 'Light as a Feather'
-      text: >
-        Fast for all users at under 50 kB uncompressed including fonts.
+    - title: 'First Card'
+      text: 'First Card Text'
+    - title: 'Second Card'
+      text: 'Second Card Text'
 bottom:
-  title: 'Get Started Today'
-  text: 'The guides will help you get up and running as quick as possible.'
+  title: 'Bottom Title'
+  text: 'Bottom Text'
   buttons:
-    - label: 'See the Guides'
+    - label: 'First Button'
       to: 'guide/'
       color: 'accent'
 ---
@@ -163,7 +159,7 @@ bottom:
 
 ### Guide Section `_index.md` 
 
-This configuration is similar to what is used in this site's guide section `_index.md`.
+This is a full front matter configuration of a section's `_index.md` file.
 
 ```yaml
 ---
@@ -175,17 +171,20 @@ menu:
   main:
     weight: 20
 masthead:
-  title: 'Looking to Get Started?'
+  title: 'Masthead Title'
+  subtitle: 'Masthead Subtitle'
   buttons:
-    - label: 'See the Quick Start Guide'
-      to: 'guide/quickstart/'
+    - label: 'Primary Colored Button'
+      href: '#'
+    - label: 'Accent Colored Button'
+      to: 'guide/'
       color: 'accent'
 bottom:
-  title: 'Need More Help?'
-  text: 'Check out existing Github Issues or open a new one.'
+  title: 'Bottom Title'
+  text: 'Bottom Text'
   buttons:
-    - label: 'See the Github Issues'
-      href: '#'
+    - label: 'First Button'
+      to: 'guide/'
       color: 'accent'
 ---
 ```
