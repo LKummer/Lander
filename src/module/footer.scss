@@ -1,4 +1,8 @@
 .footer {
+  @include responsive-block('mobile') {
+    padding: 8rem 0;
+  }
+
   background: var(--color-background-900);
   padding: 10rem 0 9rem;
 

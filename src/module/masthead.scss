@@ -1,5 +1,9 @@
 .masthead {
   @extend %container;
+  @include responsive-block('mobile') {
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+  }
 
   margin-bottom: 14rem;
   margin-top: 12rem;

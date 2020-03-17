@@ -3,6 +3,9 @@
 
   &-container {
     @extend %container;
+    @include responsive-block('mobile') {
+      padding: 8rem 0;
+    }
 
     padding: 12rem 0;
   }
