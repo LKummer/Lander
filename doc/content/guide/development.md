@@ -1,7 +1,7 @@
 +++
 title = "Development Guide"
 date = "2020-03-05"
-description = "Development workflow instruction."
+description = "Development workflow instructions."
 categories = [
     "Development Guides"
 ]
@@ -29,7 +29,7 @@ documentation or storybook.
 
 ### Demo
 
-Runs a development server of the demo site while watching the theme with Webpack.
+Run a development server of the demo site while watching the theme with Webpack:
 
 ```bash
 $ npm run demo:dev
@@ -39,8 +39,8 @@ It should be accessible at `localhost:1313/Lander/demo/`.
 
 ### Documentation
 
-Runs a development  server of the documentation while watching the theme with
-Webpack.
+Run a development  server of the documentation while watching the theme with
+Webpack:
 
 ```bash
 $ npm run doc:dev
@@ -50,7 +50,7 @@ It should be accessible at `localhost:1313/Lander/`.
 
 ### Storybook
 
-Runs a Storybook dev server.
+Run a Storybook dev server:
 
 ```bash
 $ npm run story
@@ -65,13 +65,13 @@ The rest of the build scripts are mostly for CI/CD pipelines.
 
 ### Theme
 
-To build the theme in production mode:
+Build the theme in production mode:
 
 ```bash
 $ npm run theme:build:prod
 ```
 
-To build the theme in development mode:
+Build the theme in development mode:
 
 ```bash
 $ npm run theme:build
@@ -81,16 +81,16 @@ $ npm run theme:build
 
 Note that having a built theme in `dist/` is required for building the sites.
 
-To build the documentation:
+Build the documentation:
 
 ```bash
-npm run doc:build
+$ npm run doc:build
 ```
 
-To build the demo site:
+Build the demo site:
 
 ```bash
-npm run demo:build
+$ npm run demo:build
 ```
 
 ## Linting
@@ -98,7 +98,7 @@ npm run demo:build
 ESLint and Stylelint are used in the project. To run them:
 
 ```bash
-npm run lint
+$ npm run lint
 ```
 
 The linters are also configured into the Webpack build. When using the
