@@ -22,7 +22,7 @@ Installing Dependencies All dependencies in the project are managed through NPM,
 To install the dependencies, open a command line at the root of the project and run:
 $ npm ci To avoid package compatiblity issues, use Node version 12.x.
 Hot Reload Servers Hot reload development servers can be launched for the demo site, the documentation or storybook.
-Demo Runs a development server of the demo site while watching the theme with Webpack.</description>
+Demo Run a development server of the demo site while watching the theme with Webpack:</description>
     </item>
     
   </channel>

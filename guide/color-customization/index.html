@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Color Customization</title>
+    
+
+
+<link rel="stylesheet" href="/Lander/main.css">
+
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Color Customization",
+    "author": {
+        "@type": "Person",
+        "name": "Lander Contributors"
+    },
+    "wordCount":  385 ,
+    "isAccessibleForFree": "true",
+    "license": "#",
+    "description": "Instructions for the color configuration parameters."
+}
+</script>
+
+    
+
+</head>
+
+<body>
+    
+<div>
+    <header class="navbar">
+        <h1 class="navbar-logo">
+            Lander
+        </h1>
+        
+        
+        <span class="navbar-spacer"></span>
+        <nav>
+            <ul class="navbar-navigation">
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/" class="navbar-navigation-item">
+                    Home
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://lkummer.github.io/Lander/guide/" class="navbar-navigation-item">
+                    Guides
+                </a>
+                </li>
+                
+                <li>
+                <a href="https://github.com/LKummer/Lander/releases" class="navbar-navigation-item">
+                    Download
+                </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+</div>
+
+<main class="l-single">
+    <aside class="toc l-single-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#options">Options</a>
+      <ul>
+        <li><a href="#primary">Primary</a></li>
+        <li><a href="#secondary">Secondary</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#highlight">Highlight</a></li>
+      </ul>
+    </li>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
+    </aside>
+    
+    <article class="article l-single-article">
+        <nav>
+            <ul class="article-breadcrumbs">
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide">
+                        Guides
+                    </a>
+                </li>
+                <li class="article-breadcrumbs-item">
+                    <a href="https://lkummer.github.io/Lander/guide#user-guides">
+                        User Guides
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="article-title">
+            Color Customization
+        </h1>
+        <section class="article-content">
+            <p>All colors of the theme can be customized through options in the site&rsquo;s
+configuration.</p>
+<p>The theme only requires the small version of Hugo as this is done through CSS
+variables, not Sass variables.</p>
+<h2 id="options">Options</h2>
+<p>If an invalid option is supplied, it will not be rendered and a warning will be
+emmited.</p>
+<p>Colors of a higher number are darker.</p>
+<h3 id="primary">Primary</h3>
+<p>Used mostly on buttons.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colors</span><span class="p">]</span>
+    <span class="nx">primary</span><span class="mi">-600</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 40%, 32%)&#34;</span>
+    <span class="nx">primary</span><span class="mi">-500</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 45%, 35%)&#34;</span>
+    <span class="nx">primary</span><span class="mi">-400</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 55%, 40%)&#34;</span>
+</code></pre></div><h3 id="secondary">Secondary</h3>
+<p>Used on buttons, links and active TOC links.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colors</span><span class="p">]</span>
+    <span class="nx">accent</span><span class="mi">-600</span> <span class="p">=</span> <span class="s2">&#34;hsl(27, 95%, 38%)&#34;</span>
+    <span class="nx">accent</span><span class="mi">-500</span> <span class="p">=</span> <span class="s2">&#34;hsl(27, 90%, 42%)&#34;</span>
+    <span class="nx">accent</span><span class="mi">-400</span> <span class="p">=</span> <span class="s2">&#34;hsl(27, 80%, 50%)&#34;</span>
+</code></pre></div><h3 id="background">Background</h3>
+<p>Used as the background for both light and dark sections. Note <code>200</code> and <code>100</code> are
+the light backgrounds and <code>900</code> is the dark background.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colors</span><span class="p">]</span>
+    <span class="nx">background</span><span class="mi">-900</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 40%, 20%)&#34;</span>
+    <span class="nx">background</span><span class="mi">-200</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 10%, 95%)&#34;</span>
+    <span class="nx">background</span><span class="mi">-100</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 10%, 97%)&#34;</span>
+</code></pre></div><h3 id="text">Text</h3>
+<p>Used for text. Note the three dark colors <code>900</code>, <code>800</code> and <code>700</code> and the single
+light color <code>100</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colors</span><span class="p">]</span>
+    <span class="nx">text</span><span class="mi">-900</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 0%, 0.75)&#34;</span>
+    <span class="nx">text</span><span class="mi">-800</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 0%, 0.7)&#34;</span>
+    <span class="nx">text</span><span class="mi">-700</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 0%, 0.55)&#34;</span>
+    <span class="nx">text</span><span class="mi">-100</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 100%, 0.9)&#34;</span>
+</code></pre></div><h3 id="highlight">Highlight</h3>
+<p>Used on the highlight blocks.</p>
+<ul>
+<li><code>highlight-text</code> is used for names, strings and namespaces.</li>
+<li><code>highlight-background</code> is used for the background of highlight blocks.</li>
+<li><code>highlight-comment</code> is used for comments.</li>
+<li><code>highlight-special</code> is used for types and exceptions.</li>
+<li><code>highlight-operator</code> is used for operators and parenthesis.</li>
+<li><code>highlight-literal</code> is used for literals and keywords.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colors</span><span class="p">]</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">text</span> <span class="p">=</span> <span class="s2">&#34;hsl(240, 35%, 99%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">background</span> <span class="p">=</span> <span class="s2">&#34;hsl(240, 13%, 14%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">comment</span> <span class="p">=</span> <span class="s2">&#34;hsl(250, 25%, 55%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">special</span> <span class="p">=</span> <span class="s2">&#34;hsl(180, 75%, 55%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">operator</span> <span class="p">=</span> <span class="s2">&#34;hsl(330, 95%, 75%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">literal</span> <span class="p">=</span> <span class="s2">&#34;hsl(250, 80%, 70%)&#34;</span>
+</code></pre></div><h2 id="example">Example</h2>
+<p>This example configuration sets all the valid color options.</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">colors</span><span class="p">]</span>
+    <span class="nx">primary</span><span class="mi">-600</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 40%, 32%)&#34;</span>
+    <span class="nx">primary</span><span class="mi">-500</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 45%, 35%)&#34;</span>
+    <span class="nx">primary</span><span class="mi">-400</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 55%, 40%)&#34;</span>
+    <span class="nx">accent</span><span class="mi">-600</span> <span class="p">=</span> <span class="s2">&#34;hsl(27, 95%, 38%)&#34;</span>
+    <span class="nx">accent</span><span class="mi">-500</span> <span class="p">=</span> <span class="s2">&#34;hsl(27, 90%, 42%)&#34;</span>
+    <span class="nx">accent</span><span class="mi">-400</span> <span class="p">=</span> <span class="s2">&#34;hsl(27, 80%, 50%)&#34;</span>
+    <span class="nx">background</span><span class="mi">-900</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 40%, 20%)&#34;</span>
+    <span class="nx">background</span><span class="mi">-200</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 10%, 95%)&#34;</span>
+    <span class="nx">background</span><span class="mi">-100</span> <span class="p">=</span> <span class="s2">&#34;hsl(216, 10%, 97%)&#34;</span>
+    <span class="nx">text</span><span class="mi">-900</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 0%, 0.75)&#34;</span>
+    <span class="nx">text</span><span class="mi">-800</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 0%, 0.7)&#34;</span>
+    <span class="nx">text</span><span class="mi">-700</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 0%, 0.55)&#34;</span>
+    <span class="nx">text</span><span class="mi">-100</span> <span class="p">=</span> <span class="s2">&#34;hsla(0, 0%, 100%, 0.9)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">text</span> <span class="p">=</span> <span class="s2">&#34;hsl(240, 35%, 99%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">background</span> <span class="p">=</span> <span class="s2">&#34;hsl(240, 13%, 14%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">comment</span> <span class="p">=</span> <span class="s2">&#34;hsl(250, 25%, 55%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">special</span> <span class="p">=</span> <span class="s2">&#34;hsl(180, 75%, 55%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">operator</span> <span class="p">=</span> <span class="s2">&#34;hsl(330, 95%, 75%)&#34;</span>
+    <span class="nx">highlight</span><span class="err">-</span><span class="nx">literal</span> <span class="p">=</span> <span class="s2">&#34;hsl(250, 80%, 70%)&#34;</span>
+</code></pre></div>
+        </section>
+    </article></main>
+    <footer class="footer">
+    <div class="footer-container l-offset l-offset-start">
+        <section class="content content-dark">
+            
+            <h1 class="content-title">
+                Lander
+            </h1>
+            
+            
+            <p class="content-text">
+                Hugo theme for landing and documentation sites.
+            </p>
+            
+        </section>
+        
+        <nav>
+            <ul class="lowernav">
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/" class="lowernav-item">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://lkummer.github.io/Lander/guide/" class="lowernav-item">
+                        Guides
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/LKummer/Lander/releases" class="lowernav-item">
+                        Download
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</footer>
+
+    <script src="/Lander/main.js"></script>
+</body>
+</html>

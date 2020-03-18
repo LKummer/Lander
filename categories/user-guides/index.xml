@@ -6,10 +6,24 @@
     <description>Recent content in User Guides on Lander</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lkummer.github.io/Lander/categories/user-guides/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Color Customization</title>
+      <link>https://lkummer.github.io/Lander/guide/color-customization/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lkummer.github.io/Lander/guide/color-customization/</guid>
+      <description>All colors of the theme can be customized through options in the site&amp;rsquo;s configuration.
+The theme only requires the small version of Hugo as this is done through CSS variables, not Sass variables.
+Options If an invalid option is supplied, it will not be rendered and a warning will be emmited.
+Colors of a higher number are darker.
+Primary Used mostly on buttons.
+[params] [params.colors] primary-600 = &amp;#34;hsl(216, 40%, 32%)&amp;#34; primary-500 = &amp;#34;hsl(216, 45%, 35%)&amp;#34; primary-400 = &amp;#34;hsl(216, 55%, 40%)&amp;#34; Secondary Used on buttons, links and active TOC links.</description>
+    </item>
     
     <item>
       <title>Content Management</title>

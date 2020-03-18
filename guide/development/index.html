@@ -19,12 +19,14 @@
         "@type": "Person",
         "name": "Lander Contributors"
     },
-    "wordCount":  247 ,
+    "wordCount":  246 ,
     "isAccessibleForFree": "true",
     "license": "#",
-    "description": "Development workflow instruction."
+    "description": "Development workflow instructions."
 }
 </script>
+
+    
 
 </head>
 
@@ -118,35 +120,35 @@ run:</p>
 <p>Hot reload development servers can be launched for the demo site, the
 documentation or storybook.</p>
 <h3 id="demo">Demo</h3>
-<p>Runs a development server of the demo site while watching the theme with Webpack.</p>
+<p>Run a development server of the demo site while watching the theme with Webpack:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run demo:dev
 </code></pre></div><p>It should be accessible at <code>localhost:1313/Lander/demo/</code>.</p>
 <h3 id="documentation">Documentation</h3>
-<p>Runs a development  server of the documentation while watching the theme with
-Webpack.</p>
+<p>Run a development  server of the documentation while watching the theme with
+Webpack:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run doc:dev
 </code></pre></div><p>It should be accessible at <code>localhost:1313/Lander/</code>.</p>
 <h3 id="storybook">Storybook</h3>
-<p>Runs a Storybook dev server.</p>
+<p>Run a Storybook dev server:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run story
 </code></pre></div><p>It should be accessible at <code>localhost:6006/</code>.</p>
 <h2 id="building">Building</h2>
 <p>When customizing the theme only a build of the theme itself is needed.
 The rest of the build scripts are mostly for CI/CD pipelines.</p>
 <h3 id="theme">Theme</h3>
-<p>To build the theme in production mode:</p>
+<p>Build the theme in production mode:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run theme:build:prod
-</code></pre></div><p>To build the theme in development mode:</p>
+</code></pre></div><p>Build the theme in development mode:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run theme:build
 </code></pre></div><h3 id="sites">Sites</h3>
 <p>Note that having a built theme in <code>dist/</code> is required for building the sites.</p>
-<p>To build the documentation:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run doc:build
-</code></pre></div><p>To build the demo site:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run demo:build
+<p>Build the documentation:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run doc:build
+</code></pre></div><p>Build the demo site:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run demo:build
 </code></pre></div><h2 id="linting">Linting</h2>
 <p>ESLint and Stylelint are used in the project. To run them:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm run lint
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ npm run lint
 </code></pre></div><p>The linters are also configured into the Webpack build. When using the
 development servers linting output is displayed in the console.</p>
 

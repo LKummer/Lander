@@ -19,12 +19,14 @@
         "@type": "Person",
         "name": "Lander Contributors"
     },
-    "wordCount":  564 ,
+    "wordCount":  494 ,
     "isAccessibleForFree": "true",
     "license": "#",
     "description": "Guidance for the customizable sections of the theme."
 }
 </script>
+
+    
 
 </head>
 
@@ -167,7 +169,7 @@ be used to direct them to content they might be looking for.</p>
 </span></code></pre></div><p>The <code>title</code> and <code>text</code> are used to render centered text. Both are optional.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">bottom</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;First Button&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Button&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
 </span></code></pre></div><p>The <code>buttons</code> array is rendered like the Masthead <code>buttons</code> array. It is
@@ -176,7 +178,7 @@ optional.</p>
 <p>To finish the guide, let&rsquo;s take a look at a couple of full front matter page
 configurations.</p>
 <h3 id="root-_indexmd">Root <code>_index.md</code></h3>
-<p>This configuration is similar to what is used in this site&rsquo;s root <code>_index.md</code>.</p>
+<p>This is a full front matter configuration of a site&rsquo;s root <code>_index.md</code> file.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">---<span class="w">
 </span><span class="w"></span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Home&#39;</span><span class="w">
 </span><span class="w"></span><span class="k">menu</span><span class="p">:</span><span class="w">
@@ -184,36 +186,32 @@ configurations.</p>
 </span><span class="w">    </span><span class="k">weight</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
 </span><span class="w"></span><span class="c"># Section Configuration:</span><span class="w">
 </span><span class="w"></span><span class="k">masthead</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Lander Hugo Theme&#39;</span><span class="w">
-</span><span class="w">  </span><span class="k">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Generate landing pages and guidance for your projects.&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Masthead Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Masthead Subtitle&#39;</span><span class="w">
 </span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Download the Releases&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Primary Colored Button&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">href</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#&#39;</span><span class="w">
-</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Guides&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Accent Colored Button&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
 </span><span class="w"></span><span class="k">introduction</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Create Beautiful Landing Pages for Projects&#39;</span><span class="w">
-</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="sd">&gt;
-</span><span class="sd">    Improve the first impression of your project. Ease the learning curve for new</span><span class="w">
-</span><span class="w">    </span>users.<span class="w"> </span>Stop<span class="w"> </span>sending<span class="w"> </span>people<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>readme.<span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Introduction Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Introduction Text&#39;</span><span class="w">
 </span><span class="w">  </span><span class="k">cards</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Responsively Designed&#39;</span><span class="w">
-</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="sd">&gt;
-</span><span class="sd">        Designed from the ground up to work well with any screen size.</span><span class="w">
-</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Light as a Feather&#39;</span><span class="w">
-</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="sd">&gt;
-</span><span class="sd">        Fast for all users at under 50 kB uncompressed including fonts.</span><span class="w">
+</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;First Card&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;First Card Text&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Second Card&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Second Card Text&#39;</span><span class="w">
 </span><span class="w"></span><span class="k">bottom</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Get Started Today&#39;</span><span class="w">
-</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;The guides will help you get up and running as quick as possible.&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Text&#39;</span><span class="w">
 </span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Guides&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Button&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
 </span><span class="w"></span>---<span class="w">
 </span></code></pre></div><h3 id="guide-section-_indexmd">Guide Section <code>_index.md</code></h3>
-<p>This configuration is similar to what is used in this site&rsquo;s guide section <code>_index.md</code>.</p>
+<p>This is a full front matter configuration of a section&rsquo;s <code>_index.md</code> file.</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">---<span class="w">
 </span><span class="w"></span><span class="k">aliases</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span>- <span class="s2">&#34;guides&#34;</span><span class="w">
@@ -223,17 +221,20 @@ configurations.</p>
 </span><span class="w">  </span><span class="k">main</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="k">weight</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
 </span><span class="w"></span><span class="k">masthead</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Looking to Get Started?&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Masthead Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Masthead Subtitle&#39;</span><span class="w">
 </span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Quick Start Guide&#39;</span><span class="w">
-</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/quickstart/&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Primary Colored Button&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">href</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Accent Colored Button&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
 </span><span class="w"></span><span class="k">bottom</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Need More Help?&#39;</span><span class="w">
-</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Check out existing Github Issues or open a new one.&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Title&#39;</span><span class="w">
+</span><span class="w">  </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Text&#39;</span><span class="w">
 </span><span class="w">  </span><span class="k">buttons</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;See the Github Issues&#39;</span><span class="w">
-</span><span class="w">      </span><span class="k">href</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;#&#39;</span><span class="w">
+</span><span class="w">    </span>- <span class="k">label</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Bottom Button&#39;</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;guide/&#39;</span><span class="w">
 </span><span class="w">      </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;accent&#39;</span><span class="w">
 </span><span class="w"></span>---<span class="w">
 </span></code></pre></div>
