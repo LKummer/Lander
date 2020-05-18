@@ -59,8 +59,8 @@ the light backgrounds and `900` is the dark background.
 
 ### Text
 
-Used for text. Note the three dark colors `900`, `800` and `700` and the single
-light color `100`.
+Used for text. Note the three dark colors `900`, `800` and `700` and the two
+light colors `100` and `200`.
 
 ``` toml
 [params]
@@ -68,6 +68,7 @@ light color `100`.
     text-900 = "hsla(0, 0%, 0%, 0.75)"
     text-800 = "hsla(0, 0%, 0%, 0.7)"
     text-700 = "hsla(0, 0%, 0%, 0.55)"
+    text-200 = "hsla(0, 0%, 100%, 0.85)"
     text-100 = "hsla(0, 0%, 100%, 0.9)"
 ```
 
@@ -112,6 +113,7 @@ This example configuration sets all the valid color options.
     text-900 = "hsla(0, 0%, 0%, 0.75)"
     text-800 = "hsla(0, 0%, 0%, 0.7)"
     text-700 = "hsla(0, 0%, 0%, 0.55)"
+    text-200 = "hsla(0, 0%, 100%, 0.85)"
     text-100 = "hsla(0, 0%, 100%, 0.9)"
     highlight-text = "hsl(240, 35%, 99%)"
     highlight-background = "hsl(240, 13%, 14%)"
