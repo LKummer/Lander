@@ -1,5 +1,5 @@
 .toc {
-  $toc-margin: 0.2em;
+  $toc-margin: 0.75em;
 
   font-weight: bold;
   hyphens: auto;
@@ -22,7 +22,8 @@
   }
 
   a[href] {
-    @include transition('color');
+    display: inline-block;
+    @include transition('all');
 
     color: var(--colors-text-900);
 
@@ -33,6 +34,7 @@
 
   a[href].is-active {
     color: var(--color-accent-400);
+    padding: 0.75em 0;
   }
 }
 
