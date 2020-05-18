@@ -22,10 +22,10 @@
   }
 
   a[href] {
-    display: inline-block;
     @include transition('all');
 
     color: var(--colors-text-900);
+    display: inline-block;
 
     &:hover {
       color: var(--color-accent-400);
