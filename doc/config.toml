@@ -13,6 +13,7 @@ pygmentsUseClasses = true
     title = "Lander"
     text = "Hugo theme for landing and documentation sites."
   [params.seo]
+    description = "Customizable Hugo theme for landing and documentation sites. Create beautiful documentation with ease."
     category = "Hugo Theme"
     downloadURL = "#"
     # When the versionEnv option is set, the version is picked up from the

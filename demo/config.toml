@@ -13,6 +13,7 @@ pygmentsUseClasses = true
     title = "Footer Title"
     text = "Footer section text."
   [params.seo]
+    description = "Description of the site."
     category = "Hugo Theme"
     downloadURL = "#"
     # When the versionEnv option is set, the version is picked up from the
