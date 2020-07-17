@@ -1,7 +1,7 @@
 html {
   color: var(--color-text-900);
   font-family: 'Open Sans', sans-serif;
-  font-size: map-get($font-sizes, 'small');
+  font-size: var(--type-size-200);
   line-height: 1.8;
 }
 
@@ -31,14 +31,6 @@ a {
   }
 }
 
-// Calculates font sizes between the systemized sizes.
-@function intermediate-font-size (
-  $fraction,
-  $small: map-get($font-sizes, "large"),
-  $large: map-get($font-sizes, "huge")) {
-  @return $small + ($fraction * ($large - $small));
-}
-
 h1,
 h2,
 h3,
@@ -52,27 +44,27 @@ h6 {
 }
 
 h1 {
-  font-size: map-get($font-sizes, "huge");
+  font-size: var(--type-size-800);
 }
 
 h2 {
-  font-size: intermediate-font-size(4 / 7);
+  font-size: var(--type-size-700);
 }
 
 h3 {
-  font-size: intermediate-font-size(2 / 7);
+  font-size: var(--type-size-600);
 }
 
 h4 {
-  font-size: map-get($font-sizes, "large");
+  font-size: var(--type-size-500);
 }
 
 h5 {
-  font-size: map-get($font-sizes, "medium");
+  font-size: var(--type-size-300);
 }
 
 h6 {
-  font-size: map-get($font-sizes, "small");
+  font-size: var(--type-size-200);
 }
 
 p {

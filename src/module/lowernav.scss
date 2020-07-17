@@ -6,7 +6,7 @@
   &-item {
     @include transition('color');
 
-    font-size: map-get($font-sizes, 'large');
+    font-size: var(--type-size-500);
     font-weight: bold;
     line-height: 1.6;
   }
