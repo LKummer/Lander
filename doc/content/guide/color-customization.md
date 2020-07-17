@@ -22,7 +22,7 @@ Colors of a higher number are darker.
 
 ### Primary
 
-Used mostly on buttons.
+Primary color used mostly for buttons.
 
 ``` toml
 [params]
@@ -32,9 +32,11 @@ Used mostly on buttons.
     primary-400 = "hsl(216, 55%, 40%)"
 ```
 
-### Secondary
+### Accent
 
-Used on buttons, links and active TOC links.
+Accent color used for buttons and links.
+`100`, `200` and `300` are used for link card accents.
+`400`, `500` and `600` are used for buttons and links.
 
 ``` toml
 [params]
@@ -42,17 +44,22 @@ Used on buttons, links and active TOC links.
     accent-600 = "hsl(27, 95%, 38%)"
     accent-500 = "hsl(27, 90%, 42%)"
     accent-400 = "hsl(27, 80%, 50%)"
+    accent-300 = "hsl(216, 27%, 65%)"
+    accent-200 = "hsl(216, 25%, 67%)"
+    accent-100 = "hsl(216, 20%, 70%)"
 ```
 
 ### Background
 
-Used as the background for both light and dark sections. Note `200` and `100` are
-the light backgrounds and `900` is the dark background.
+Used as the background for both light and dark sections. Note `400`, `300`, `200`
+and `100` are the light backgrounds and `900` is the dark background.
 
 ``` toml
 [params]
   [params.colors]
     background-900 = "hsl(216, 40%, 20%)"
+    background-400 = "hsl(216, 10%, 90%)"
+    background-300 = "hsl(216, 10%, 92%)"
     background-200 = "hsl(216, 10%, 95%)"
     background-100 = "hsl(216, 10%, 97%)"
 ```

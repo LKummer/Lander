@@ -15,7 +15,23 @@
 
   // Set the color of anchor cards.
   &[href] {
+    @include transition('all');
+
+    border-bottom: 2rem solid var(--color-accent-100);
     color: var(--color-text-900);
+    padding-bottom: 3rem;
+
+    &:hover {
+      background: var(--color-background-300);
+      border-color: var(--color-accent-200);
+    }
+
+    &:active {
+      @include shadow(0.2em);
+
+      background: var(--color-background-400);
+      border-color: var(--color-accent-300);
+    }
   }
 
   &-centered {
@@ -34,7 +50,9 @@
   }
 
   &-text {
+    color: var(--color-text-700);
     font-size: map-get($font-sizes, 'small');
+    font-weight: normal;
     margin: 0 0 1em 0;
 
     &:last-child {
