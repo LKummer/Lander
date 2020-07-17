@@ -44,6 +44,7 @@ pygmentsUseClasses = true
     text-800 = "hsla(0, 0%, 0%, 0.7)"
     text-700 = "hsla(0, 0%, 0%, 0.55)"
     text-100 = "hsla(0, 0%, 100%, 0.9)"
+    highlight-inline = "hsl(27, 80%, 50%)"
     highlight-text = "hsl(240, 35%, 99%)"
     highlight-background = "hsl(240, 13%, 14%)"
     highlight-comment = "hsl(250, 25%, 55%)"

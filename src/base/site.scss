@@ -91,6 +91,14 @@ code {
   font-family: 'Fira Code', monospace;
 }
 
+code {
+  color: var(--color-highlight-inline);
+}
+
+pre > code {
+  color: var(--color-highlight-text);
+}
+
 pre {
   line-height: 1.6;
   overflow: auto;

@@ -83,6 +83,7 @@ light colors `100` and `200`.
 
 Used on the highlight blocks.
 
+* `highlight-inline` is used for inline `code` elements.
 * `highlight-text` is used for names, strings and namespaces.
 * `highlight-background` is used for the background of highlight blocks.
 * `highlight-comment` is used for comments.
@@ -93,6 +94,7 @@ Used on the highlight blocks.
 ``` toml
 [params]
   [params.colors]
+    highlight-inline = "hsl(27, 80%, 50%)"
     highlight-text = "hsl(240, 35%, 99%)"
     highlight-background = "hsl(240, 13%, 14%)"
     highlight-comment = "hsl(250, 25%, 55%)"
