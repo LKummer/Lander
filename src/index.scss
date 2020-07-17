@@ -1,13 +1,13 @@
+// Mixins
+@import 'mixins/responsive';
+@import 'mixins/shadow';
+@import 'mixins/transition';
+
 // Theme Styles
 @import 'theme/colors';
 @import 'theme/screens';
 @import 'theme/timing';
 @import 'theme/type';
-
-// Mixins
-@import 'mixins/responsive';
-@import 'mixins/shadow';
-@import 'mixins/transition';
 
 // Base Styles
 @import 'base/reset';
