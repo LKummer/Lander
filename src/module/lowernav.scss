@@ -4,6 +4,8 @@
   padding: 0;
 
   &-item {
+    @include transition('color');
+
     font-size: map-get($font-sizes, 'large');
     font-weight: bold;
     line-height: 1.6;
