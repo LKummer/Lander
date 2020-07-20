@@ -1,8 +1,5 @@
 ---
 title: 'Home'
-menu:
-  main:
-    weight: 10
 masthead:
   title: 'Everyone loves good documentation.'
   subtitle: 'This Hugo theme will get you halfway there.'

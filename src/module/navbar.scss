@@ -60,17 +60,40 @@
   }
 
   &-logo {
-    @extend %navbar-item;
-    @include responsive-block('mobile') {
-      flex-basis: 100%;
-      font-size: var(--type-size-500);
-      margin: 1.5rem 0 0.5rem;
-      text-align: center;
+    display: inline-block;
+    height: 2rem;
+    margin-right: 0.75rem;
+
+    &-link {
+      @include transition('color');
+
+      align-items: center;
+      color: var(--color-text-900);
+      display: flex;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-text-800);
+      }
+
+      &:active {
+        color: var(--color-text-900);
+      }
     }
 
-    display: inline;
-    font-size: var(--type-size-200);
-    margin: 0;
-    user-select: none;
+    &-title {
+      @extend %navbar-item;
+      @include responsive-block('mobile') {
+        flex-basis: 100%;
+        font-size: var(--type-size-500);
+        margin: 1.5rem 0 0.5rem;
+        text-align: center;
+      }
+
+      display: inline;
+      font-size: var(--type-size-200);
+      margin: 0;
+      user-select: none;
+    }
   }
 }

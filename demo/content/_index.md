@@ -1,8 +1,5 @@
 ---
 title: 'Home'
-menu:
-  main:
-    weight: 10
 # Section Configuration:
 masthead:
   title: 'Masthead Title'
