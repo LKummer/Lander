@@ -16,7 +16,7 @@ All dependencies in the project are managed through NPM, including Hugo.
 To install the dependencies, open a command line at the root of the project and
 run:
 
-```bash
+```s
 $ npm ci
 ```
 
@@ -31,7 +31,7 @@ documentation or storybook.
 
 Run a development server of the demo site while watching the theme with Webpack:
 
-```bash
+```s
 $ npm run demo:dev
 ```
 
@@ -42,7 +42,7 @@ It should be accessible at `localhost:1313/Lander/demo/`.
 Run a development  server of the documentation while watching the theme with
 Webpack:
 
-```bash
+```s
 $ npm run doc:dev
 ```
 
@@ -52,7 +52,7 @@ It should be accessible at `localhost:1313/Lander/`.
 
 Run a Storybook dev server:
 
-```bash
+```s
 $ npm run story
 ```
 
@@ -67,13 +67,13 @@ The rest of the build scripts are mostly for CI/CD pipelines.
 
 Build the theme in production mode:
 
-```bash
+```s
 $ npm run theme:build:prod
 ```
 
 Build the theme in development mode:
 
-```bash
+```s
 $ npm run theme:build
 ```
 
@@ -83,13 +83,13 @@ Note that having a built theme in `dist/` is required for building the sites.
 
 Build the documentation:
 
-```bash
+```s
 $ npm run doc:build
 ```
 
 Build the demo site:
 
-```bash
+```s
 $ npm run demo:build
 ```
 
@@ -97,7 +97,7 @@ $ npm run demo:build
 
 ESLint and Stylelint are used in the project. To run them:
 
-```bash
+```s
 $ npm run lint
 ```
 
