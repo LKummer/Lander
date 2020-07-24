@@ -80,6 +80,7 @@ pygmentsUseClasses = true
         s5.8-13,13-13s13,5.8,13,13S31.2,37,24,37z"/>
     </svg>
     """
+    favicon = "favicon.svg"
 
 [taxonomies]
 category = "categories"
