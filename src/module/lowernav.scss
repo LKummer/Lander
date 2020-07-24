@@ -6,8 +6,17 @@
   &-item {
     @include transition('color');
 
+    color: var(--color-text-300);
     font-size: var(--type-size-500);
     font-weight: bold;
     line-height: 1.6;
+
+    &:hover {
+      color: var(--color-text-400);
+    }
+
+    &:active {
+      color: var(--color-text-500);
+    }
   }
 }
