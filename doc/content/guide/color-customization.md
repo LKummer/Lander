@@ -7,22 +7,24 @@ categories = [
 ]
 +++
 
-All colors of the theme can be customized through options in the site's
-configuration.
+Lander only requires the non-extended version of Hugo to build.
+Every color in the theme can be customized without a Sass rebuild,
+thanks to CSS custom properties.
 
-The theme only requires the small version of Hugo as this is done through CSS
-variables, not Sass variables.
+Lander is built around two types of sections: _light_ and _dark_.
+Color customization is built around enabling independent coloring of each type.
+This means you can theme Lander with both section types dark, light or reversed.
+
+Note all examples in this guide are in `TOML`.
+The options can be used in other configuration formats.
 
 ## Options
 
-If an invalid option is supplied, it will not be rendered and a warning will be
-emmited.
-
-Colors of a higher number are darker.
+If an invalid option is supplied a warning will be emmited.
 
 ### Primary
 
-Primary color used mostly for buttons.
+Primary color used mostly for buttons over _light_ sections.
 
 ``` toml
 [params]
@@ -35,8 +37,10 @@ Primary color used mostly for buttons.
 ### Accent
 
 Accent color used for buttons and links.
-`100`, `200` and `300` are used for link card accents.
-`400`, `500` and `600` are used for buttons and links.
+
+* `100`, `200` and `300` are used for link card accents in _dark_ sections.
+* `400`, `500` and `600` are used for buttons, links and active items in _light_
+  sections.
 
 ``` toml
 [params]
@@ -51,8 +55,11 @@ Accent color used for buttons and links.
 
 ### Background
 
-Used as the background for both light and dark sections. Note `400`, `300`, `200`
-and `100` are the light backgrounds and `900` is the dark background.
+Used as the background for both _light_ and _dark_ sections.
+
+* `100` is the _light_ background.
+* `200`, `300` and `400` are used on cards and link cards in _dark_ background.
+* `900` is the _dark_ background.
 
 ``` toml
 [params]
@@ -66,8 +73,13 @@ and `100` are the light backgrounds and `900` is the dark background.
 
 ### Text
 
-Used for text. Note the three dark colors `900`, `800` and `700` and the two
-light colors `100` and `200`.
+Used for text. Note the three dark colors `900`, `800` and `700` and the five
+light colors `500`, `400`, `300`, `200` and `100`.
+
+* `100` is used in _dark_ secctions.
+* `200` is used in buttons in _light_ sections.
+* `300`, `400` and `500` are used in the footer navigation (_dark_).
+* `700`, `800` and `900` are used in _light_ sections.
 
 ``` toml
 [params]
@@ -75,6 +87,9 @@ light colors `100` and `200`.
     text-900 = "hsla(0, 0%, 0%, 0.75)"
     text-800 = "hsla(0, 0%, 0%, 0.7)"
     text-700 = "hsla(0, 0%, 0%, 0.55)"
+    text-500 = "hsl(216, 56%, 78%)"
+    text-400 = "hsl(216, 48%, 83%)"
+    text-300 = "hsl(216, 40%, 90%)"
     text-200 = "hsla(0, 0%, 100%, 0.85)"
     text-100 = "hsla(0, 0%, 100%, 0.9)"
 ```
@@ -122,6 +137,9 @@ This example configuration sets all the valid color options.
     text-900 = "hsla(0, 0%, 0%, 0.75)"
     text-800 = "hsla(0, 0%, 0%, 0.7)"
     text-700 = "hsla(0, 0%, 0%, 0.55)"
+    text-500 = "hsl(216, 56%, 78%)"
+    text-400 = "hsl(216, 48%, 83%)"
+    text-300 = "hsl(216, 40%, 90%)"
     text-200 = "hsla(0, 0%, 100%, 0.85)"
     text-100 = "hsla(0, 0%, 100%, 0.9)"
     highlight-text = "hsl(240, 35%, 99%)"
