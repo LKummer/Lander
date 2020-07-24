@@ -1,5 +1,8 @@
 ---
 title: 'Home'
+menu:
+  footer:
+    weight: 10
 # Section Configuration:
 masthead:
   title: 'Masthead Title'

@@ -4,6 +4,8 @@ aliases:
 title: "Guides"
 menu:
   main:
+    weight: 10
+  footer:
     weight: 20
 masthead:
   title: 'Looking to Get Started?'
