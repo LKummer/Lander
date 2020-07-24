@@ -68,9 +68,9 @@
       @include responsive-block('mobile') {
         flex-basis: 100%;
         font-size: var(--type-size-500);
+        justify-content: center;
         margin-top: 0.5rem;
         text-align: center;
-        justify-content: center;
       }
       @include transition('color');
 
