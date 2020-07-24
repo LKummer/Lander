@@ -9,8 +9,8 @@ menu:
   footer:
     weight: 20
 masthead:
-  title: 'Masthead Title'
-  subtitle: 'Masthead Subtitle'
+  title: 'Guides Masthead Title'
+  subtitle: 'And this is the guides masthead subtitle'
   buttons:
     - label: 'Primary Colored Button'
       href: '#'
@@ -18,10 +18,10 @@ masthead:
       to: 'guide/'
       color: 'accent'
 bottom:
-  title: 'Bottom Title'
-  text: 'Bottom Text'
+  title: 'Want to give it a try?'
+  text: 'Learn more about the theme'
   buttons:
-    - label: 'Bottom Button'
-      to: 'guide/'
+    - label: 'See the Lander Docs'
+      href: 'https://lkummer.github.io/Lander/'
       color: 'accent'
 ---

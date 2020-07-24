@@ -1,5 +1,5 @@
 baseURL = "https://lkummer.github.io/Lander/demo/"
-title = "Lander"
+title = "Lander Demo"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -10,8 +10,11 @@ pygmentsUseClasses = true
 
 [params]
   [params.footer]
-    title = "Footer Title"
-    text = "Footer section text."
+    title = "About"
+    text = """
+    This is a demo for the Lander Hugo theme.
+    See the Lander documentation to learn more.
+    """
   [params.seo]
     description = "Description of the site."
     category = "Hugo Theme"
@@ -53,15 +56,21 @@ pygmentsUseClasses = true
     highlight-literal = "hsl(250, 80%, 70%)"
   [params.graphics]
     logo = """
-    <svg class="navbar-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 48">
+    <svg class="navbar-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
       <defs>
         <style>
+          :root {
+            --logo-rotation: 0deg;
+          }
           .logo-fill {
             fill: var(--color-primary-600);
-            transition: fill 0.25s;
+            transform-origin: 24px 24px;
+            transform: rotate(var(--logo-rotation));
+            transition: fill 0.25s, transform 0.25s ease;
           }
           .navbar-logo-link:hover {
             --color-primary-600: var(--color-primary-400);
+            --logo-rotation: 60deg;
           }
         </style>
       </defs>

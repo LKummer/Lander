@@ -5,27 +5,30 @@ menu:
     weight: 10
 # Section Configuration:
 masthead:
-  title: 'Masthead Title'
-  subtitle: 'Masthead Subtitle'
+  title: 'This can be your awesome site'
+  subtitle: 'Demo of the Lander Hugo theme'
   buttons:
-    - label: 'Primary Colored Button'
-      href: '#'
-    - label: 'Accent Colored Button'
+    - label: 'To the Demo Guides'
       to: 'guide/'
+    - label: 'To the Lander Docs'
+      href: 'https://lkummer.github.io/Lander/'
       color: 'accent'
 introduction:
-  title: 'Introduction Title'
-  text: 'Introduction Text'
+  title: 'Meet the Introduction Section'
+  text: >
+    You are reading the introduction section.
+    It contains a title, text and cards.
+    Each card can contain a title and text.
   cards:
-    - title: 'First Card'
-      text: 'First Card Text'
-    - title: 'Second Card'
-      text: 'Second Card Text'
+    - title: 'Convincing Pitch'
+      text: 'Good spot for your copy!'
+    - title: 'Great Point'
+      text: 'More free real estate!'
 bottom:
-  title: 'Bottom Title'
-  text: 'Bottom Text'
+  title: 'Feel Like Trying It?'
+  text: 'Download this Demo and Get Going'
   buttons:
-    - label: 'Bottom Button'
-      to: 'guide/'
+    - label: 'Get the Quick Start Site'
+      href: 'https://github.com/LKummer/Lander/releases'
       color: 'accent'
 ---
