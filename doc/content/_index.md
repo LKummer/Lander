@@ -1,8 +1,8 @@
 ---
 title: 'Home'
 masthead:
-  title: 'Everyone loves good documentation.'
-  subtitle: 'This Hugo theme will get you halfway there.'
+  title: 'Everyone loves good documentation'
+  subtitle: 'This Hugo theme will get you halfway there'
   buttons:
     - label: 'See the Demo'
       href: 'demo/'
@@ -10,7 +10,7 @@ masthead:
       to: 'guide/quickstart/'
       color: 'accent'
 introduction:
-  title: 'Create Beautiful Landing and Documentation Sites.'
+  title: 'Create Beautiful Landing and Documentation Sites'
   text: >
     Have you ever found yourself searching the documentation of a new library for
     guidance? This theme makes sure your users never will.
