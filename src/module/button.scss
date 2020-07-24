@@ -1,6 +1,9 @@
 .button {
   @include transition('all');
   @include shadow;
+  @include responsive-block('mobile') {
+    padding: 0.7rem 1.4rem;
+  }
 
   border: none;
   border-radius: 100em;
