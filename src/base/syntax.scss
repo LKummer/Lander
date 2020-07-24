@@ -1,4 +1,3 @@
-/* Background */
 .chroma {
   // Names and namespaces.
   $text: var(--color-highlight-text);
@@ -13,6 +12,7 @@
   // Background.
   $background: var(--color-highlight-background);
 
+  /* Background */
   background: $background;
   color: $text;
 

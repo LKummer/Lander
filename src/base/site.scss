@@ -92,6 +92,7 @@ pre > code {
 }
 
 pre {
+  background: var(--color-highlight-background);
   line-height: 1.6;
   overflow: auto;
   // For some reason overflow: auto does not make the overflow scrollable, but
