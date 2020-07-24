@@ -65,6 +65,13 @@
     margin-right: 0.75rem;
 
     &-link {
+      @include responsive-block('mobile') {
+        flex-basis: 100%;
+        font-size: var(--type-size-500);
+        margin-top: 0.5rem;
+        text-align: center;
+        justify-content: center;
+      }
       @include transition('color');
 
       align-items: center;
@@ -83,12 +90,6 @@
 
     &-title {
       @extend %navbar-item;
-      @include responsive-block('mobile') {
-        flex-basis: 100%;
-        font-size: var(--type-size-500);
-        margin: 1.5rem 0 0.5rem;
-        text-align: center;
-      }
 
       display: inline;
       font-size: var(--type-size-200);
