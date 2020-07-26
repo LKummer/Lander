@@ -3,53 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lkummer.github.io/Lander/categories/application/</loc>
+  </url>
+  
+  <url>
     <loc>https://lkummer.github.io/Lander/categories/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://lkummer.github.io/Lander/guide/color-customization/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lkummer.github.io/Lander/guide/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lkummer.github.io/Lander/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lkummer.github.io/Lander/categories/user-guides/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://lkummer.github.io/Lander/guide/content/</loc>
-    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lkummer.github.io/Lander/categories/development/</loc>
   </url>
   
   <url>
     <loc>https://lkummer.github.io/Lander/guide/development/</loc>
-    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lkummer.github.io/Lander/categories/development-guides/</loc>
-    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+    <loc>https://lkummer.github.io/Lander/guide/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lkummer.github.io/Lander/</loc>
   </url>
   
   <url>
     <loc>https://lkummer.github.io/Lander/guide/quickstart/</loc>
-    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://lkummer.github.io/Lander/guide/front-matter-customization/</loc>
-    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Lander</title>
+    <link>https://lkummer.github.io/Lander/categories/development/</link>
+    <description>Recent content in Development on Lander</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://lkummer.github.io/Lander/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development Guide</title>
+      <link>https://lkummer.github.io/Lander/guide/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lkummer.github.io/Lander/guide/development/</guid>
+      <description>Get familiarized with the development workflow of the project.
+Installing Dependencies All dependencies in the project are managed through NPM, including Hugo.
+To install the dependencies, open a command line at the root of the project and run:
+$ npm ci To avoid package compatiblity issues, use Node version 12.x.
+Hot Reload Servers Hot reload development servers can be launched for the demo site, the documentation or storybook.
+Demo Run a development server of the demo site while watching the theme with Webpack:</description>
+    </item>
+    
+  </channel>
+</rss>

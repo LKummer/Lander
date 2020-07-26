@@ -4,7 +4,7 @@
 	<meta name="generator" content="Hugo 0.66.0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
-    <title>Home - Lander</title>
+    <title>Home - Lander Demo</title>
     
 
 
@@ -18,15 +18,15 @@
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Lander",
+    "name": "Lander Demo",
     "applicationCategory": "Hugo Theme",
     "operatingSystem": "Any",
     "downloadUrl": "#",
-    "softwareVersion": "0.1.1",
-    "url": "https:\/\/lkummer.github.io\/",
+    "softwareVersion": "0.2.0",
+    "url": "https:\/\/lkummer.github.io\/Lander\/demo\/",
     "isAccessibleForFree": "true",
     "license": "#",
-    "description": "Footer section text."
+    "description": "    This is a demo for the Lander Hugo theme.\n    See the Lander documentation to learn more.\n    "
 }
 </script>
 
@@ -34,14 +34,20 @@
 
 <style>
 :root {
+    --color-accent-100: hsl(216, 20%, 70%);
+    --color-accent-200: hsl(216, 25%, 67%);
+    --color-accent-300: hsl(216, 27%, 65%);
     --color-accent-400: hsl(27, 80%, 50%);
     --color-accent-500: hsl(27, 90%, 42%);
     --color-accent-600: hsl(27, 95%, 38%);
     --color-background-100: hsl(216, 10%, 97%);
     --color-background-200: hsl(216, 10%, 95%);
+    --color-background-300: hsl(216, 10%, 92%);
+    --color-background-400: hsl(216, 10%, 90%);
     --color-background-900: hsl(216, 40%, 20%);
     --color-highlight-background: hsl(240, 13%, 14%);
     --color-highlight-comment: hsl(250, 25%, 55%);
+    --color-highlight-inline: hsl(27, 80%, 50%);
     --color-highlight-literal: hsl(250, 80%, 70%);
     --color-highlight-operator: hsl(330, 95%, 75%);
     --color-highlight-special: hsl(180, 75%, 55%);
@@ -50,6 +56,10 @@
     --color-primary-500: hsl(216, 45%, 35%);
     --color-primary-600: hsl(216, 40%, 32%);
     --color-text-100: hsla(0, 0%, 100%, 0.9);
+    --color-text-200: hsla(0, 0%, 100%, 0.85);
+    --color-text-300: hsl(216, 40%, 90%);
+    --color-text-400: hsl(216, 48%, 83%);
+    --color-text-500: hsl(216, 56%, 78%);
     --color-text-700: hsla(0, 0%, 0%, 0.55);
     --color-text-800: hsla(0, 0%, 0%, 0.7);
     --color-text-900: hsla(0, 0%, 0%, 0.75);
@@ -57,27 +67,51 @@
 </style>
 
 
+    
+    <link rel="icon" href="/Lander/demo/favicon.svg">
+    
 </head>
 
 <body>
     
 <div>
     <header class="navbar">
-        <h1 class="navbar-logo">
-            Lander
-        </h1>
+        <a class="navbar-logo-link" href="https://lkummer.github.io/Lander/demo/">
+            
+                <svg class="navbar-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+      <defs>
+        <style>
+          :root {
+            --logo-rotation: 0deg;
+          }
+          .logo-fill {
+            fill: var(--color-primary-600);
+            transform-origin: 24px 24px;
+            transform: rotate(var(--logo-rotation));
+            transition: fill 0.25s, transform 0.25s ease;
+          }
+          .navbar-logo-link:hover {
+            --color-primary-600: var(--color-primary-400);
+            --logo-rotation: 60deg;
+          }
+        </style>
+      </defs>
+      <path class="logo-fill" d="M42.2,11.7C42.2,11.7,42.2,11.7,42.2,11.7C38.5,6.2,32.4,2.5,25.3,2h0c-2.4,1-5.8,2.6-10.4,5.3
+        c-5.1,3-8.5,5.3-10.7,7.1C2.8,17.3,2,20.5,2,24c0,3.5,0.8,6.9,2.3,9.8c2.1,1.6,5.1,3.7,9.8,6.4c5.1,2.9,8.9,4.7,11.5,5.7
+        c7-0.5,13.1-4.3,16.8-9.8c0,0,0,0,0,0c0.4-2.6,0.6-6.3,0.6-11.6C43,18.6,42.6,14.5,42.2,11.7z M24,37c-7.2,0-13-5.8-13-13
+        s5.8-13,13-13s13,5.8,13,13S31.2,37,24,37z"/>
+    </svg>
+    
+            
+            <h1 class="navbar-logo-title">
+                Lander Demo
+            </h1>
+        </a>
         
         
         <span class="navbar-spacer"></span>
         <nav>
             <ul class="navbar-navigation">
-                
-                <li>
-                <a href="https://lkummer.github.io/Lander/demo/" class="navbar-navigation-item
-                navbar-navigation-item-active">
-                    Home
-                </a>
-                </li>
                 
                 <li>
                 <a href="https://lkummer.github.io/Lander/demo/guide/" class="navbar-navigation-item">
@@ -96,12 +130,12 @@
 <section class="masthead">
     
     <h1 class="masthead-title">
-        Masthead Title
+        This can be your awesome site
     </h1>
     
     
     <h2 class="masthead-subtitle">
-        Masthead Subtitle
+        Demo of the Lander Hugo theme
     </h2>
     
     
@@ -111,9 +145,9 @@
         
         <li>
             <a
-                href="#"
+                href="https://lkummer.github.io/Lander/demo/guide/"
                 class="button button-primary buttons-button">
-                Primary Colored Button
+                To the Demo Guides
             </a>
         </li>
         
@@ -121,9 +155,9 @@
         
         <li>
             <a
-                href="https://lkummer.github.io/Lander/demo/guide/"
+                href="https://lkummer.github.io/Lander/"
                 class="button button-accent buttons-button">
-                Accent Colored Button
+                To the Lander Docs
             </a>
         </li>
         
@@ -143,14 +177,15 @@
             
             <section class="content content-dark l-offset-item-start">
                 <h1 class="content-title">
-                    Introduction Title
+                    Meet the Introduction Section
                 </h1>
             </section>
             
             
             <section class="content content-dark l-offset-item-end">
                 <p class="content-text">
-                    Introduction Text
+                    You are reading the introduction section. It contains a title, text and cards. Each card can contain a title and text.
+
                 </p>
             </section>
             
@@ -162,10 +197,10 @@
             <li>
                 <section class="card card-centered">
                     <h1 class="card-title">
-                        First Card
+                        Convincing Pitch
                     </h1>
                     <p class="card-text">
-                        First Card Text
+                        Good spot for your copy!
                     </p>
                 </section>
             </li>
@@ -173,10 +208,10 @@
             <li>
                 <section class="card card-centered">
                     <h1 class="card-title">
-                        Second Card
+                        Great Point
                     </h1>
                     <p class="card-text">
-                        Second Card Text
+                        More free real estate!
                     </p>
                 </section>
             </li>
@@ -192,12 +227,12 @@
     <section class="content content-light content-centered">
         
         <h1 class="content-title">
-            Bottom Title
+            Feel Like Trying It?
         </h1>
         
         
         <p class="content-text">
-            Bottom Text
+            Download this Demo and Get Going
         </p>
         
         
@@ -207,9 +242,9 @@
         
         <li>
             <a
-                href="https://lkummer.github.io/Lander/demo/guide/"
+                href="https://github.com/LKummer/Lander/releases"
                 class="button button-accent buttons-button">
-                Bottom Button
+                Get the Quick Start Site
             </a>
         </li>
         
@@ -229,12 +264,14 @@
         <section class="content content-dark">
             
             <h1 class="content-title">
-                Footer Title
+                About
             </h1>
             
             
             <p class="content-text">
-                Footer section text.
+                    This is a demo for the Lander Hugo theme.
+    See the Lander documentation to learn more.
+    
             </p>
             
         </section>

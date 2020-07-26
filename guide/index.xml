@@ -6,7 +6,6 @@
     <description>Recent content in Guides on Lander</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lkummer.github.io/Lander/guide/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,21 +13,18 @@
     <item>
       <title>Color Customization</title>
       <link>https://lkummer.github.io/Lander/guide/color-customization/</link>
-      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lkummer.github.io/Lander/guide/color-customization/</guid>
-      <description>All colors of the theme can be customized through options in the site&amp;rsquo;s configuration.
-The theme only requires the small version of Hugo as this is done through CSS variables, not Sass variables.
-Options If an invalid option is supplied, it will not be rendered and a warning will be emmited.
-Colors of a higher number are darker.
-Primary Used mostly on buttons.
-[params] [params.colors] primary-600 = &amp;#34;hsl(216, 40%, 32%)&amp;#34; primary-500 = &amp;#34;hsl(216, 45%, 35%)&amp;#34; primary-400 = &amp;#34;hsl(216, 55%, 40%)&amp;#34; Secondary Used on buttons, links and active TOC links.</description>
+      <description>Lander only requires the non-extended version of Hugo to build. Every color in the theme can be customized without a Sass rebuild, thanks to CSS custom properties.
+Lander is built around two types of sections: light and dark. Color customization is built around enabling independent coloring of each type. This means you can theme Lander with both section types dark, light or reversed.
+Note all examples in this guide are in TOML.</description>
     </item>
     
     <item>
       <title>Content Management</title>
       <link>https://lkummer.github.io/Lander/guide/content/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lkummer.github.io/Lander/guide/content/</guid>
       <description>For the best experience, content should be structured and configured according to this guide.
@@ -41,7 +37,7 @@ The title option used as the title of the page.</description>
     <item>
       <title>Development Guide</title>
       <link>https://lkummer.github.io/Lander/guide/development/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lkummer.github.io/Lander/guide/development/</guid>
       <description>Get familiarized with the development workflow of the project.
@@ -55,7 +51,7 @@ Demo Run a development server of the demo site while watching the theme with Web
     <item>
       <title>Quick Start Guide</title>
       <link>https://lkummer.github.io/Lander/guide/quickstart/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lkummer.github.io/Lander/guide/quickstart/</guid>
       <description>By the end of this guide you should have a Hugo site ready to be generated.
@@ -67,7 +63,7 @@ After downloading, extract the quickstart site into an empty directory. The site
     <item>
       <title>Section Customization with Front Matter</title>
       <link>https://lkummer.github.io/Lander/guide/front-matter-customization/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lkummer.github.io/Lander/guide/front-matter-customization/</guid>
       <description>The root _index.md and section _index.md files render sections that are customizable through front matter options.
