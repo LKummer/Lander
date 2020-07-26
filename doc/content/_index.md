@@ -5,7 +5,7 @@ menu:
     weight: 10
 masthead:
   title: 'Everyone loves good documentation'
-  subtitle: 'This Hugo theme will get you halfway there'
+  subtitle: 'Launch better docs with Lander'
   buttons:
     - label: 'See the Demo'
       href: 'demo/'
@@ -13,32 +13,22 @@ masthead:
       to: 'guide/quickstart/'
       color: 'accent'
 introduction:
-  title: 'Create Beautiful Landing and Documentation Sites'
+  title: 'Documentation should not be rocket science'
   text: >
-    Have you ever found yourself searching the documentation of a new library for
-    guidance? This theme makes sure your users never will.
+    Have you ever found yourself lost in the documentation of a new library?
+    Lander ensures your users never will.
   cards:
-    - title: 'Open Source'
-      text: >
-        Use for free under GPL 3.0 with full sources available on Github.
-    - title: 'Ease the Landing'
-      text: >
-        Ease the learning curve with UX designed around learning.
-    - title: 'Control the Search'
-      text: >
-        Modern search engine optimizations make sure your project is discoverable.
-    - title: 'Scale Globally'
-      text: >
-        Create translations and support right to left languages.
-    - title: 'Target All Screens'
-      text: >
-        Make your content available anywhere, on all screen sizes.
-    - title: 'Reach Everyone'
-      text: >
-        Ensure your project is accessible for everyone.
+    - title: 'Easy Launch'
+      text: 'Easy to build and deploy with Hugo.'
+    - title: 'Search Booster'
+      text: 'Modern SEO, perfect Lighthouse score.'
+    - title: 'Your Payload'
+      text: 'Built for unique customization.'
+    - title: 'Smooth Landing'
+      text: 'Convert more visitors to users.'
 bottom:
-  title: 'Get Started Today'
-  text: 'Check out the guides to get up quickly.'
+  title: 'Launch with Lander'
+  text: 'Deploy in minutes'
   buttons:
     - label: 'Read the Guides'
       to: 'guide/'

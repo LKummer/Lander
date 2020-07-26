@@ -1,9 +1,8 @@
 +++
 title = "Section Customization with Front Matter"
-date = "2020-03-05"
 description = "Guidance for the customizable sections of the theme."
 categories = [
-    "User Guides"
+    "Application"
 ]
 +++
 

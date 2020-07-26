@@ -1,9 +1,8 @@
 +++
 title = "Color Customization"
-date = "2020-03-17"
-description = "Instructions for the color configuration parameters."
+description = "Instructions for color configuration parameters."
 categories = [
-    "User Guides"
+    "Application"
 ]
 +++
 

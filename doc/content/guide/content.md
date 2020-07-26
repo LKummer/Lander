@@ -1,9 +1,8 @@
 +++
 title = "Content Management"
-date = "2020-03-05"
-description = "Content structure and front matter options."
+description = "Supported content structure and front matter options."
 categories = [
-    "User Guides"
+    "Application"
 ]
 +++
 

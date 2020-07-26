@@ -8,16 +8,16 @@ menu:
   footer:
     weight: 20
 masthead:
-  title: 'Looking to Get Started?'
+  title: 'Looking to get started?'
   buttons:
-    - label: 'See the Quick Start Guide'
+    - label: 'See the Guide'
       to: 'guide/quickstart/'
       color: 'accent'
 bottom:
   title: 'Need More Help?'
-  text: 'Check out existing Github Issues or open a new one.'
+  text: 'Check out existing Github Issues or open a new one'
   buttons:
-    - label: 'See the Github Issues'
+    - label: 'See the Issue Tracker'
       href: 'https://github.com/LKummer/Lander/issues'
       color: 'accent'
 ---

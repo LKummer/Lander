@@ -1,9 +1,8 @@
 +++
 title = "Quick Start Guide"
-date = "2020-03-05"
 description = "Succinct guide to get new users up and going quickly."
 categories = [
-    "User Guides"
+    "Application"
 ]
 +++
 
