@@ -26,7 +26,7 @@
     "@babel/core": "^7.8.4",
     "@storybook/addon-docs": "^5.3.13",
     "@storybook/addon-viewport": "^5.3.13",
-    "@storybook/html": "^5.3.13",
+    "@storybook/html": "^7.0.9",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
@@ -50,7 +50,7 @@
     "typeface-fira-code": "^1.1.4",
     "typeface-open-sans": "0.0.75",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-merge": "^4.2.2",
     "webpack-rtl-plugin": "^2.0.0"
   }
